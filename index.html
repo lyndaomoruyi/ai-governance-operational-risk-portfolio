@@ -1,68 +1,69 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Governance & Operational Risk Automation Portfolio</title>
+  <title>AI Governance & Operational Risk Automation Portfolio | Lynda Omoruyi</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     :root{
-      --navy:#071325;
-      --navy2:#10233f;
+      --navy:#071426;
+      --navy2:#10223d;
       --ink:#101828;
-      --muted:#667085;
+      --muted:#5f6f89;
       --gold:#d3aa56;
-      --blue:#b8d7ff;
+      --blue:#b9d7ff;
       --white:#ffffff;
-      --card:#111c31;
-      --line:rgba(255,255,255,.14);
       --light:#f5f7fb;
+      --card:#ffffff;
+      --card-dark:#111d32;
+      --line:#e1e7f0;
+      --shadow:0 16px 42px rgba(16,24,40,.08);
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--light);color:var(--ink);line-height:1.55}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--light);color:var(--ink);line-height:1.58}
     a{color:inherit}
-    .hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--white);padding:72px 7vw 56px;min-height:auto}
-    .eyebrow{color:var(--gold);font-weight:800;letter-spacing:.26em;text-transform:uppercase;font-size:.82rem;margin:0 0 24px}
-    h1{font-size:clamp(3rem,7vw,6.25rem);line-height:.98;margin:0 0 26px;font-weight:900;letter-spacing:-.055em;max-width:980px}
-    .subtitle{font-size:clamp(1.35rem,2.6vw,2.55rem);font-weight:800;color:var(--blue);line-height:1.2;max-width:1120px;margin:0 0 24px}
-    .lead{font-size:clamp(1.05rem,1.45vw,1.35rem);max-width:1080px;color:#f3f8ff;margin:0 0 34px}
-    .btnrow{display:flex;gap:16px;flex-wrap:wrap;margin:24px 0 38px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;border-radius:999px;font-weight:850;text-decoration:none;border:1px solid rgba(255,255,255,.24)}
-    .btn.primary{background:var(--gold);color:#071325;border-color:var(--gold)}
-    .btn.secondary{background:transparent;color:var(--white)}
-    .metrics{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:18px;max-width:1180px;margin-top:18px}
-    .metric{background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:18px;padding:24px}
-    .metric strong{font-size:2.55rem;display:block;line-height:1;color:#fff}
-    .metric span{font-size:1.05rem;color:#e9f2ff}
-    main{background:#fff}
-    .section{padding:64px 7vw;border-bottom:1px solid #e7eaf0}
-    .section.alt{background:#f8fafc}
-    .section-header{max-width:980px;margin-bottom:30px}
-    .section-header h2{font-size:clamp(2rem,3vw,3rem);line-height:1.05;margin:0 0 12px;letter-spacing:-.035em}
-    .section-header p{font-size:1.1rem;color:var(--muted);margin:0}
-    .card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-    .card{background:#fff;border:1px solid #dfe5ef;border-radius:18px;padding:24px;box-shadow:0 10px 28px rgba(16,24,40,.06)}
-    .card.dark{background:#101b2e;color:#fff;border-color:#26354e}
-    .card h3{font-size:1.25rem;margin:0 0 10px}.card p{margin:0;color:#475467}.card.dark p{color:#d8e6ff}
-    .card ul{margin:10px 0 0;padding-left:20px}.card li{margin:8px 0;color:#475467}.card.dark li{color:#d8e6ff}
-    .wide-card{grid-column:span 2}.full-card{grid-column:1/-1}
-    .workflow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}
-    .step{background:#101b2e;color:#fff;border-radius:16px;padding:18px;border:1px solid #26354e}.step b{color:var(--gold);display:block;margin-bottom:8px}
-    .table-wrap{overflow-x:auto;border:1px solid #dfe5ef;border-radius:16px;background:#fff}
-    table{width:100%;border-collapse:collapse;min-width:800px}th,td{padding:14px 16px;border-bottom:1px solid #e7eaf0;text-align:left;vertical-align:top}th{background:#0b172a;color:#fff}td{color:#344054}
-    footer{background:#071325;color:#d8e6ff;padding:34px 7vw}.small{font-size:.95rem;color:#667085}.dark .small{color:#d8e6ff}
-    @media(max-width:900px){.metrics,.card-grid,.workflow{grid-template-columns:1fr}.wide-card{grid-column:auto}.hero{padding-top:52px}h1{font-size:3.2rem}.subtitle{font-size:1.55rem}}
+    .hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--white);padding:38px 7vw 46px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:48px;max-width:1220px}
+    .name{font-weight:850;letter-spacing:.02em;color:#fff}.role{color:#d8e7ff;font-size:.95rem}
+    .toplinks{display:flex;gap:18px;flex-wrap:wrap;color:#d8e7ff;font-weight:700;font-size:.95rem}.toplinks a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+    .eyebrow{color:var(--gold);font-weight:850;letter-spacing:.22em;text-transform:uppercase;font-size:.78rem;margin:0 0 18px}
+    h1{font-size:clamp(2.45rem,5.6vw,4.85rem);line-height:1.02;margin:0 0 18px;font-weight:900;letter-spacing:-.05em;max-width:930px}
+    .subtitle{font-size:clamp(1.25rem,2.4vw,2.05rem);font-weight:850;color:var(--blue);line-height:1.2;max-width:1050px;margin:0 0 20px}
+    .lead{font-size:clamp(1rem,1.28vw,1.18rem);max-width:1040px;color:#f3f8ff;margin:0 0 26px}
+    .btnrow{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border-radius:999px;font-weight:850;text-decoration:none;border:1px solid rgba(255,255,255,.25)}.btn.primary{background:var(--gold);color:#071426;border-color:var(--gold)}.btn.secondary{background:transparent;color:#fff}.btn.light{background:#fff;color:#071426;border-color:#fff}
+    .metrics{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:16px;max-width:1120px;margin-top:18px}.metric{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px}.metric strong{font-size:2rem;display:block;line-height:1;color:#fff}.metric span{font-size:1rem;color:#e9f2ff}
+    main{background:#fff}.section{padding:58px 7vw;border-bottom:1px solid var(--line)}.section.alt{background:#f8fafc}.section-header{max-width:980px;margin-bottom:28px}.section-header h2{font-size:clamp(1.9rem,3vw,2.65rem);line-height:1.08;margin:0 0 12px;letter-spacing:-.035em}.section-header p{font-size:1.06rem;color:var(--muted);margin:0}
+    .card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border:1px solid #dfe5ef;border-radius:18px;padding:23px;box-shadow:var(--shadow)}.card.dark{background:var(--card-dark);color:#fff;border-color:#26354e}.card h3{font-size:1.18rem;margin:0 0 10px}.card p{margin:0;color:#475467}.card.dark p{color:#d8e6ff}.card ul{margin:10px 0 0;padding-left:20px}.card li{margin:8px 0;color:#475467}.card.dark li{color:#d8e6ff}.wide-card{grid-column:span 2}.full-card{grid-column:1/-1}
+    .workflow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}.step{background:#101b2e;color:#fff;border-radius:16px;padding:18px;border:1px solid #26354e}.step b{color:var(--gold);display:block;margin-bottom:8px}.step span{color:#d8e6ff}
+    .table-wrap{overflow-x:auto;border:1px solid #dfe5ef;border-radius:16px;background:#fff;box-shadow:var(--shadow)}table{width:100%;border-collapse:collapse;min-width:820px}th,td{padding:14px 16px;border-bottom:1px solid #e7eaf0;text-align:left;vertical-align:top}th{background:#0b172a;color:#fff}td{color:#344054}
+    .callout{background:linear-gradient(135deg,#0b172a,#122542);color:#fff;border-radius:22px;padding:30px;display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:center}.callout p{color:#d8e6ff;margin:0}.callout h2{margin:0 0 10px;font-size:clamp(1.8rem,3vw,2.45rem);line-height:1.08}
+    footer{background:#071426;color:#d8e6ff;padding:32px 7vw}.footergrid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.small{font-size:.95rem;color:#667085}.dark .small{color:#d8e6ff}
+    @media(max-width:900px){.topbar{align-items:flex-start;flex-direction:column;margin-bottom:34px}.metrics,.card-grid,.workflow,.callout{grid-template-columns:1fr}.wide-card{grid-column:auto}.hero{padding-top:34px}h1{font-size:2.75rem}.subtitle{font-size:1.45rem}}
   </style>
 </head>
 <body>
   <header class="hero">
-    <p class="eyebrow">IT Compliance • Business Analysis • Operational Risk • AI Governance</p>
+    <div class="topbar">
+      <div>
+        <div class="name">Lynda Omoruyi</div>
+        <div class="role">IT Compliance • Business Analysis • Operational Risk • AI Governance</div>
+      </div>
+      <nav class="toplinks" aria-label="Portfolio navigation">
+        <a href="#workflow">AI Workflow</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#resume-integration">Resume Integration</a>
+      </nav>
+    </div>
+    <p class="eyebrow">Employer-Facing Technical Portfolio</p>
     <h1>AI Governance & Operational Risk Automation Portfolio</h1>
     <p class="subtitle">Inventory Risk, Client Compliance & Replenishment Automation System</p>
-    <p class="lead">An employer-facing portfolio showing how generative AI can reduce manual review by classifying inventory risk, identifying compliance gaps, generating action items, and supporting stakeholder-ready reporting using synthetic operational data.</p>
+    <p class="lead">A professional portfolio demonstrating how generative AI can reduce manual review by classifying inventory risk, identifying compliance gaps, generating action items, and supporting stakeholder-ready reporting using synthetic operational data.</p>
     <div class="btnrow">
       <a class="btn primary" href="ai_risk_automation_workbook.xlsx">Download Workbook</a>
       <a class="btn secondary" href="#resume-integration">Resume Integration</a>
+      <a class="btn secondary" href="#artifacts">View Proof of Work</a>
     </div>
     <div class="metrics">
       <div class="metric"><strong>36</strong><span>Synthetic Records</span></div>
@@ -76,7 +77,7 @@
     <section class="section">
       <div class="section-header">
         <p class="eyebrow">Business Problem</p>
-        <h2>Manual inventory review creates operational and compliance risk.</h2>
+        <h2>Manual inventory review creates operational, reporting, and compliance risk.</h2>
         <p>Entertainment and venue-based product operations can experience stockout risk when inventory levels, reorder needs, documentation gaps, vendor follow-ups, and client reporting requirements are tracked manually across multiple accounts.</p>
       </div>
       <div class="card-grid">
@@ -89,15 +90,15 @@
     <section class="section alt" id="workflow">
       <div class="section-header">
         <p class="eyebrow">AI Automation Workflow</p>
-        <h2>How the AI-enabled workflow reduces manual effort.</h2>
-        <p>The dashboard is only the visual layer. The portfolio demonstrates a workflow that classifies risks, maps controls, generates actions, and supports human validation.</p>
+        <h2>The dashboard is the output. The AI workflow is the project.</h2>
+        <p>This portfolio demonstrates a workflow that classifies risks, maps controls, generates actions, and supports human validation.</p>
       </div>
       <div class="workflow">
-        <div class="step"><b>1. Intake</b>Synthetic inventory and client reporting data is reviewed.</div>
-        <div class="step"><b>2. Classify</b>AI-assisted logic labels stockout, reporting, documentation, and escalation risks.</div>
-        <div class="step"><b>3. Map</b>Risks are mapped to controls, evidence needs, owners, and status.</div>
-        <div class="step"><b>4. Generate</b>Action items, backlog entries, and stakeholder summaries are produced.</div>
-        <div class="step"><b>5. Validate</b>Human review confirms accuracy before any stakeholder communication.</div>
+        <div class="step"><b>1. Intake</b><span>Synthetic inventory and client reporting data is reviewed.</span></div>
+        <div class="step"><b>2. Classify</b><span>AI-assisted logic labels stockout, reporting, documentation, and escalation risks.</span></div>
+        <div class="step"><b>3. Map</b><span>Risks are mapped to controls, evidence needs, owners, and status.</span></div>
+        <div class="step"><b>4. Generate</b><span>Action items, backlog entries, and stakeholder summaries are produced.</span></div>
+        <div class="step"><b>5. Validate</b><span>Human review confirms accuracy before stakeholder communication.</span></div>
       </div>
     </section>
 
@@ -105,7 +106,7 @@
       <div class="section-header">
         <p class="eyebrow">Proof of Work</p>
         <h2>Portfolio artifacts included.</h2>
-        <p>Each artifact is designed to show business analysis, compliance tracking, AI governance, project delivery, and testing discipline.</p>
+        <p>Each artifact shows business analysis, compliance tracking, AI governance, project delivery, and testing discipline.</p>
       </div>
       <div class="card-grid">
         <article class="card"><h3>Automation Workbook</h3><p>Dashboard, synthetic data, risk register, control matrix, UAT, backlog, and sources.</p><p><a href="ai_risk_automation_workbook.xlsx">Open workbook</a></p></article>
@@ -136,6 +137,16 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="callout">
+        <div>
+          <h2>Confidentiality-first portfolio design.</h2>
+          <p>This portfolio uses synthetic operational data. It does not include confidential employer, client, Disney, Universal Studios, SeaWorld, vendor, or internal business data.</p>
+        </div>
+        <a class="btn light" href="ai_governance_validation_note.md">View AI Governance Note</a>
+      </div>
+    </section>
+
     <section class="section" id="resume-integration">
       <div class="section-header">
         <p class="eyebrow">Resume Visibility</p>
@@ -145,7 +156,7 @@
       <div class="card-grid">
         <article class="card">
           <h3>Resume Header</h3>
-          <p><strong>Portfolio:</strong> AI Governance & Operational Risk Automation Portfolio — Live GitHub Pages link</p>
+          <p><strong>Portfolio:</strong> AI Governance & Operational Risk Automation Portfolio — https://lyndaomoruyi.github.io/ai-governance-operational-risk-portfolio/</p>
         </article>
         <article class="card wide-card">
           <h3>Selected Project Bullets</h3>
@@ -167,8 +178,10 @@
   </main>
 
   <footer>
-    <strong>AI Governance & Operational Risk Automation Portfolio</strong><br />
-    <span>Built with synthetic data for employer-facing demonstration. No confidential employer or client data is included.</span>
+    <div class="footergrid">
+      <div><strong>Lynda Omoruyi</strong><br /><span>AI Governance & Operational Risk Automation Portfolio</span></div>
+      <div><span>Built with synthetic data for employer-facing demonstration. No confidential employer or client data is included.</span></div>
+    </div>
   </footer>
 </body>
 </html>
