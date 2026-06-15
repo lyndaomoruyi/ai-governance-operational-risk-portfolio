@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <rect width="1200" height="420" fill="#0B1220"/>
+  <text x="60" y="60" fill="#C7A15A" font-family="Arial" font-size="24" font-weight="700">AI Automation Workflow</text>
+  <g font-family="Arial" font-size="16" fill="#ffffff">
+    <g transform="translate(60 120)"><rect rx="18" width="190" height="150" fill="#17233B" stroke="#334155"/><text x="24" y="45" font-weight="700">1. Input Data</text><text x="24" y="80" fill="#CBD5E1">Inventory, vendor,</text><text x="24" y="105" fill="#CBD5E1">documentation,</text><text x="24" y="130" fill="#CBD5E1">client reporting</text></g>
+    <g transform="translate(290 120)"><rect rx="18" width="190" height="150" fill="#17233B" stroke="#334155"/><text x="24" y="45" font-weight="700">2. AI Review</text><text x="24" y="80" fill="#CBD5E1">Classifies stockout,</text><text x="24" y="105" fill="#CBD5E1">documentation,</text><text x="24" y="130" fill="#CBD5E1">reporting risks</text></g>
+    <g transform="translate(520 120)"><rect rx="18" width="190" height="150" fill="#17233B" stroke="#334155"/><text x="24" y="45" font-weight="700">3. Controls</text><text x="24" y="80" fill="#CBD5E1">Maps evidence,</text><text x="24" y="105" fill="#CBD5E1">owners, frequency,</text><text x="24" y="130" fill="#CBD5E1">status</text></g>
+    <g transform="translate(750 120)"><rect rx="18" width="190" height="150" fill="#17233B" stroke="#334155"/><text x="24" y="45" font-weight="700">4. Actions</text><text x="24" y="80" fill="#CBD5E1">Generates tasks,</text><text x="24" y="105" fill="#CBD5E1">backlog items,</text><text x="24" y="130" fill="#CBD5E1">summaries</text></g>
+    <g transform="translate(980 120)"><rect rx="18" width="190" height="150" fill="#17233B" stroke="#334155"/><text x="24" y="45" font-weight="700">5. Validation</text><text x="24" y="80" fill="#CBD5E1">Human review</text><text x="24" y="105" fill="#CBD5E1">before business</text><text x="24" y="130" fill="#CBD5E1">use</text></g>
+  </g>
+  <g stroke="#C7A15A" stroke-width="4" fill="none" marker-end="url(#a)"><path d="M250 195 H290"/><path d="M480 195 H520"/><path d="M710 195 H750"/><path d="M940 195 H980"/></g>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#C7A15A"/></marker></defs>
+</svg>
