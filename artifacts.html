@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lynda Omoruyi | Portfolio Artifacts</title>
+  <meta name="description" content="Polished portfolio artifacts for AI Governance and Operational Risk Automation by Lynda Omoruyi." />
+  <style>
+    :root{--navy:#081527;--navy2:#0d1b2f;--ink:#172033;--muted:#5d6b82;--gold:#d7a84d;--bg:#f6f8fb;--line:#dce3ee;--panel:#fff;--radius:22px;--shadow:0 18px 50px rgba(4,15,32,.12)}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65} a{color:inherit}.top{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:38px 24px 54px}.wrap{max-width:1120px;margin:0 auto}.brand{font-weight:800;font-size:1.05rem}.sub{color:#dbe7f6;margin-top:4px}.back{display:inline-flex;margin-top:24px;color:#ffe0a3;font-weight:800;text-decoration:none;border-bottom:1px solid rgba(255,224,163,.55)}.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:900;font-size:.82rem;margin:0 0 14px}h1{font-size:clamp(2.2rem,5vw,4.5rem);line-height:1.02;margin:46px 0 18px;letter-spacing:-.055em} .lead{font-size:clamp(1.05rem,2vw,1.35rem);max-width:920px;color:#edf4ff}.content{padding:46px 24px 72px}.grid{display:grid;gap:28px}.artifact{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px}h2{font-size:clamp(1.75rem,3vw,2.6rem);line-height:1.1;margin:0 0 16px;letter-spacing:-.035em}.artifact h3{font-size:1.25rem;margin:24px 0 8px}.artifact p{color:var(--muted);font-size:1.05rem}.artifact ul{margin:8px 0 0;padding-left:22px;color:#334158}.artifact li{margin:8px 0}.note{margin-top:26px;background:#fff7e8;border:1px solid #f0cc85;border-radius:18px;padding:18px 22px;color:#4b3210}.table{overflow-x:auto;margin-top:16px}.table table{width:100%;border-collapse:collapse;background:#fff}.table th{background:#0f2139;color:#fff;text-align:left;padding:12px}.table td{border:1px solid var(--line);padding:12px;vertical-align:top}.pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.pill{background:#eef3fa;border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:750;color:#2f4058}.footer{padding:28px 24px;background:#07111f;color:#dce7f5;text-align:center}.anchor-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.anchor-nav a{color:#081527;background:#fff;border-radius:999px;padding:9px 13px;text-decoration:none;font-weight:800}@media(max-width:760px){.artifact{padding:22px}h1{font-size:2.5rem}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">Lynda Omoruyi</div>
+      <div class="sub">AI Governance • IT Compliance • Business Analysis • Operational Risk</div>
+      <a class="back" href="index.html">← Back to Portfolio Home</a>
+      <p class="eyebrow" style="margin-top:50px">Proof of Work</p>
+      <h1>Portfolio Artifacts</h1>
+      <p class="lead">Polished employer-facing artifacts supporting the AI Governance & Operational Risk Automation Portfolio. These artifacts summarize the business requirements, user stories, UAT validation, and AI governance controls behind the project.</p>
+      <div class="anchor-nav">
+        <a href="#brd">BRD</a><a href="#stories">User Stories</a><a href="#uat">UAT</a><a href="#governance-note">AI Governance Note</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content wrap grid">
+    <section id="brd" class="artifact">
+      <p class="eyebrow">Business Analysis Artifact</p>
+      <h2>Business Requirements Document</h2>
+      <p><strong>Project:</strong> Inventory Risk, Client Compliance & Replenishment Automation System</p>
+      <p><strong>Objective:</strong> Create an AI-assisted workflow that helps operational and compliance teams identify replenishment risk, documentation gaps, client reporting issues, and overdue follow-up actions before they become service or compliance concerns.</p>
+      <h3>Stakeholders</h3>
+      <div class="pillrow"><span class="pill">Commercial Operations</span><span class="pill">Project / Business Analyst</span><span class="pill">Compliance / Risk Owner</span><span class="pill">Vendor Management</span><span class="pill">Fulfillment / Inventory</span><span class="pill">Client-facing Stakeholders</span></div>
+      <h3>Functional Requirements</h3>
+      <ul><li>Ingest synthetic inventory and operational tracking data.</li><li>Calculate days of cover and compare inventory to reorder thresholds.</li><li>Classify each record by risk type and risk rating.</li><li>Flag missing documentation, overdue vendor follow-ups, and pending client reports.</li><li>Generate recommended action items and escalation notes.</li><li>Maintain owner, due date, status, and evidence fields.</li><li>Provide dashboard views for leadership and stakeholder reporting.</li><li>Support UAT validation through pass/fail test cases.</li></ul>
+      <h3>Non-Functional Requirements</h3>
+      <ul><li>Use synthetic data in the public portfolio version.</li><li>Keep risk logic explainable and reviewable.</li><li>Maintain human validation checkpoints.</li><li>Provide downloadable artifacts for recruiter and employer review.</li><li>Publish the project through an employer-facing portfolio website.</li></ul>
+    </section>
+
+    <section id="stories" class="artifact">
+      <p class="eyebrow">Agile / Scrum Artifact</p>
+      <h2>User Stories & Acceptance Criteria</h2>
+      <h3>Story 1: Inventory Risk Identification</h3>
+      <p><strong>As an operations stakeholder,</strong> I want the system to flag low inventory and short days-of-cover records so replenishment actions can begin before a stockout occurs.</p>
+      <ul><li>Records below reorder threshold are flagged.</li><li>Records with low days of cover receive elevated risk.</li><li>Recommended action includes replenishment review.</li></ul>
+      <h3>Story 2: Client Compliance Visibility</h3>
+      <p><strong>As a compliance stakeholder,</strong> I want documentation and client reporting gaps visible so required follow-up is tracked and evidence is maintained.</p>
+      <ul><li>Missing documentation is classified as a control gap.</li><li>Pending or overdue client reports are flagged.</li><li>Owner and due date fields are populated.</li></ul>
+      <h3>Story 3: AI-Generated Action Items</h3>
+      <p><strong>As a project analyst,</strong> I want AI-generated recommended actions so manual follow-up drafting is reduced.</p>
+      <ul><li>Each risk record has a recommended next action.</li><li>High-risk records include escalation language.</li><li>Actions are reviewable before use.</li></ul>
+      <h3>Story 4: Leadership Reporting</h3>
+      <p><strong>As a manager,</strong> I want summarized risk views so I can quickly understand open issues, high-risk accounts, and overdue actions.</p>
+      <ul><li>Dashboard shows high, medium, and low risk counts.</li><li>Dashboard highlights overdue actions.</li><li>Executive summary language can be generated from risk trends.</li></ul>
+    </section>
+
+    <section id="uat" class="artifact">
+      <p class="eyebrow">Testing Artifact</p>
+      <h2>UAT Test Cases</h2>
+      <p>These test cases show how the AI-assisted workflow is validated before business use.</p>
+      <div class="table"><table><thead><tr><th>Test ID</th><th>Scenario</th><th>Expected Result</th><th>Validation</th></tr></thead><tbody><tr><td>UAT-001</td><td>Inventory below reorder threshold</td><td>System assigns stockout risk and elevated rating.</td><td>Pass if risk type and rating match rule.</td></tr><tr><td>UAT-002</td><td>Documentation status missing approval</td><td>System flags documentation control gap.</td><td>Pass if control gap appears in register.</td></tr><tr><td>UAT-003</td><td>Vendor follow-up overdue</td><td>System assigns escalation or follow-up risk.</td><td>Pass if owner/action is generated.</td></tr><tr><td>UAT-004</td><td>Client reporting overdue</td><td>System flags client reporting risk.</td><td>Pass if dashboard and action log reflect issue.</td></tr><tr><td>UAT-005</td><td>Low-risk item with complete documentation</td><td>System classifies as monitoring or low risk.</td><td>Pass if no unnecessary escalation occurs.</td></tr><tr><td>UAT-006</td><td>High-risk record</td><td>Human validation checkpoint required.</td><td>Pass if validation status is required before final reporting.</td></tr></tbody></table></div>
+    </section>
+
+    <section id="governance-note" class="artifact">
+      <p class="eyebrow">AI Governance Artifact</p>
+      <h2>AI Governance & Human Validation Note</h2>
+      <p><strong>Purpose:</strong> This portfolio demonstrates responsible AI use in a business-analysis and compliance context. AI assists with classification, summarization, action generation, and documentation support; final review remains human-owned.</p>
+      <h3>Governance Controls</h3>
+      <ul><li>Synthetic data only; no confidential business data is used.</li><li>Human review is required before any AI-generated summary, risk rating, or action item is treated as final.</li><li>AI outputs are checked against defined business rules: inventory threshold, days of cover, documentation status, follow-up aging, and client reporting status.</li><li>High-risk records require evidence review and escalation confirmation.</li><li>Risk ratings remain explainable through visible input fields and scoring logic.</li></ul>
+      <h3>Validation Approach</h3>
+      <ul><li>Compare AI risk classification to business rules.</li><li>Check whether recommended actions match the risk type.</li><li>Confirm that high-risk records include clear follow-up ownership.</li><li>Validate that client reporting and documentation gaps are not ignored.</li><li>Retain source data and evidence fields for audit readiness.</li></ul>
+      <div class="note"><strong>Responsible AI Positioning:</strong> This project treats AI as a productivity and decision-support tool, not a replacement for business judgment, compliance review, or management approval.</div>
+    </section>
+  </main>
+  <footer class="footer">© 2026 Lynda Omoruyi · AI Governance & Operational Risk Automation Portfolio</footer>
+</body>
+</html>
