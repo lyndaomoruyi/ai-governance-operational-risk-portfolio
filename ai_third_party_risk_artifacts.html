@@ -5,36 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project 2 Artifacts | AI Third-Party Risk Compliance Portfolio</title>
   <style>
-    :root{--bg:#f6f8fb;--navy:#0b1726;--ink:#172033;--muted:#526174;--gold:#d7a84d;--line:#dbe3ef;--card:#ffffff;--blue:#2563eb;}
+    :root{--bg:#f6f8fb;--navy:#0b1726;--ink:#172033;--muted:#526174;--gold:#d7a84d;--line:#dbe3ef;--card:#ffffff;--blue:#2563eb;--soft:#eef4ff;}
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-    header{background:var(--navy);color:white;padding:24px 6vw;display:flex;justify-content:space-between;align-items:center;gap:24px}
+    header{background:var(--navy);color:white;padding:24px 6vw;display:flex;justify-content:space-between;align-items:center;gap:24px;position:sticky;top:0;z-index:10}
     .brand strong{display:block;font-size:1.15rem;letter-spacing:.01em}
     .brand span{display:block;color:#f1d991;text-transform:uppercase;letter-spacing:.14em;font-weight:800;font-size:.82rem}
     nav a{color:#d9e2ef;text-decoration:none;margin-left:24px;font-weight:700}
     nav a:hover{color:white}
-    .hero{padding:56px 6vw 34px;background:linear-gradient(135deg,#ffffff 0%,#f4f7fb 100%);border-bottom:1px solid var(--line)}
+    .hero{padding:54px 6vw 38px;background:linear-gradient(135deg,#ffffff 0%,#f4f7fb 100%);border-bottom:1px solid var(--line)}
     .eyebrow{color:#6b7280;text-transform:uppercase;letter-spacing:.18em;font-weight:900;font-size:.82rem;margin-bottom:10px}
-    h1{font-size:clamp(2rem,4vw,3.7rem);line-height:1.04;margin:0 0 18px;color:#0b1726;letter-spacing:-.045em}
+    h1{font-size:clamp(2rem,4vw,3.55rem);line-height:1.04;margin:0 0 18px;color:#0b1726;letter-spacing:-.045em}
     .hero p{max-width:980px;font-size:1.12rem;color:var(--muted);margin:0}
-    main{max-width:1180px;margin:0 auto;padding:48px 24px 72px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 16px 40px rgba(15,23,42,.06)}
-    .card h2{margin:0 0 8px;font-size:1.18rem;color:#0b1726}
-    .card p{margin:0;color:var(--muted)}
-    .badge{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:14px;background:#eef4ff;color:var(--blue);font-weight:900;margin-bottom:14px}
-    .full{grid-column:1/-1}
-    ul{margin:10px 0 0 20px;color:var(--muted)}
+    main{max-width:1180px;margin:0 auto;padding:44px 24px 72px}
     .actions{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
     .btn{display:inline-block;text-decoration:none;border-radius:999px;padding:14px 22px;font-weight:900;border:1px solid #cfd8e6;color:#10203a;background:#fff}
     .btn.primary{background:var(--gold);border-color:var(--gold);color:#111827}
+    .section{margin:0 0 28px;scroll-margin-top:96px}
+    .section-title{margin:0 0 16px;font-size:1.8rem;line-height:1.15;color:#0b1726;letter-spacing:-.02em}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 16px 40px rgba(15,23,42,.06)}
+    .card h3{margin:0 0 8px;font-size:1.16rem;color:#0b1726}
+    .card p{margin:0;color:var(--muted)}
+    .badge{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:14px;background:var(--soft);color:var(--blue);font-weight:900;margin-bottom:14px}
+    .wide{grid-column:1/-1}
+    ul{margin:10px 0 0 20px;color:var(--muted);padding:0}
+    li{margin:5px 0}
+    .table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(15,23,42,.05)}
+    .table th,.table td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    .table th{background:#eef4ff;color:#10203a;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em}
+    .table tr:last-child td{border-bottom:none}
+    .small{font-size:.95rem;color:var(--muted)}
     footer{padding:26px 6vw;background:#0b1726;color:#cbd5e1;text-align:center}
-    @media(max-width:820px){
-      header{display:block}
-      nav{margin-top:14px}
-      nav a{margin:0 16px 0 0}
-      .grid{grid-template-columns:1fr}
-    }
+    @media(max-width:820px){header{display:block}nav{margin-top:14px}nav a{margin:0 16px 0 0}.grid{grid-template-columns:1fr}.wide{grid-column:auto}.table{font-size:.92rem}}
   </style>
 </head>
 <body>
@@ -53,9 +56,7 @@
   <section class="hero">
     <div class="eyebrow">Proof of Work</div>
     <h1>Project 2 Employer-Reviewable Artifacts</h1>
-    <p>
-      These artifacts support the AI Governance & Third-Party Risk Compliance Portfolio. The project demonstrates how AI use cases, vendor risk, evidence gaps, human oversight, control ownership, and remediation issues can be organized into a compliance-ready workflow using synthetic data.
-    </p>
+    <p>Detailed project artifacts for the AI Governance & Third-Party Risk Compliance Portfolio. This page shows the business requirements, workbook structure, UAT validation, governance boundaries, and research basis behind the compliance workflow.</p>
     <div class="actions">
       <a class="btn primary" href="ai_third_party_risk_compliance_workbook.xlsx">Download Compliance Workbook</a>
       <a class="btn" href="ai_third_party_risk_project.html">Back to Project 2</a>
@@ -63,61 +64,81 @@
   </section>
 
   <main>
-    <div class="grid">
-      <div class="card">
-        <div class="badge">X</div>
-        <h2>AI Third-Party Risk Compliance Workbook</h2>
-        <p>Downloadable workbook with dashboard, AI use-case inventory, vendor review, control matrix, issue log, UAT tracker, sources, and data dictionary.</p>
+    <section class="section">
+      <h2 class="section-title">Artifact Summary</h2>
+      <div class="grid">
+        <div class="card"><div class="badge">X</div><h3>AI Third-Party Risk Compliance Workbook</h3><p>Structured Excel workbook with dashboard, AI use-case inventory, vendor risk review, control matrix, issue/action log, UAT tracker, sources, and data dictionary.</p></div>
+        <div class="card"><div class="badge">D</div><h3>Synthetic Dataset Included in Workbook</h3><p>The dataset is included inside the workbook so employers review a clean Excel artifact instead of a raw CSV file.</p></div>
+        <div class="card"><div class="badge">B</div><h3>Business Requirements Document</h3><p>Defines the business need, stakeholders, functional requirements, compliance requirements, controls, and success measures.</p></div>
+        <div class="card"><div class="badge">U</div><h3>UAT Test Cases</h3><p>Validates risk rating, missing evidence, overdue review, vendor due diligence, human oversight, and issue tracking logic.</p></div>
+        <div class="card"><div class="badge">G</div><h3>AI Governance Validation Note</h3><p>Documents human review, synthetic data limitations, risk boundaries, responsible AI use, and governance alignment.</p></div>
+        <div class="card"><div class="badge">S</div><h3>Sources</h3><p>Research basis includes AI risk management, third-party risk management, model risk governance, and compliance evidence practices.</p></div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="badge">D</div>
-        <h2>Synthetic Dataset Included in Workbook</h2>
-        <p>The synthetic AI use-case dataset is included inside the polished workbook so employers review the structured Excel version instead of a raw CSV view.</p>
+    <section class="section">
+      <h2 class="section-title">Business Requirements Document</h2>
+      <div class="grid">
+        <div class="card"><h3>Business Need</h3><p>Financial institutions need a practical way to identify, review, monitor, and evidence AI use cases across departments before data exposure, vendor risk, missing oversight, or undocumented AI usage creates compliance risk.</p></div>
+        <div class="card"><h3>Stakeholders</h3><p>Compliance, risk management, IT security, vendor management, business owners, internal audit, legal, and privacy teams need one shared view of AI use, review status, risk tier, and evidence readiness.</p></div>
+        <div class="card wide"><h3>Functional Requirements</h3><ul><li>Capture each AI use case with business area, owner, vendor/tool, platform type, data sensitivity, customer impact, and human oversight status.</li><li>Assign risk tier based on data sensitivity, customer impact, approval status, review status, oversight level, and evidence gaps.</li><li>Track vendor evidence such as SOC reports, model cards, data-flow diagrams, due diligence status, contract/privacy review, and subcontractor review.</li><li>Map AI governance risks to control objectives, evidence expectations, control owner, frequency, and testing status.</li><li>Track issues, remediation owner, due date, severity, status, and recommended next action.</li></ul></div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="badge">B</div>
-        <h2>Business Requirements Document</h2>
-        <p>Defines the business need, stakeholders, functional requirements, compliance requirements, control expectations, and success measures.</p>
+    <section class="section">
+      <h2 class="section-title">Workbook Structure</h2>
+      <table class="table">
+        <thead><tr><th>Workbook Tab</th><th>Purpose</th><th>Employer Skill Demonstrated</th></tr></thead>
+        <tbody>
+          <tr><td>Dashboard</td><td>Summarizes high-risk use cases, missing evidence, overdue reviews, open issues, and risk distribution.</td><td>Compliance reporting, executive visibility, dashboard logic.</td></tr>
+          <tr><td>AI Use Case Inventory</td><td>Tracks AI tool, vendor, business area, data sensitivity, customer impact, review status, and approval status.</td><td>AI governance inventory, control visibility, data organization.</td></tr>
+          <tr><td>Vendor Risk Review</td><td>Documents vendor-hosted tools, due diligence, SOC report status, subcontractor review, privacy/contract terms, and gaps.</td><td>Third-party risk, vendor evidence, compliance follow-up.</td></tr>
+          <tr><td>Control Matrix</td><td>Maps risks to controls, evidence, owner, frequency, and testing status.</td><td>GRC control mapping and audit readiness.</td></tr>
+          <tr><td>Issue Action Log</td><td>Tracks remediation items, owner, due date, status, severity, and next action.</td><td>Issue tracking, escalation readiness, accountability.</td></tr>
+          <tr><td>UAT Tracker</td><td>Validates scoring, evidence gaps, overdue review logic, vendor due diligence, and human oversight rules.</td><td>Testing, validation, acceptance criteria, quality control.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">UAT Test Cases</h2>
+      <div class="grid">
+        <div class="card"><h3>UAT-001: Restricted Data Risk Rating</h3><p>When a use case includes restricted data and customer-impacting workflow, the risk tier should calculate as High or Critical.</p></div>
+        <div class="card"><h3>UAT-002: Missing Evidence Gap</h3><p>When required evidence is missing, the dashboard should reflect the missing evidence count and generate a review gap.</p></div>
+        <div class="card"><h3>UAT-003: Overdue Review</h3><p>When the next review date is past due, the overdue review count should increase and the item should require follow-up.</p></div>
+        <div class="card"><h3>UAT-004: Human Oversight Gap</h3><p>When oversight is limited for a customer-impacting use case, the workflow should flag a control gap and increase risk priority.</p></div>
+        <div class="card"><h3>UAT-005: Vendor Due Diligence</h3><p>Vendor-hosted AI use cases should require due diligence evidence, privacy/contract review, and documented vendor ownership.</p></div>
+        <div class="card"><h3>UAT-006: Closed Issues</h3><p>When an issue is closed, it should be excluded from the open issue count and remain available as audit evidence.</p></div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="badge">U</div>
-        <h2>UAT Test Cases</h2>
-        <p>Validation scenarios for risk rating, missing evidence, overdue review, vendor due diligence, human oversight, and issue tracking.</p>
+    <section class="section">
+      <h2 class="section-title">AI Governance Validation Note</h2>
+      <div class="grid">
+        <div class="card"><h3>Human Review Principle</h3><p>AI-assisted outputs support review by summarizing risk, highlighting evidence gaps, and recommending next actions. Final approval, hold, escalation, or remediation decisions remain with accountable human reviewers.</p></div>
+        <div class="card"><h3>Data Protection Boundary</h3><p>This portfolio uses synthetic data only. It does not include confidential banking records, customer information, employer data, vendor contracts, internal procedures, or regulatory submissions.</p></div>
+        <div class="card"><h3>Risk Boundary</h3><p>The workflow supports AI use-case inventory, vendor review, evidence tracking, compliance control monitoring, issue remediation, and audit-ready documentation. It is not designed to make credit decisions, replace compliance officers, or approve AI use without human review.</p></div>
+        <div class="card"><h3>Governance Alignment</h3><p>The project is aligned conceptually with AI risk management, third-party risk management life-cycle principles, model risk governance concepts, and compliance documentation practices.</p></div>
       </div>
+    </section>
 
+    <section class="section">
+      <h2 class="section-title">Sources and Research Basis</h2>
       <div class="card">
-        <div class="badge">G</div>
-        <h2>AI Governance Validation Note</h2>
-        <p>Documents synthetic data use, human review boundaries, responsible AI use, risk limitations, and governance alignment.</p>
-      </div>
-
-      <div class="card">
-        <div class="badge">S</div>
-        <h2>Sources</h2>
-        <p>Research basis includes AI risk management, third-party risk management, model risk governance, and compliance documentation practices.</p>
-      </div>
-
-      <div class="card full">
-        <div class="badge">C</div>
-        <h2>What This Project Shows</h2>
-        <p>This portfolio demonstrates a practical compliance workflow that can support regulated financial-services review of AI tools and vendor-enabled AI capabilities.</p>
+        <p>This project direction is grounded in current compliance and governance themes affecting financial services and regulated organizations:</p>
         <ul>
-          <li>AI use-case intake and inventory visibility</li>
-          <li>Vendor and third-party AI risk tracking</li>
-          <li>Evidence management for SOC reports, model cards, due diligence, and oversight documentation</li>
-          <li>Risk scoring based on data sensitivity, customer impact, approval status, and control readiness</li>
-          <li>Issue and remediation tracking for overdue reviews, missing evidence, and human oversight gaps</li>
-          <li>UAT validation and audit-ready documentation</li>
+          <li>NIST AI Risk Management Framework for AI governance, mapping, measurement, and management concepts.</li>
+          <li>Interagency third-party risk management guidance for vendor due diligence and ongoing monitoring.</li>
+          <li>Model risk management concepts for governance, validation, monitoring, controls, and vendor-provided tools.</li>
+          <li>Financial-services compliance concerns around AI use, human oversight, data governance, and evidence readiness.</li>
         </ul>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer>
     AI Governance, Compliance & Risk Automation Portfolio | Lynda Omoruyi
   </footer>
 </body>
-</html> 
+</html>
+ 
