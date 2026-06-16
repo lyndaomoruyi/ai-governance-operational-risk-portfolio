@@ -96,8 +96,99 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
 .value-card h3 { margin:0 0 8px; font-size:1.02rem; }
 .value-card p { margin:0; color:var(--muted); }
 
-@media (max-width:980px) { .hero-inner{grid-template-columns:1fr;} .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .steps{grid-template-columns:repeat(2,minmax(0,1fr));} .wide-card{grid-column:span 2;} .split{grid-template-columns:1fr;} .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .flow-strip{grid-template-columns:repeat(2,minmax(0,1fr));} .value-grid{grid-template-columns:1fr;} }
-@media (max-width:640px) { .nav{align-items:flex-start; flex-direction:column;} .hero{padding-top:46px;} h1{font-size:2.15rem; line-height:1.05;} .card-grid,.artifact-list,.metric-grid,.steps,.kpi-grid,.flow-strip{grid-template-columns:1fr;} .wide-card{grid-column:span 1;} .workflow{padding:22px;} .premium-panel{padding:22px;} }
+
+/* Top 1% Project 1 case-study system */
+.case-hero { background: radial-gradient(circle at 15% 12%, rgba(215,168,77,.20), transparent 28%), radial-gradient(circle at 86% 20%, rgba(44,111,214,.20), transparent 30%), linear-gradient(135deg,#071323 0%,#0e2140 72%,#07101f 100%); color:#fff; border-radius:36px; padding:36px; box-shadow:0 36px 92px rgba(8,17,31,.32); overflow:hidden; }
+.case-hero h2, .case-hero h3 { color:#fff; }
+.case-hero p { color:#cbd8e8; }
+.case-grid { display:grid; grid-template-columns:.92fr 1.08fr; gap:28px; align-items:start; }
+.case-tag { display:inline-flex; color:#f7dc9a; border:1px solid rgba(215,168,77,.55); background:rgba(215,168,77,.12); border-radius:999px; padding:7px 11px; text-transform:uppercase; letter-spacing:.09em; font-weight:900; font-size:.74rem; }
+.case-title { margin:18px 0 14px; font-size:clamp(2rem,3.4vw,3.35rem); line-height:.98; letter-spacing:-.055em; }
+.case-subtitle { font-size:1.04rem; margin:0 0 18px; }
+.case-proof { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:22px; }
+.proof-tile { background:rgba(255,255,255,.075); border:1px solid rgba(255,255,255,.13); border-radius:18px; padding:15px; }
+.proof-tile strong { display:block; color:#fff; font-size:1.42rem; line-height:1; letter-spacing:-.03em; }
+.proof-tile span { display:block; color:#cbd8e8; font-size:.86rem; margin-top:7px; line-height:1.25; }
+.case-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+.dashboard-mock { background:#f6f8fb; color:var(--ink); border:1px solid rgba(255,255,255,.25); border-radius:28px; padding:18px; box-shadow:0 28px 80px rgba(0,0,0,.25); }
+.dash-top { display:flex; justify-content:space-between; align-items:flex-start; gap:14px; border-bottom:1px solid #dce3ee; padding-bottom:14px; margin-bottom:14px; }
+.dash-top h3 { margin:0; color:var(--navy); font-size:1.08rem; }
+.dash-top p { margin:3px 0 0; color:var(--muted); font-size:.86rem; }
+.dash-status { color:#174a2b; background:#eaf7ef; border:1px solid #bfe6ca; border-radius:999px; padding:6px 9px; font-size:.75rem; font-weight:900; white-space:nowrap; }
+.dash-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-bottom:14px; }
+.dash-kpi { background:#fff; border:1px solid #dce3ee; border-radius:16px; padding:12px; min-height:84px; }
+.dash-kpi strong { display:block; color:var(--navy); font-size:1.48rem; line-height:1; }
+.dash-kpi span { display:block; color:var(--muted); font-size:.74rem; line-height:1.22; margin-top:6px; }
+.dash-body { display:grid; grid-template-columns:1fr .88fr; gap:12px; }
+.dash-panel { background:#fff; border:1px solid #dce3ee; border-radius:18px; padding:14px; min-height:180px; }
+.dash-panel h4 { margin:0 0 10px; color:var(--navy); font-size:.88rem; letter-spacing:.02em; }
+.risk-row { display:grid; grid-template-columns:1.1fr .7fr .8fr; gap:8px; align-items:center; padding:8px 0; border-top:1px solid #edf2f8; font-size:.78rem; color:#5d6b82; }
+.risk-row:first-of-type { border-top:0; }
+.risk-badge { display:inline-flex; justify-content:center; border-radius:999px; padding:4px 7px; font-weight:900; font-size:.68rem; }
+.risk-high { background:#fff0ed; color:#9a3412; border:1px solid #ffd3c4; }
+.risk-med { background:#fff8e8; color:#7b5b16; border:1px solid #f0d69b; }
+.mini-bars { display:grid; gap:9px; margin-top:6px; }
+.mini-bar span { display:flex; justify-content:space-between; font-size:.76rem; color:#5d6b82; margin-bottom:4px; }
+.mini-track { height:9px; background:#edf2f8; border-radius:999px; overflow:hidden; }
+.mini-fill { height:100%; width:var(--w); background:linear-gradient(90deg,#d7a84d,#2c6fd6); border-radius:999px; }
+.narrative-grid { display:grid; grid-template-columns:.86fr 1.14fr; gap:20px; margin-top:22px; }
+.narrative-card { background:#fff; border:1px solid var(--line); border-radius:24px; padding:24px; box-shadow:0 18px 48px rgba(4,15,32,.08); }
+.narrative-card h3 { margin:0 0 12px; color:var(--navy); }
+.narrative-card p, .narrative-card li { color:var(--muted); }
+.narrative-card ul { margin:0; padding-left:20px; }
+.problem-flow { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:10px; margin-top:18px; }
+.problem-node { background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px 13px; box-shadow:0 12px 30px rgba(4,15,32,.06); min-height:112px; position:relative; }
+.problem-node:not(:last-child)::after { content:"→"; position:absolute; right:-13px; top:38%; color:var(--gold); font-size:1.4rem; font-weight:950; z-index:1; }
+.problem-node b { display:block; color:var(--navy); font-size:.92rem; line-height:1.18; }
+.problem-node span { display:block; color:var(--muted); font-size:.78rem; line-height:1.3; margin-top:7px; }
+.ownership-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; margin-top:18px; }
+.owner-card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:18px; box-shadow:0 12px 28px rgba(4,15,32,.06); }
+.owner-card small { display:block; color:#7b5b16; font-weight:900; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+.owner-card b { color:var(--navy); display:block; }
+.owner-card span { color:var(--muted); display:block; font-size:.85rem; line-height:1.34; margin-top:6px; }
+.process-canvas { margin-top:22px; background:linear-gradient(135deg,#071323 0%,#0d1f3b 100%); color:#fff; border-radius:30px; padding:28px; box-shadow:0 28px 70px rgba(8,17,31,.28); overflow:hidden; }
+.process-canvas h3 { margin:0; color:#fff; font-size:1.35rem; letter-spacing:-.02em; }
+.process-canvas p { color:#cbd8e8; margin:6px 0 0; }
+.process-header { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; margin-bottom:22px; }
+.process-badge { white-space:nowrap; background:rgba(215,168,77,.14); border:1px solid rgba(215,168,77,.55); color:#f7dc9a; border-radius:999px; padding:8px 12px; font-weight:900; font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+.swimlane { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px; position:relative; }
+.swim-card { position:relative; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:20px; padding:18px 14px; min-height:206px; }
+.swim-card:after { content:""; position:absolute; right:-12px; top:50%; width:12px; height:2px; background:rgba(215,168,77,.75); }
+.swim-card:last-child:after { display:none; }
+.swim-num { width:34px; height:34px; border-radius:12px; display:flex; align-items:center; justify-content:center; background:var(--gold); color:#111827; font-weight:950; margin-bottom:12px; box-shadow:0 10px 24px rgba(215,168,77,.28); }
+.swim-type { display:block; color:#f7dc9a; font-size:.68rem; font-weight:900; letter-spacing:.11em; text-transform:uppercase; margin-bottom:8px; }
+.swim-card strong { display:block; font-size:.95rem; line-height:1.18; color:#fff; }
+.swim-card span { display:block; color:#cbd8e8; font-size:.8rem; line-height:1.34; margin-top:7px; }
+.evidence-row { margin-top:12px; display:flex; flex-wrap:wrap; gap:7px; }
+.evidence-pill { color:#e7eef8; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.07); border-radius:999px; padding:5px 8px; font-size:.7rem; font-weight:750; }
+.findings-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:20px; }
+.finding { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:0 14px 34px rgba(4,15,32,.06); }
+.finding strong { display:block; color:var(--navy); font-size:1.55rem; letter-spacing:-.04em; }
+.finding span { color:var(--muted); display:block; margin-top:5px; font-size:.9rem; }
+.bar-track { height:10px; background:#edf2f8; border-radius:999px; margin-top:12px; overflow:hidden; }
+.bar-fill { height:100%; width:var(--w); background:linear-gradient(90deg,#d7a84d,#2c6fd6); border-radius:999px; }
+.before-after { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:20px; }
+.ba-card { border:1px solid var(--line); border-radius:20px; padding:20px; background:#fff; box-shadow:0 12px 30px rgba(4,15,32,.05); }
+.ba-card h3 { margin:0 0 12px; }
+.ba-card.before h3 { color:#8a3a24; }
+.ba-card.after h3 { color:#184a2c; }
+.ba-card ul { margin:0; padding-left:20px; color:var(--muted); }
+.decision-strip { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:18px; }
+.decision-card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:18px; box-shadow:0 14px 34px rgba(4,15,32,.06); }
+.decision-card small { display:block; color:#7b5b16; font-weight:900; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+.decision-card strong { color:var(--navy); display:block; line-height:1.18; }
+.decision-card p { color:var(--muted); margin:8px 0 0; font-size:.9rem; line-height:1.38; }
+.evidence-stack { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:10px; margin-top:20px; }
+.evidence-card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px 14px; box-shadow:0 12px 28px rgba(4,15,32,.06); }
+.evidence-card b { display:block; color:var(--navy); margin-bottom:6px; font-size:.92rem; }
+.evidence-card span { color:var(--muted); font-size:.78rem; line-height:1.3; display:block; }
+.ai-guardrail { margin-top:20px; background:#fff8e8; border:1px solid #f0d69b; border-radius:22px; padding:22px; color:#5c461b; }
+.ai-guardrail strong { color:#4a3510; }
+.video-placeholder { margin-top:20px; background:#fff; border:1px dashed #c8d3e4; border-radius:22px; padding:22px; color:var(--muted); }
+.video-placeholder strong { color:var(--navy); display:block; margin-bottom:6px; }
+
+@media (max-width:980px) { .hero-inner{grid-template-columns:1fr;} .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .steps{grid-template-columns:repeat(2,minmax(0,1fr));} .wide-card{grid-column:span 2;} .split{grid-template-columns:1fr;} .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .flow-strip{grid-template-columns:repeat(2,minmax(0,1fr));} .value-grid{grid-template-columns:1fr;} .case-grid,.narrative-grid,.before-after,.dash-body{grid-template-columns:1fr;} .dash-kpis,.ownership-grid,.decision-strip,.evidence-stack,.findings-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .problem-flow,.swimlane{grid-template-columns:1fr;} .problem-node:not(:last-child)::after,.swim-card:after{display:none;} .process-header{display:block;} .process-badge{display:inline-flex;margin-top:14px;} }
+@media (max-width:640px) { .nav{align-items:flex-start; flex-direction:column;} .hero{padding-top:46px;} h1{font-size:2.15rem; line-height:1.05;} .card-grid,.artifact-list,.metric-grid,.steps,.kpi-grid,.flow-strip,.dash-kpis,.ownership-grid,.decision-strip,.evidence-stack,.findings-grid,.case-proof{grid-template-columns:1fr;} .wide-card{grid-column:span 1;} .workflow{padding:22px;} .premium-panel{padding:22px;} .case-hero,.process-canvas{padding:22px;} }
 </style>
 </head>
 <body>
@@ -148,10 +239,10 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
     </div>
     <div class="card-grid">
       <article class="card wide-card" id="portfolio-one">
-        <h3>Project 1: Inventory Risk, Client Compliance & Replenishment Automation System</h3>
-        <p><strong>Problem:</strong> Manual inventory, client reporting, documentation, and vendor follow-up can create delayed visibility into stockout risk, replenishment needs, missing documentation, and open actions.</p>
+        <h3>Project 1: AI-Assisted Operational Risk & Client Compliance Command Center</h3>
+        <p><strong>Problem:</strong> Operational teams can lose early visibility when replenishment exposure, client reporting status, documentation gaps, vendor follow-up, and control evidence are spread across separate trackers and messages.</p>
         <ul>
-          <li><strong>Solution:</strong> AI-assisted operational risk workflow for classifying risk, generating action items, mapping controls, and supporting UAT validation.</li>
+          <li><strong>Solution:</strong> AI-assisted command center for risk classification, replenishment exposure review, client/account reporting readiness, control mapping, UAT validation, and stakeholder-ready reporting.</li>
           <li><strong>Evidence:</strong> Polished workbook, synthetic data, BRD, user stories, UAT, control matrix, AI governance note, and resume-ready project bullets.</li>
         </ul>
         <p style="margin-top:14px;"><a class="btn btn-primary" href="ai_risk_automation_workbook.xlsx">Download Project 1 Workbook</a></p>
@@ -171,66 +262,215 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
 
 
   <section class="section" id="project-one-premium">
-    <div class="section-header">
-      <p class="eyebrow">Project 1 Premium Case Study Upgrade</p>
-      <h2>Inventory risk workflow: measurable evidence and process visibility</h2>
-      <p>This section strengthens Project 1 from a workbook showcase into a case-study portfolio: what was reviewed, what risks were surfaced, how the workflow moved from intake to reporting, and what business value the system demonstrates.</p>
-    </div>
-
-    <div class="premium-panel">
-      <div class="split">
+    <div class="case-hero">
+      <div class="case-grid">
         <div>
-          <p class="eyebrow">My Role / What I Built</p>
-          <h2 style="margin-top:0;">AI-assisted operational risk and client compliance monitoring system</h2>
-          <p>Designed the workflow logic, synthetic dataset structure, workbook views, control mapping, UAT validation, and employer-facing documentation for an operational risk and client compliance monitoring system.</p>
-          <p><strong>Business problem addressed:</strong> operational teams need faster visibility into replenishment risk, documentation gaps, vendor follow-up status, and client reporting readiness across high-visibility account environments.</p>
+          <span class="case-tag">Project 1 Case Study</span>
+          <h2 class="case-title">AI-Assisted Operational Risk & Client Compliance Command Center</h2>
+          <p class="case-subtitle">A decision-support case study showing how AI-assisted workflow logic can surface replenishment exposure, documentation gaps, escalation needs, and client/account reporting readiness using synthetic operational data.</p>
+          <p><strong>The business problem was not inventory tracking.</strong> The business problem was delayed operational risk visibility across replenishment exposure, client reporting readiness, documentation gaps, vendor follow-up, and control evidence.</p>
+          <div class="case-proof">
+            <div class="proof-tile"><strong>36</strong><span>Synthetic operational records reviewed</span></div>
+            <div class="proof-tile"><strong>22</strong><span>Medium/high risk items surfaced</span></div>
+            <div class="proof-tile"><strong>19</strong><span>Documentation/control gaps identified</span></div>
+            <div class="proof-tile"><strong>3</strong><span>Client/account views modeled</span></div>
+          </div>
+          <div class="case-actions">
+            <a class="btn btn-primary" href="ai_risk_automation_workbook.xlsx">View Workbook</a>
+            <a class="btn btn-secondary" href="artifacts.html">View Artifacts</a>
+            <a class="btn btn-secondary" href="#project-one-video">90-Second Walkthrough Plan</a>
+          </div>
         </div>
-        <div>
-          <p class="eyebrow">Portfolio Data Metrics</p>
-          <p>These metrics are calculated from the synthetic portfolio dataset and workbook logic. They demonstrate the review workflow, not employer production results.</p>
-          <div class="kpi-grid">
-            <div class="kpi"><strong>36</strong><span>Synthetic operational records reviewed</span></div>
-            <div class="kpi"><strong>3</strong><span>Client/account views modeled</span></div>
-            <div class="kpi"><strong>22</strong><span>Medium/high risk items identified</span></div>
-            <div class="kpi"><strong>10</strong><span>High-risk items surfaced for escalation visibility</span></div>
-            <div class="kpi"><strong>19</strong><span>Documentation/control gaps identified</span></div>
-            <div class="kpi"><strong>7</strong><span>Escalated workflow items modeled</span></div>
-            <div class="kpi"><strong>7</strong><span>Overdue client-reporting items surfaced</span></div>
-            <div class="kpi"><strong>100%</strong><span>Synthetic data used; no confidential employer/client data</span></div>
+
+        <div class="dashboard-mock" aria-label="Command center dashboard preview">
+          <div class="dash-top">
+            <div>
+              <h3>Command Center Preview</h3>
+              <p>Synthetic portfolio data • risk visibility • action tracking</p>
+            </div>
+            <span class="dash-status">Review-ready</span>
+          </div>
+
+          <div class="dash-kpis">
+            <div class="dash-kpi"><strong>10</strong><span>High-risk escalation items</span></div>
+            <div class="dash-kpi"><strong>7</strong><span>Overdue reporting items</span></div>
+            <div class="dash-kpi"><strong>7</strong><span>Escalated workflow items</span></div>
+            <div class="dash-kpi"><strong>100%</strong><span>Synthetic data only</span></div>
+          </div>
+
+          <div class="dash-body">
+            <div class="dash-panel">
+              <h4>Risk Review Queue</h4>
+              <div class="risk-row"><b>Replenishment exposure</b><span class="risk-badge risk-high">High</span><span>Escalate</span></div>
+              <div class="risk-row"><b>Client reporting delay</b><span class="risk-badge risk-high">High</span><span>Owner review</span></div>
+              <div class="risk-row"><b>Documentation gap</b><span class="risk-badge risk-med">Medium</span><span>Evidence needed</span></div>
+              <div class="risk-row"><b>Vendor follow-up</b><span class="risk-badge risk-med">Medium</span><span>Track action</span></div>
+            </div>
+
+            <div class="dash-panel">
+              <h4>Control & Reporting Readiness</h4>
+              <div class="mini-bars">
+                <div class="mini-bar"><span><b>Account views modeled</b><em>3</em></span><div class="mini-track"><div class="mini-fill" style="--w:75%;"></div></div></div>
+                <div class="mini-bar"><span><b>Risk logic validated</b><em>UAT</em></span><div class="mini-track"><div class="mini-fill" style="--w:88%;"></div></div></div>
+                <div class="mini-bar"><span><b>Evidence coverage</b><em>Mapped</em></span><div class="mini-track"><div class="mini-fill" style="--w:71%;"></div></div></div>
+                <div class="mini-bar"><span><b>Reporting readiness</b><em>Tracked</em></span><div class="mini-track"><div class="mini-fill" style="--w:82%;"></div></div></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="narrative-grid">
+      <div class="narrative-card">
+        <h3>Executive Summary</h3>
+        <p>This project converts a predictable inventory dashboard idea into a risk, compliance, evidence, and decision-support case study.</p>
+        <p>It demonstrates business analysis, workflow design, compliance thinking, operational risk visibility, UAT validation, and responsible AI use.</p>
+      </div>
+      <div class="narrative-card">
+        <h3>What I Built</h3>
+        <ul>
+          <li>An intake-to-reporting workflow for operational risk and client compliance review.</li>
+          <li>A synthetic data model that protects confidentiality while demonstrating realistic monitoring logic.</li>
+          <li>A workbook with dashboard views, risk classification, control mapping, and UAT-ready outputs.</li>
+          <li>An evidence package with BRD, user stories, UAT test cases, governance notes, and sources.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="project-one-problem">
+    <div class="section-header">
+      <p class="eyebrow">The Problem</p>
+      <h2>Why manual tracking breaks down</h2>
+      <p>The risk is not only low inventory. The risk is delayed visibility when operational signals are scattered across trackers, emails, documentation follow-ups, and client reporting obligations.</p>
+    </div>
+    <div class="problem-flow">
+      <div class="problem-node"><b>Separate trackers</b><span>Inventory, vendor, client, and documentation items live in different places.</span></div>
+      <div class="problem-node"><b>Delayed visibility</b><span>High-risk items are harder to identify early.</span></div>
+      <div class="problem-node"><b>Unclear ownership</b><span>Follow-up actions can sit without a clean owner/status view.</span></div>
+      <div class="problem-node"><b>Missing evidence</b><span>Documentation and control gaps become reporting issues.</span></div>
+      <div class="problem-node"><b>Late escalation</b><span>Issues may not surface until they affect service or client readiness.</span></div>
+      <div class="problem-node"><b>Reporting pressure</b><span>Stakeholders need clean summaries and account-level visibility.</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="project-one-role">
+    <div class="section-header">
+      <p class="eyebrow">My Role / Ownership</p>
+      <h2>What this project proves I can own</h2>
+      <p>The project is packaged to show end-to-end ownership, not just tool usage.</p>
+    </div>
+    <div class="ownership-grid">
+      <div class="owner-card"><small>Workflow Design</small><b>Operating model</b><span>Defined intake, review, classification, control mapping, validation, and reporting flow.</span></div>
+      <div class="owner-card"><small>Data Model</small><b>Synthetic dataset</b><span>Created safe operational records and fields without exposing employer or client data.</span></div>
+      <div class="owner-card"><small>Risk Logic</small><b>Classification rules</b><span>Built risk categories, escalation flags, documentation gap logic, and action status views.</span></div>
+      <div class="owner-card"><small>Compliance Evidence</small><b>Control mapping</b><span>Mapped owners, evidence, controls, UAT checks, and review status.</span></div>
+      <div class="owner-card"><small>Portfolio Packaging</small><b>Employer proof</b><span>Created workbook, artifacts, governance note, and case-study website presentation.</span></div>
     </div>
   </section>
 
   <section class="section" id="project-one-workflow">
     <div class="section-header">
-      <p class="eyebrow">Project 1 Workflow Diagram</p>
-      <h2>From operational intake to stakeholder-ready reporting</h2>
-      <p>The workflow shows how raw operational inputs become risk visibility, control evidence, validation, and reporting outputs.</p>
+      <p class="eyebrow">Process Map</p>
+      <h2>How the command center works</h2>
+      <p>The process map shows how raw operational inputs become risk visibility, control evidence, validation, and stakeholder-ready reporting.</p>
     </div>
-    <div class="flow-strip">
-      <div class="flow-step"><div class="flow-number">1</div><strong>Operational Intake</strong><span>Capture client, product, vendor, documentation, and follow-up fields.</span></div>
-      <div class="flow-step"><div class="flow-number">2</div><strong>Inventory Risk Review</strong><span>Compare current levels, thresholds, coverage, and replenishment needs.</span></div>
-      <div class="flow-step"><div class="flow-number">3</div><strong>AI Risk Classification</strong><span>Classify stockout risk, documentation gaps, reporting issues, and escalation needs.</span></div>
-      <div class="flow-step"><div class="flow-number">4</div><strong>Control Mapping</strong><span>Map risks to owners, controls, evidence, and review status.</span></div>
-      <div class="flow-step"><div class="flow-number">5</div><strong>UAT Validation</strong><span>Test risk logic, workflow outputs, dashboard views, and expected results.</span></div>
-      <div class="flow-step"><div class="flow-number">6</div><strong>Stakeholder Reporting</strong><span>Produce client/account views, action tracking, and audit-ready summaries.</span></div>
+
+    <div class="process-canvas" aria-label="Project 1 process map">
+      <div class="process-header">
+        <div>
+          <h3>Operational Risk Review Flow</h3>
+          <p>Input data is structured, assessed, classified, validated, and converted into reviewable reporting outputs.</p>
+        </div>
+        <span class="process-badge">Decision-support system</span>
+      </div>
+
+      <div class="swimlane">
+        <div class="swim-card"><div class="swim-num">1</div><span class="swim-type">Input</span><strong>Operational Intake</strong><span>Capture account, product, vendor, stock level, threshold, documentation, reporting status, and follow-up owner.</span><div class="evidence-row"><span class="evidence-pill">Dataset</span><span class="evidence-pill">Workbook</span></div></div>
+        <div class="swim-card"><div class="swim-num">2</div><span class="swim-type">Assessment</span><strong>Risk & Exposure Review</strong><span>Review replenishment exposure, threshold risk, client reporting readiness, and open action status.</span><div class="evidence-row"><span class="evidence-pill">Risk logic</span><span class="evidence-pill">Review view</span></div></div>
+        <div class="swim-card"><div class="swim-num">3</div><span class="swim-type">Decision Support</span><strong>AI-Assisted Classification</strong><span>Classify priority, recommended action, escalation need, documentation gap, and review status.</span><div class="evidence-row"><span class="evidence-pill">AI output</span><span class="evidence-pill">Action queue</span></div></div>
+        <div class="swim-card"><div class="swim-num">4</div><span class="swim-type">Controls</span><strong>Control Mapping</strong><span>Connect risks to control owner, evidence requirement, review status, and management response path.</span><div class="evidence-row"><span class="evidence-pill">Controls</span><span class="evidence-pill">Evidence</span></div></div>
+        <div class="swim-card"><div class="swim-num">5</div><span class="swim-type">Validation</span><strong>UAT / Human Review</strong><span>Test formulas, risk flags, filtered views, and expected outputs before the workflow is treated as usable.</span><div class="evidence-row"><span class="evidence-pill">UAT</span><span class="evidence-pill">Review</span></div></div>
+        <div class="swim-card"><div class="swim-num">6</div><span class="swim-type">Output</span><strong>Stakeholder Reporting</strong><span>Produce client/account views, action tracking, summary metrics, and audit-ready reporting outputs.</span><div class="evidence-row"><span class="evidence-pill">Reports</span><span class="evidence-pill">Actions</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="project-one-findings">
+    <div class="section-header">
+      <p class="eyebrow">Metrics & Findings</p>
+      <h2>What the system surfaced</h2>
+      <p>Metrics are calculated from the synthetic portfolio dataset and workbook logic. They demonstrate the review workflow, not employer production results.</p>
+    </div>
+
+    <div class="findings-grid">
+      <div class="finding"><strong>61%</strong><span>of records modeled as medium/high risk for review visibility</span><div class="bar-track"><div class="bar-fill" style="--w:61%;"></div></div></div>
+      <div class="finding"><strong>53%</strong><span>of records modeled with documentation or control gaps</span><div class="bar-track"><div class="bar-fill" style="--w:53%;"></div></div></div>
+      <div class="finding"><strong>28%</strong><span>of records modeled as high-risk escalation items</span><div class="bar-track"><div class="bar-fill" style="--w:28%;"></div></div></div>
+      <div class="finding"><strong>100%</strong><span>synthetic data; no confidential employer, client, or vendor data</span><div class="bar-track"><div class="bar-fill" style="--w:100%;"></div></div></div>
     </div>
   </section>
 
   <section class="section" id="project-one-value">
     <div class="section-header">
-      <p class="eyebrow">Project 1 Business Value</p>
-      <h2>What the workflow is designed to improve</h2>
+      <p class="eyebrow">Before / After Business Value</p>
+      <h2>The transformation the command center demonstrates</h2>
     </div>
-    <div class="value-grid">
-      <div class="value-card"><h3>Earlier Risk Visibility</h3><p>Highlights stockout risk, overdue reporting, and documentation gaps before they are buried in manual follow-up.</p></div>
-      <div class="value-card"><h3>Cleaner Client/Account Views</h3><p>Separates internal master monitoring from account-specific review views so information is organized and controlled.</p></div>
-      <div class="value-card"><h3>Audit-Ready Documentation</h3><p>Connects risks, controls, evidence, UAT validation, and responsible AI notes into one reviewable portfolio package.</p></div>
+
+    <div class="before-after">
+      <div class="ba-card before">
+        <h3>Before: Fragmented Review</h3>
+        <ul>
+          <li>Inventory, documentation, vendor follow-up, and reporting status can sit in separate trackers or messages.</li>
+          <li>Stockout risk and overdue reporting may not surface until follow-up becomes urgent.</li>
+          <li>Managers may lack one view showing risk, owner, action, evidence, and status.</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <h3>After: Structured Risk Visibility</h3>
+        <ul>
+          <li>Risk signals are grouped into one monitoring workflow with account-level views.</li>
+          <li>High-risk items, documentation gaps, and escalations are surfaced for action.</li>
+          <li>Controls, UAT validation, and evidence notes make the work reviewable for stakeholders.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="decision-strip">
+      <div class="decision-card"><small>Risk Visibility</small><strong>Earlier attention to exposure</strong><p>Highlights replenishment exposure, overdue reporting, and documentation gaps before they are buried in manual follow-up.</p></div>
+      <div class="decision-card"><small>Client Readiness</small><strong>Cleaner account-level views</strong><p>Separates internal master monitoring from client/account views so information is organized and reviewable.</p></div>
+      <div class="decision-card"><small>Control Evidence</small><strong>Audit-ready documentation</strong><p>Connects risks, controls, owners, evidence, UAT validation, and AI governance notes into one package.</p></div>
+      <div class="decision-card"><small>Leadership Reporting</small><strong>Stakeholder-ready output</strong><p>Turns operational noise into decision-ready reporting for managers, clients, and cross-functional partners.</p></div>
     </div>
   </section>
 
+  <section class="section" id="project-one-evidence">
+    <div class="section-header">
+      <p class="eyebrow">Evidence Stack</p>
+      <h2>Proof package behind the case study</h2>
+      <p>The artifacts are intentionally packaged to show business analysis, workflow design, testing discipline, responsible AI thinking, and compliance documentation.</p>
+    </div>
+
+    <div class="evidence-stack">
+      <div class="evidence-card"><b>Workbook</b><span>Risk logic, dashboard views, control mapping, and reporting outputs.</span></div>
+      <div class="evidence-card"><b>Synthetic Dataset</b><span>Safe data model without confidential employer or client data.</span></div>
+      <div class="evidence-card"><b>BRD</b><span>Business problem, requirements, scope, assumptions, and success criteria.</span></div>
+      <div class="evidence-card"><b>User Stories</b><span>Business analysis translation from need to workflow behavior.</span></div>
+      <div class="evidence-card"><b>UAT Cases</b><span>Testing scenarios validating formulas, filters, risk flags, and outputs.</span></div>
+      <div class="evidence-card"><b>Governance Note</b><span>Responsible AI, human review, and synthetic data boundaries.</span></div>
+      <div class="evidence-card"><b>Sources</b><span>Professional grounding and explainable project assumptions.</span></div>
+    </div>
+
+    <div class="ai-guardrail">
+      <strong>Responsible AI Guardrail:</strong> AI is used as decision support, not final decision-making authority. Human review, control ownership, UAT validation, and synthetic data boundaries are built into the workflow.
+    </div>
+
+    <div class="video-placeholder" id="project-one-video">
+      <strong>90-Second Walkthrough Plan</strong>
+      After the page is live, the walkthrough will show this actual case study on screen: case hero, command center preview, process map, metrics, evidence stack, and responsible AI guardrail. The final video should be screen-recorded in Clipchamp with executive voiceover and captions.
+    </div>
+  </section>
 
   <section class="section" id="workflow">
     <div class="workflow">
