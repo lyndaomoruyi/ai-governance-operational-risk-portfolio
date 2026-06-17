@@ -1,27 +1,232 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lynda Omoruyi | AI Governance & Third-Party Risk Compliance Portfolio</title>
-  <style>
-    :root{--bg:#08111f;--bg-2:#0d1b2f;--panel:#ffffff;--panel-soft:#f6f8fb;--ink:#0f172a;--muted:#5d6b82;--gold:#d7a84d;--gold-soft:#f7ead0;--line:#dbe3ef;--card:#20314a;--blue:#2563eb;}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#f4f7fb;line-height:1.6}
-    header{position:sticky;top:0;z-index:20;background:#111b2a;color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
-    .nav{max-width:1180px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand strong{display:block;font-size:1.05rem}.brand span{display:block;color:#f2d98d;text-transform:uppercase;letter-spacing:.14em;font-weight:800;font-size:.72rem} nav a{color:#d7dfec;text-decoration:none;margin-left:22px;font-weight:700}nav a:hover{color:#fff}
-    .hero{background:radial-gradient(circle at 72% 30%,#173865 0,#0c1b31 38%,#07101d 100%);color:#fff;padding:56px 24px 54px}.hero-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}.eyebrow{color:#f2d98d;text-transform:uppercase;letter-spacing:.18em;font-weight:900;font-size:.78rem;margin-bottom:18px}h1{margin:0;max-width:760px;font-size:clamp(2.05rem,3.65vw,3.65rem);line-height:1.04;letter-spacing:-.045em;font-weight:850}.subtitle{font-size:1.22rem;font-weight:800;margin:22px 0 24px}.hero p{font-size:1.05rem;color:#e6edf7;max-width:700px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;border-radius:999px;padding:13px 22px;text-decoration:none;font-weight:900;border:1px solid rgba(255,255,255,.25);color:#fff}.btn-primary{background:var(--gold);border-color:var(--gold);color:#111827}.btn-secondary{background:rgba(255,255,255,.06)}
-    .metric-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.metric{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px}.metric strong{display:block;font-size:2rem;line-height:1;color:#fff}.metric span{display:block;color:#dbe7f7;margin-top:12px}
-    .section{max-width:1180px;margin:0 auto;padding:70px 24px;scroll-margin-top:92px}.section h2{font-size:clamp(1.8rem,3vw,2.8rem);line-height:1.08;margin:0 0 16px;color:#0b1726}.section-lead{font-size:1.08rem;color:var(--muted);max-width:900px;margin-bottom:30px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card,.artifact{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 14px 40px rgba(15,23,42,.06)}.card h3{margin:0 0 10px;color:#0b1726}.card p,.artifact p{color:var(--muted);margin:0}.steps{counter-reset:step}.step:before{counter-increment:step;content:counter(step);display:inline-flex;width:34px;height:34px;border-radius:12px;background:#eef4ff;color:#2563eb;align-items:center;justify-content:center;font-weight:900;margin-bottom:12px}.artifact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.artifact{display:flex;gap:16px;align-items:flex-start}.artifact-icon{width:42px;height:42px;border-radius:14px;background:#eef4ff;color:#2563eb;font-weight:900;display:flex;align-items:center;justify-content:center;flex:0 0 auto}.artifact a{font-size:1.08rem;font-weight:900;color:#2563eb;text-decoration:none}.artifact a:hover{text-decoration:underline}.note{background:#fff7e6;border:1px solid #f2ce78;border-radius:22px;padding:22px;color:#68420b;margin-top:30px}.note strong{font-weight:900}.alt{background:#eef2f7}.wide{grid-column:span 2}footer{background:#0b1726;color:#cbd5e1;text-align:center;padding:28px 24px}
-    @media(max-width:900px){.hero-inner{grid-template-columns:1fr}.grid,.artifact-grid,.metric-panel{grid-template-columns:1fr}.wide{grid-column:auto}.nav{display:block}nav{margin-top:12px}nav a{margin:0 16px 0 0}}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lynda Omoruyi | AI Governance & Third-Party Risk Compliance Command Center</title>
+<meta name="description" content="Project 2 case study by Lynda Omoruyi: AI Governance and Third-Party Risk Compliance Command Center for financial-services AI inventory, vendor review, control monitoring, issue tracking, UAT, and stakeholder reporting using synthetic data." />
+<style>
+:root{
+  --bg:#07101f;--bg2:#0d1f3b;--navy:#0a1730;--ink:#172033;--muted:#5b6981;--panel:#fff;--soft:#f6f8fb;--line:#dce3ee;--gold:#d7a84d;--gold2:#f3dfad;--blue:#2c6fd6;--red:#9f3030;--green:#1d6b42;--shadow:0 22px 60px rgba(4,15,32,.18);--radius:22px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--soft);color:var(--ink);line-height:1.6}a{color:inherit}.site-header{position:sticky;top:0;z-index:30;background:rgba(7,16,31,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{color:#fff;text-decoration:none;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.nav-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.nav-links a{color:#dbe7f7;text-decoration:none;font-weight:700;font-size:.86rem;opacity:.92}.nav-links a:hover{color:var(--gold2)}.hero{background:radial-gradient(circle at top left,rgba(215,168,77,.18),transparent 34%),linear-gradient(135deg,#06101d 0%,#0b1a33 48%,#112a52 100%);color:#fff;padding:92px 24px 72px}.wrap{max-width:1180px;margin:0 auto}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(242,216,155,.55);color:#f7e6bd;background:rgba(255,255,255,.06);border-radius:999px;padding:8px 13px;font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h1{max-width:980px;margin:22px 0 18px;font-size:clamp(2.2rem,5vw,4.8rem);line-height:.96;letter-spacing:-.055em}.hero p{max-width:920px;color:#dbe7f7;font-size:1.14rem;margin:0 0 26px}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:26px;align-items:stretch;margin-top:36px}.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:28px;padding:24px;box-shadow:0 24px 80px rgba(0,0,0,.22)}.hero-card h2{color:#fff;margin:0 0 12px;font-size:1.15rem}.hero-card p{font-size:.98rem;margin:0;color:#d4e2f5}.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.stat{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px}.stat b{display:block;font-size:2rem;line-height:1;color:#f7d98c}.stat span{display:block;margin-top:8px;color:#dbe7f7;font-size:.86rem}.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:800;text-decoration:none;border:1px solid transparent}.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#0b1628}.btn.ghost{border-color:rgba(255,255,255,.26);color:#fff;background:rgba(255,255,255,.06)}.section{padding:72px 24px}.section.white{background:#fff}.section.soft{background:var(--soft)}.section.dark{background:#08111f;color:#fff}.section h2{font-size:clamp(1.8rem,3.2vw,3rem);letter-spacing:-.04em;line-height:1.04;margin:0 0 16px;color:var(--navy)}.section.dark h2{color:#fff}.section-lead{max-width:850px;color:var(--muted);font-size:1.04rem;margin:0 0 28px}.section.dark .section-lead{color:#d2dfef}.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:#9c6e16;margin-bottom:10px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 12px 36px rgba(4,15,32,.07)}.card h3{margin:0 0 10px;color:var(--navy);font-size:1.12rem}.card p{margin:0;color:var(--muted)}.role-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:24px}.role-item{border:1px solid var(--line);border-radius:18px;background:#fff;padding:18px}.role-item b{display:block;color:var(--navy);margin-bottom:6px}.role-item span{display:block;color:var(--muted);font-size:.88rem}.problem-chain{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:22px}.chain{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;position:relative}.chain:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:#9c6e16;font-weight:900}.chain b{display:block;color:var(--navy);font-size:.95rem}.chain span{display:block;color:var(--muted);font-size:.82rem;margin-top:6px}.command{background:linear-gradient(135deg,#071323,#0e2140);border-radius:30px;padding:24px;color:#fff;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.12)}.command-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:18px;margin-bottom:18px}.command-head h3{margin:0;color:#fff}.badge{border:1px solid rgba(242,216,155,.55);color:#f7e6bd;border-radius:999px;padding:7px 10px;font-size:.75rem;font-weight:900;white-space:nowrap}.dashboard-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.mini-metric{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:16px}.mini-metric b{font-size:1.75rem;color:#f7d98c;display:block;line-height:1}.mini-metric span{font-size:.78rem;color:#cfe0f3;display:block;margin-top:7px}.queue,.readiness{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);border-radius:20px;padding:18px}.queue h4,.readiness h4{margin:0 0 12px;color:#fff}.queue-row{display:flex;justify-content:space-between;gap:12px;border-top:1px solid rgba(255,255,255,.09);padding:11px 0;color:#dce8f7}.queue-row:first-of-type{border-top:0}.pill{font-size:.72rem;font-weight:900;border-radius:999px;padding:5px 9px;white-space:nowrap}.critical{background:#fbe4e4;color:#8a1e1e}.high{background:#fff0cf;color:#7a5300}.moderate{background:#e7f0ff;color:#204d92}.bar{height:10px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden;margin:9px 0 15px}.fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#d7a84d,#f3dfad)}.process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:24px}.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 28px rgba(4,15,32,.06);position:relative;min-height:160px}.step:not(:last-child)::after{content:"";position:absolute;right:-10px;top:50%;width:18px;height:18px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:translateY(-50%) rotate(45deg);background:var(--soft)}.step-num{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff5dc;border:1px solid #efd99a;color:#6b4b0c;font-weight:900;margin-bottom:12px}.step b{display:block;color:var(--navy);margin-bottom:8px}.step span{display:block;color:var(--muted);font-size:.84rem}.findings{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}.finding{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;text-align:left;box-shadow:0 12px 32px rgba(4,15,32,.06)}.finding b{display:block;font-size:2.2rem;line-height:1;color:var(--navy);letter-spacing:-.04em}.finding span{display:block;color:var(--muted);font-weight:700;margin-top:8px}.before-after{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}.ba-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 34px rgba(4,15,32,.06)}.ba-card h3{margin:0 0 12px}.ba-card.before h3{color:#8a3a24}.ba-card.after h3{color:#184a2c}.ba-card ul{margin:0;padding-left:20px;color:var(--muted)}.ba-card li{margin-bottom:8px}.evidence-stack{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.evidence-card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 12px 30px rgba(4,15,32,.06);transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease}.evidence-card:hover{transform:translateY(-2px);border-color:rgba(215,168,77,.72);box-shadow:0 18px 44px rgba(4,15,32,.12)}.evidence-card b{display:block;color:var(--navy);margin-bottom:7px}.evidence-card span{display:block;color:var(--muted);font-size:.88rem}.guardrail{margin-top:24px;background:#fff8e8;border:1px solid #efd99a;border-radius:24px;padding:24px;color:#5b461c}.guardrail strong{color:#4a3510}.source-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.source-row a{font-size:.84rem;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff;color:var(--muted);font-weight:800}.takeaway{background:linear-gradient(135deg,#071323 0%,#0d1f3b 100%);color:#fff;border-radius:28px;padding:30px;box-shadow:0 24px 70px rgba(8,17,31,.24)}.takeaway h2{color:#fff}.takeaway p{color:#d8e5f4;font-size:1.06rem;margin:0}.footer{background:#06101d;color:#c9d6e7;padding:36px 24px;text-align:center}.footer strong{color:#fff}@media(max-width:980px){.hero-grid,.dashboard-grid,.grid-3,.grid-2,.before-after{grid-template-columns:1fr}.stat-grid,.metric-row,.findings,.role-list,.problem-chain,.process,.evidence-stack{grid-template-columns:1fr 1fr}.chain:not(:last-child)::after,.step:not(:last-child)::after{display:none}}@media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.nav-links{gap:10px}.stat-grid,.metric-row,.findings,.role-list,.problem-chain,.process,.evidence-stack{grid-template-columns:1fr}.hero{padding-top:70px}.section{padding:52px 18px}}
+</style>
 </head>
 <body>
-<header><div class="nav"><div class="brand"><strong>Lynda Omoruyi</strong><span>AI Governance • Compliance • Third-Party Risk</span></div><nav><a href="index.html">Home</a><a href="#workflow">Workflow</a><a href="#proof">Proof of Work</a><a href="#governance">Governance</a></nav></div></header>
-<section class="hero"><div class="hero-inner"><div><div class="eyebrow">Employer-facing compliance portfolio</div><h1>AI Governance & Third-Party Risk Compliance Portfolio</h1><div class="subtitle">AI Use Case Inventory, Vendor Risk & Compliance Control Monitoring System</div><p>A practical banking compliance portfolio demonstrating how AI use cases, vendor risk, missing evidence, human oversight, control ownership, and remediation issues can be monitored using synthetic data.</p><div class="actions"><a class="btn btn-primary" href="ai_third_party_risk_compliance_workbook.xlsx">Download Compliance Workbook</a><a class="btn btn-secondary" href="#proof">Review Artifacts</a></div></div><div class="metric-panel"><div class="metric"><strong>30</strong><span>Synthetic AI use cases</span></div><div class="metric"><strong>10</strong><span>Mapped compliance controls</span></div><div class="metric"><strong>20</strong><span>Issue/action log entries</span></div><div class="metric"><strong>NIST</strong><span>AI governance-aligned review</span></div></div></div></section>
-<section class="section"><div class="eyebrow">Project Overview</div><h2>From scattered AI adoption to compliance-ready control visibility</h2><p class="section-lead">This project models a current banking compliance problem: AI tools can be adopted across business units before compliance teams have full visibility into data exposure, vendor risk, human oversight, missing evidence, and ongoing monitoring responsibilities.</p><div class="grid"><div class="card"><h3>Business Problem</h3><p>AI use cases can expand across departments without one clear inventory, evidence trail, owner, review cadence, or control monitoring view.</p></div><div class="card"><h3>Compliance Solution</h3><p>The workflow tracks AI use cases, vendor review status, data sensitivity, human oversight, missing evidence, risk tier, issues, and remediation actions.</p></div><div class="card"><h3>Business Value</h3><p>Compliance, risk, IT security, vendor management, and audit teams gain a practical view of approval status, open issues, and evidence readiness.</p></div></div></section>
-<section class="section alt" id="workflow"><div class="eyebrow">Compliance Monitoring Workflow</div><h2>How the system makes AI risk review usable</h2><p class="section-lead">The workflow is built around compliance operations: intake, risk rating, vendor evidence, control mapping, remediation tracking, and human validation.</p><div class="grid steps"><div class="card step"><h3>Inventory AI Use</h3><p>Capture tool, use case, business area, platform type, data sensitivity, customer impact, and owner.</p></div><div class="card step"><h3>Review Risk</h3><p>Classify risk based on data exposure, customer impact, approval status, oversight, and evidence gaps.</p></div><div class="card step"><h3>Validate Vendor</h3><p>Track due diligence, SOC reports, model cards, subcontractor review, privacy terms, and contract review.</p></div><div class="card step"><h3>Map Controls</h3><p>Connect each risk area to control objective, evidence expectation, control owner, and monitoring frequency.</p></div><div class="card step"><h3>Track Issues</h3><p>Document remediation owner, due date, issue status, escalation need, and human-reviewed next action.</p></div></div></section>
-<section class="section" id="proof"><div class="eyebrow">Proof of Work</div><h2>Employer-reviewable artifacts</h2><p class="section-lead">These artifacts show that the project is not just a dashboard. It includes data, compliance controls, vendor review, issue tracking, UAT, governance, and sources.</p><div class="artifact-grid"><div class="artifact"><span class="artifact-icon">X</span><div><a href="ai_third_party_risk_compliance_workbook.xlsx">AI Third-Party Risk Compliance Workbook</a><p>Dashboard, AI inventory, vendor risk review, controls, issue log, UAT, sources, and data dictionary.</p></div></div><div class="artifact"><span class="artifact-icon">D</span><div><a href="ai_third_party_risk_artifacts.html#dataset">Synthetic Dataset Included in Workbook</a><p>The synthetic AI use-case dataset is included inside the polished workbook so employers do not open a raw CSV view.</p></div></div><div class="artifact"><span class="artifact-icon">B</span><div><a href="ai_third_party_risk_artifacts.html#brd">Business Requirements Document</a><p>Business need, stakeholders, functional requirements, controls, and success measures.</p></div></div><div class="artifact"><span class="artifact-icon">U</span><div><a href="ai_third_party_risk_artifacts.html#uat">UAT Test Cases</a><p>Validation scenarios for risk rating, missing evidence, overdue review, vendor due diligence, and issue tracking.</p></div></div><div class="artifact"><span class="artifact-icon">G</span><div><a href="ai_third_party_risk_artifacts.html#governance-note">AI Governance Validation Note</a><p>Human review, synthetic data limitations, risk boundaries, and responsible AI use.</p></div></div><div class="artifact"><span class="artifact-icon">S</span><div><a href="ai_third_party_risk_artifacts.html#sources">Sources</a><p>Regulatory and governance sources supporting the project direction.</p></div></div></div></section>
-<section class="section alt" id="governance"><div class="eyebrow">Compliance & Governance</div><h2>Built for banking compliance, IT risk, and audit readiness</h2><p class="section-lead">The project uses AI as a monitored workflow layer, not an unchecked decision-maker. The workbook emphasizes human review, owner accountability, control evidence, and explainable risk status.</p><div class="grid"><div class="card"><h3>AI Use Case Inventory</h3><p>Tracks who is using AI, why, where the tool is hosted, whether customer data is involved, and who owns review.</p></div><div class="card"><h3>Third-Party Risk</h3><p>Surfaces vendor due diligence gaps, subcontractor review, retention terms, contract/privacy review, and required follow-up.</p></div><div class="card"><h3>Control Monitoring</h3><p>Maps AI governance risks to control objectives, evidence, owner, frequency, and issue remediation.</p></div><div class="card wide"><h3>Authenticity Note</h3><p>This is an independent portfolio project inspired by regulated banking compliance experience. It uses synthetic data only and does not claim that the workflow was used by Commerce Bank or any employer.</p></div></div><div class="note"><strong>Portfolio note:</strong> Synthetic data is used for this portfolio; no confidential banking, customer, vendor, or employer data is included.</div></section>
-<footer>Lynda Omoruyi — AI Governance, Compliance & Risk Automation Portfolio</footer>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">Lynda Omoruyi</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#context">Context</a>
+      <a href="#command-center">Command Center</a>
+      <a href="#process">Process</a>
+      <a href="#evidence">Evidence</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Project 2 • Financial Services AI Governance</span>
+      <h1>AI Governance & Third-Party Risk Compliance Command Center</h1>
+      <p>A case study showing how AI use cases, vendor evidence, review status, control ownership, issue remediation, and stakeholder reporting can be centralized into one governance-ready workflow.</p>
+      <div class="btn-row">
+        <a class="btn gold" href="ai_third_party_risk_compliance_workbook.xlsx">View Workbook</a>
+        <a class="btn ghost" href="#evidence">Review Evidence Stack</a>
+        <a class="btn ghost" href="index.html#portfolio-two">Back to Portfolio</a>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-card">
+          <h2>Executive Summary</h2>
+          <p>Financial-services teams are adopting AI across compliance, fraud, customer operations, underwriting support, productivity tools, analytics, and vendor-enabled platforms. The risk is not only the AI tool itself; the risk is not knowing who owns it, what data it touches, which third party supports it, what evidence is missing, and whether human oversight is documented.</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><b>30</b><span>Synthetic AI use cases inventoried</span></div>
+          <div class="stat"><b>10</b><span>High/Critical risk records surfaced</span></div>
+          <div class="stat"><b>22</b><span>Evidence gaps modeled</span></div>
+          <div class="stat"><b>20</b><span>Remediation actions tracked</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="context" class="section white">
+    <div class="wrap">
+      <div class="kicker">Industry Context</div>
+      <h2>AI adoption is moving faster than evidence, ownership, and third-party oversight.</h2>
+      <p class="section-lead">This project is positioned around a current financial-services risk area: organizations need a practical way to inventory AI use, classify exposure, review vendor involvement, monitor controls, and prepare evidence before audit or regulatory pressure arrives.</p>
+      <div class="grid-3">
+        <div class="card"><h3>Business problem</h3><p>AI tools can enter business workflows before teams have a complete inventory, documented owner, data classification, vendor review, approval status, review cadence, or control evidence.</p></div>
+        <div class="card"><h3>Solution</h3><p>The workflow centralizes intake, risk scoring, vendor due diligence, control mapping, issue tracking, UAT validation, and stakeholder reporting into one operating view.</p></div>
+        <div class="card"><h3>Business value</h3><p>Leaders can see high-risk AI use cases, overdue reviews, missing evidence, limited oversight, and open remediation actions before they become audit or governance issues.</p></div>
+      </div>
+      <div class="source-row">
+        <a href="https://www.reuters.com/business/finance/us-bank-regulators-ramp-up-scrutiny-ai-use-financial-companies-2026-06-12/" target="_blank" rel="noopener">Reuters: AI scrutiny in finance</a>
+        <a href="https://www.occ.gov/news-issuances/bulletins/2023/bulletin-2023-17.html" target="_blank" rel="noopener">OCC: Third-party risk guidance</a>
+        <a href="https://www.fdic.gov/news/financial-institution-letters/2023/fil23029.html" target="_blank" rel="noopener">FDIC: Interagency third-party guidance</a>
+        <a href="https://www.occ.treas.gov/news-issuances/bulletins/2026/bulletin-2026-13.html" target="_blank" rel="noopener">OCC: Model risk guidance</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="kicker">The Problem</div>
+      <h2>Why AI governance breaks down without operational control visibility</h2>
+      <p class="section-lead">The issue is not simply “using AI.” The issue is using AI without clear ownership, vendor evidence, approval status, monitoring cadence, control mapping, human oversight, and escalation logic.</p>
+      <div class="problem-chain">
+        <div class="chain"><b>AI enters workflow</b><span>Business teams use internal, vendor, or embedded AI tools.</span></div>
+        <div class="chain"><b>Evidence is incomplete</b><span>Data terms, SOC reports, subcontractors, privacy review, or approval records may be missing.</span></div>
+        <div class="chain"><b>Oversight is unclear</b><span>Human review rules, override steps, and impact boundaries are not consistently documented.</span></div>
+        <div class="chain"><b>Controls are not mapped</b><span>Control owners, review cadence, and remediation steps are not visible in one place.</span></div>
+        <div class="chain"><b>Audit readiness suffers</b><span>Leaders lack a clean view of risk, evidence, ownership, and next action.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap">
+      <div class="kicker">My Role / Ownership</div>
+      <h2>How I approached the project</h2>
+      <p class="section-lead">I treated this as a business analysis and compliance operations project, not just a dashboard build.</p>
+      <div class="role-list">
+        <div class="role-item"><b>Defined scope</b><span>Framed the use case around financial-services AI inventory, third-party risk, and control monitoring.</span></div>
+        <div class="role-item"><b>Built data model</b><span>Created synthetic records for AI use cases, vendors, controls, issues, UAT, and sources.</span></div>
+        <div class="role-item"><b>Mapped risk logic</b><span>Translated customer impact, data sensitivity, evidence gaps, and oversight into risk status.</span></div>
+        <div class="role-item"><b>Validated workflow</b><span>Created UAT scenarios for overdue reviews, missing evidence, restricted data, and escalation rules.</span></div>
+        <div class="role-item"><b>Packaged evidence</b><span>Organized the workbook, dataset, BRD, UAT, governance note, and source references.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="command-center" class="section dark">
+    <div class="wrap">
+      <div class="kicker">Command Center Preview</div>
+      <h2>One view for AI use-case risk, vendor evidence, and remediation status</h2>
+      <p class="section-lead">The command center is designed to help stakeholders quickly answer: what AI is being used, where risk is elevated, which evidence is missing, and who owns the next action.</p>
+      <div class="command">
+        <div class="command-head">
+          <div>
+            <h3>AI Compliance Review Queue</h3>
+            <p style="margin:4px 0 0;color:#cfe0f3">Synthetic portfolio data • AI inventory • vendor risk • control monitoring</p>
+          </div>
+          <span class="badge">Review-ready</span>
+        </div>
+        <div class="metric-row">
+          <div class="mini-metric"><b>1</b><span>Critical use case requiring escalation</span></div>
+          <div class="mini-metric"><b>9</b><span>High-risk use cases requiring enhanced review</span></div>
+          <div class="mini-metric"><b>5</b><span>Overdue AI reviews surfaced</span></div>
+          <div class="mini-metric"><b>8</b><span>Vendor due diligence files pending</span></div>
+        </div>
+        <div class="dashboard-grid">
+          <div class="queue">
+            <h4>High-priority review queue</h4>
+            <div class="queue-row"><span>Customer-impacting AI use case</span><span class="pill critical">Critical</span></div>
+            <div class="queue-row"><span>Limited human oversight</span><span class="pill high">High</span></div>
+            <div class="queue-row"><span>Vendor evidence gap</span><span class="pill high">High</span></div>
+            <div class="queue-row"><span>Overdue monitoring review</span><span class="pill moderate">Moderate</span></div>
+          </div>
+          <div class="readiness">
+            <h4>Control & evidence readiness</h4>
+            <div><span>Inventory coverage</span><div class="bar"><div class="fill" style="width:100%"></div></div></div>
+            <div><span>Control mapping coverage</span><div class="bar"><div class="fill" style="width:83%"></div></div></div>
+            <div><span>Vendor evidence completion</span><div class="bar"><div class="fill" style="width:73%"></div></div></div>
+            <div><span>Human oversight documented</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section soft">
+    <div class="wrap">
+      <div class="kicker">Process Map</div>
+      <h2>From AI intake to control evidence and stakeholder reporting</h2>
+      <p class="section-lead">The diagram below shows the operating flow behind the command center.</p>
+      <div class="process">
+        <div class="step"><div class="step-num">1</div><b>Log AI use case</b><span>Capture business owner, function, purpose, AI category, data type, and third-party involvement.</span></div>
+        <div class="step"><div class="step-num">2</div><b>Classify exposure</b><span>Score risk using data sensitivity, customer impact, decision support, approval status, and review timing.</span></div>
+        <div class="step"><div class="step-num">3</div><b>Validate vendor evidence</b><span>Check due diligence status, SOC report, privacy terms, subcontractors, and documentation gaps.</span></div>
+        <div class="step"><div class="step-num">4</div><b>Map monitoring controls</b><span>Connect each use case to control owner, evidence expectation, review cadence, and escalation trigger.</span></div>
+        <div class="step"><div class="step-num">5</div><b>Track remediation</b><span>Open issue actions for missing evidence, overdue review, limited oversight, or unresolved vendor review.</span></div>
+        <div class="step"><div class="step-num">6</div><b>Prepare stakeholder view</b><span>Summarize high-risk items, evidence gaps, overdue reviews, and owner accountability.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap">
+      <div class="kicker">Metrics & Findings</div>
+      <h2>What the synthetic review surfaced</h2>
+      <p class="section-lead">The metrics are calculated from the project workbook and show the type of oversight visibility a compliance, risk, or audit team would need.</p>
+      <div class="findings">
+        <div class="finding"><b>30</b><span>AI use-case records inventoried</span></div>
+        <div class="finding"><b>10</b><span>High/Critical risk records surfaced</span></div>
+        <div class="finding"><b>22</b><span>Evidence gaps identified for follow-up</span></div>
+        <div class="finding"><b>20</b><span>Issue and remediation actions tracked</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="kicker">Before / After Business Value</div>
+      <h2>What changes when AI governance becomes visible</h2>
+      <div class="before-after">
+        <div class="ba-card before">
+          <h3>Before: Fragmented AI oversight</h3>
+          <ul>
+            <li>AI tools are tracked across separate messages, forms, and spreadsheets.</li>
+            <li>Vendor review gaps are not visible to compliance, IT, business, and audit stakeholders.</li>
+            <li>Human oversight requirements may be discussed but not consistently evidenced.</li>
+            <li>Leadership receives late-stage updates instead of a control-ready review queue.</li>
+          </ul>
+        </div>
+        <div class="ba-card after">
+          <h3>After: Structured governance visibility</h3>
+          <ul>
+            <li>AI use cases, vendor evidence, risk tier, owner, and review status sit in one workflow.</li>
+            <li>Evidence gaps, overdue reviews, and issue actions are visible before audit pressure.</li>
+            <li>Human oversight is tracked as a control requirement, not an assumption.</li>
+            <li>Stakeholders receive a governance-ready view of risk, ownership, and remediation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence" class="section white">
+    <div class="wrap">
+      <div class="kicker">Evidence Stack</div>
+      <h2>Employer-reviewable proof of work</h2>
+      <p class="section-lead">The project includes the workbook, synthetic dataset, requirements, UAT, governance note, and sources needed to show delivery beyond a visual dashboard.</p>
+      <div class="evidence-stack">
+        <a class="evidence-card" href="ai_third_party_risk_compliance_workbook.xlsx"><b>Workbook</b><span>Dashboard, AI inventory, vendor review, control monitoring, issue tracking, UAT, and sources.</span></a>
+        <a class="evidence-card" href="ai_third_party_risk_dataset.csv"><b>Dataset</b><span>Synthetic AI use-case records used for risk classification, evidence-gap tracking, and monitoring.</span></a>
+        <div class="evidence-card"><b>Business Requirements</b><span>Problem statement, users, scope, functional needs, reporting expectations, and success measures.</span></div>
+        <div class="evidence-card"><b>Risk Logic</b><span>Risk-tier and evidence-gap logic built from customer impact, data sensitivity, review status, and oversight.</span></div>
+        <div class="evidence-card"><b>UAT</b><span>Validation scenarios for restricted data, evidence gaps, overdue reviews, and oversight controls.</span></div>
+        <div class="evidence-card"><b>Governance Sources</b><span>Regulatory and governance references used to shape the project direction and control expectations.</span></div>
+      </div>
+      <div class="guardrail"><strong>Responsible AI & Data Boundary:</strong> This project uses synthetic portfolio data only. It does not include customer data, confidential bank information, employer-owned records, or production system output. AI is positioned as a review-support and visibility layer; human owners remain responsible for approval, escalation, remediation, and control validation.</div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="takeaway">
+        <div class="kicker">Recruiter Takeaway</div>
+        <h2>This project demonstrates practical AI governance execution.</h2>
+        <p>It shows business analysis, compliance operations thinking, AI use-case inventory design, third-party risk review, control monitoring, evidence management, UAT validation, issue tracking, and stakeholder reporting in a current financial-services risk area.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <strong>Lynda Omoruyi</strong> — AI Governance, Compliance & Risk Automation Portfolio
+</footer>
 </body>
 </html>
