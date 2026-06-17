@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -187,6 +187,21 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
 .video-placeholder { margin-top:20px; background:#fff; border:1px dashed #c8d3e4; border-radius:22px; padding:22px; color:var(--muted); }
 .video-placeholder strong { color:var(--navy); display:block; margin-bottom:6px; }
 
+
+.real-foundation { background:linear-gradient(135deg,#fff 0%,#f8fbff 100%); border:1px solid var(--line); border-radius:26px; padding:28px; box-shadow:0 18px 48px rgba(4,15,32,.08); }
+.foundation-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px; }
+.foundation-card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px; }
+.foundation-card h3 { margin:0 0 8px; color:var(--navy); }
+.foundation-card p { margin:0; color:var(--muted); }
+.recruiter-takeaway { background:linear-gradient(135deg,#071323 0%,#0d1f3b 100%); color:#fff; border-radius:26px; padding:28px; box-shadow:0 24px 70px rgba(8,17,31,.24); }
+.recruiter-takeaway h2 { color:#fff; margin-bottom:12px; }
+.recruiter-takeaway p { color:#d8e5f4; font-size:1.05rem; margin:0; }
+a.evidence-pill { text-decoration:none; transition:transform .16s ease, background .16s ease; }
+a.evidence-pill:hover { transform:translateY(-1px); background:rgba(215,168,77,.16); border-color:rgba(215,168,77,.55); }
+a.evidence-card { text-decoration:none; display:block; color:inherit; transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease; }
+a.evidence-card:hover { transform:translateY(-2px); border-color:rgba(215,168,77,.65); box-shadow:0 18px 42px rgba(4,15,32,.10); }
+@media (max-width:980px) { .foundation-grid{grid-template-columns:1fr;} }
+
 @media (max-width:980px) { .hero-inner{grid-template-columns:1fr;} .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .steps{grid-template-columns:repeat(2,minmax(0,1fr));} .wide-card{grid-column:span 2;} .split{grid-template-columns:1fr;} .kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .flow-strip{grid-template-columns:repeat(2,minmax(0,1fr));} .value-grid{grid-template-columns:1fr;} .case-grid,.narrative-grid,.before-after,.dash-body{grid-template-columns:1fr;} .dash-kpis,.ownership-grid,.decision-strip,.evidence-stack,.findings-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .problem-flow,.swimlane{grid-template-columns:1fr;} .problem-node:not(:last-child)::after,.swim-card:after{display:none;} .process-header{display:block;} .process-badge{display:inline-flex;margin-top:14px;} }
 @media (max-width:640px) { .nav{align-items:flex-start; flex-direction:column;} .hero{padding-top:46px;} h1{font-size:2.15rem; line-height:1.05;} .card-grid,.artifact-list,.metric-grid,.steps,.kpi-grid,.flow-strip,.dash-kpis,.ownership-grid,.decision-strip,.evidence-stack,.findings-grid,.case-proof{grid-template-columns:1fr;} .wide-card{grid-column:span 1;} .workflow{padding:22px;} .premium-panel{padding:22px;} .case-hero,.process-canvas{padding:22px;} }
 </style>
@@ -278,7 +293,7 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
           <div class="case-actions">
             <a class="btn btn-primary" href="ai_risk_automation_workbook.xlsx">View Workbook</a>
             <a class="btn btn-secondary" href="artifacts.html">View Artifacts</a>
-            <a class="btn btn-secondary" href="#project-one-video">90-Second Walkthrough Plan</a>
+            <a class="btn btn-secondary" href="#project-one-video">90-Second Walkthrough Coming Soon</a>
           </div>
         </div>
 
@@ -339,6 +354,26 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
     </div>
   </section>
 
+  <section class="section" id="project-one-foundation">
+    <div class="section-header">
+      <p class="eyebrow">Real-World Foundation</p>
+      <h2>Built from real operational visibility work</h2>
+      <p>This public portfolio version uses synthetic data, but the business problem is grounded in real operational experience supporting collectible medallion inventory visibility, replenishment coordination, client reporting, and account follow-up across major entertainment environments.</p>
+    </div>
+    <div class="real-foundation">
+      <div class="foundation-grid">
+        <div class="foundation-card">
+          <h3>Business impact behind the case study</h3>
+          <p>The real work helped improve visibility into medallion coin availability, reduce the risk of running out of guest-facing products, and support better coordination across high-visibility entertainment account environments.</p>
+        </div>
+        <div class="foundation-card">
+          <h3>Portfolio expansion</h3>
+          <p>The command center expands that operational foundation into an employer-facing AI-assisted workflow using synthetic data, risk logic, control evidence, UAT validation, and stakeholder-ready reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="project-one-problem">
     <div class="section-header">
       <p class="eyebrow">The Problem</p>
@@ -387,12 +422,12 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
       </div>
 
       <div class="swimlane">
-        <div class="swim-card"><div class="swim-num">1</div><span class="swim-type">Input</span><strong>Operational Intake</strong><span>Capture account, product, vendor, stock level, threshold, documentation, reporting status, and follow-up owner.</span><div class="evidence-row"><span class="evidence-pill">Dataset</span><span class="evidence-pill">Workbook</span></div></div>
-        <div class="swim-card"><div class="swim-num">2</div><span class="swim-type">Assessment</span><strong>Risk & Exposure Review</strong><span>Review replenishment exposure, threshold risk, client reporting readiness, and open action status.</span><div class="evidence-row"><span class="evidence-pill">Risk logic</span><span class="evidence-pill">Review view</span></div></div>
-        <div class="swim-card"><div class="swim-num">3</div><span class="swim-type">Decision Support</span><strong>AI-Assisted Classification</strong><span>Classify priority, recommended action, escalation need, documentation gap, and review status.</span><div class="evidence-row"><span class="evidence-pill">AI output</span><span class="evidence-pill">Action queue</span></div></div>
-        <div class="swim-card"><div class="swim-num">4</div><span class="swim-type">Controls</span><strong>Control Mapping</strong><span>Connect risks to control owner, evidence requirement, review status, and management response path.</span><div class="evidence-row"><span class="evidence-pill">Controls</span><span class="evidence-pill">Evidence</span></div></div>
-        <div class="swim-card"><div class="swim-num">5</div><span class="swim-type">Validation</span><strong>UAT / Human Review</strong><span>Test formulas, risk flags, filtered views, and expected outputs before the workflow is treated as usable.</span><div class="evidence-row"><span class="evidence-pill">UAT</span><span class="evidence-pill">Review</span></div></div>
-        <div class="swim-card"><div class="swim-num">6</div><span class="swim-type">Output</span><strong>Stakeholder Reporting</strong><span>Produce client/account views, action tracking, summary metrics, and audit-ready reporting outputs.</span><div class="evidence-row"><span class="evidence-pill">Reports</span><span class="evidence-pill">Actions</span></div></div>
+        <div class="swim-card"><div class="swim-num">1</div><span class="swim-type">Input</span><strong>Operational Intake</strong><span>Capture account, product, vendor, stock level, threshold, documentation, reporting status, and follow-up owner.</span><div class="evidence-row"><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Dataset</a><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Workbook</a></div></div>
+        <div class="swim-card"><div class="swim-num">2</div><span class="swim-type">Assessment</span><strong>Risk & Exposure Review</strong><span>Review replenishment exposure, threshold risk, client reporting readiness, and open action status.</span><div class="evidence-row"><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Risk logic</a><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Review view</a></div></div>
+        <div class="swim-card"><div class="swim-num">3</div><span class="swim-type">Decision Support</span><strong>AI-Assisted Classification</strong><span>Classify priority, recommended action, escalation need, documentation gap, and review status.</span><div class="evidence-row"><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">AI output</a><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Action queue</a></div></div>
+        <div class="swim-card"><div class="swim-num">4</div><span class="swim-type">Controls</span><strong>Control Mapping</strong><span>Connect risks to control owner, evidence requirement, review status, and management response path.</span><div class="evidence-row"><a class="evidence-pill" href="artifacts.html#governance-note">Controls</a><a class="evidence-pill" href="artifacts.html#governance-note">Evidence</a></div></div>
+        <div class="swim-card"><div class="swim-num">5</div><span class="swim-type">Validation</span><strong>UAT / Human Review</strong><span>Test formulas, risk flags, filtered views, and expected outputs before the workflow is treated as usable.</span><div class="evidence-row"><a class="evidence-pill" href="artifacts.html#uat">UAT</a><a class="evidence-pill" href="artifacts.html#uat">Review</a></div></div>
+        <div class="swim-card"><div class="swim-num">6</div><span class="swim-type">Output</span><strong>Stakeholder Reporting</strong><span>Produce client/account views, action tracking, summary metrics, and audit-ready reporting outputs.</span><div class="evidence-row"><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Reports</a><a class="evidence-pill" href="ai_risk_automation_workbook.xlsx">Actions</a></div></div>
       </div>
     </div>
   </section>
@@ -453,21 +488,26 @@ h2 { margin:0 0 12px; font-size:clamp(1.9rem,3vw,2.7rem); line-height:1.05; lett
     </div>
 
     <div class="evidence-stack">
-      <div class="evidence-card"><b>Workbook</b><span>Risk logic, dashboard views, control mapping, and reporting outputs.</span></div>
-      <div class="evidence-card"><b>Synthetic Dataset</b><span>Safe data model without confidential employer or client data.</span></div>
-      <div class="evidence-card"><b>BRD</b><span>Business problem, requirements, scope, assumptions, and success criteria.</span></div>
-      <div class="evidence-card"><b>User Stories</b><span>Business analysis translation from need to workflow behavior.</span></div>
-      <div class="evidence-card"><b>UAT Cases</b><span>Testing scenarios validating formulas, filters, risk flags, and outputs.</span></div>
-      <div class="evidence-card"><b>Governance Note</b><span>Responsible AI, human review, and synthetic data boundaries.</span></div>
-      <div class="evidence-card"><b>Sources</b><span>Professional grounding and explainable project assumptions.</span></div>
+      <a class="evidence-card" href="ai_risk_automation_workbook.xlsx"><b>Workbook</b><span>Risk logic, dashboard views, control mapping, and reporting outputs.</span></a>
+      <a class="evidence-card" href="ai_risk_automation_workbook.xlsx"><b>Synthetic Dataset</b><span>Safe data model without confidential employer or client data.</span></a>
+      <a class="evidence-card" href="artifacts.html#brd"><b>BRD</b><span>Business problem, requirements, scope, assumptions, and success criteria.</span></a>
+      <a class="evidence-card" href="artifacts.html#stories"><b>User Stories</b><span>Business analysis translation from need to workflow behavior.</span></a>
+      <a class="evidence-card" href="artifacts.html#uat"><b>UAT Cases</b><span>Testing scenarios validating formulas, filters, risk flags, and outputs.</span></a>
+      <a class="evidence-card" href="artifacts.html#governance-note"><b>Governance Note</b><span>Responsible AI, human review, and synthetic data boundaries.</span></a>
+      <a class="evidence-card" href="artifacts.html"><b>Sources</b><span>Professional grounding and explainable project assumptions.</span></a>
     </div>
 
     <div class="ai-guardrail">
       <strong>Responsible AI Guardrail:</strong> AI is used as decision support, not final decision-making authority. Human review, control ownership, UAT validation, and synthetic data boundaries are built into the workflow.
     </div>
 
+    <div class="recruiter-takeaway">
+      <h2>Recruiter Takeaway</h2>
+      <p>This case study demonstrates business analysis, operational risk review, client compliance visibility, AI-assisted workflow design, control evidence mapping, UAT validation, responsible AI guardrails, and stakeholder-ready reporting.</p>
+    </div>
+
     <div class="video-placeholder" id="project-one-video">
-      <strong>90-Second Walkthrough Plan</strong>
+      <strong>90-Second Walkthrough Coming Soon</strong>
       After the page is live, the walkthrough will show this actual case study on screen: case hero, command center preview, process map, metrics, evidence stack, and responsible AI guardrail. The final video should be screen-recorded in Clipchamp with executive voiceover and captions.
     </div>
   </section>
