@@ -1,1 +1,97 @@
- <!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>AI Operational Risk Command Center</title><link rel='stylesheet' href='styles.css'></head><body><nav><b>AI Operational Risk Command Center</b></nav><header><h1>AI Operational Risk Command Center</h1><p>Executive visibility into operational risk and AI governance.</p></header><section><h2>Dashboard</h2><div>247 Controls | 98% Health | 18 Signals | 97% AI Confidence</div></section><section><h2>AI Insights</h2><ul><li>Automate evidence collection</li><li>Improve vendor oversight</li><li>Accelerate reporting</li></ul></section><script src='script.js'></script></body></html>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Operational Risk Command Center</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">AI Operational Risk Command Center</div>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#metrics">Metrics</a>
+    <a href="#risks">Risks</a>
+    <a href="#recommendations">Recommendations</a>
+    <a href="#roadmap">Roadmap</a>
+  </nav>
+</header>
+
+<main>
+<section id="overview" class="wrap hero reveal">
+  <div class="eyebrow">AI Governance • Executive Intelligence</div>
+  <h1>AI Operational Risk<br>Command Center</h1>
+  <p class="lead">Executive view of operational risk, AI governance, controls, third‑party oversight, and decision support.</p>
+  <div class="actions">
+    <a class="btn primary" href="#metrics">View Metrics</a>
+    <a class="btn secondary" href="#recommendations">View Recommendations</a>
+  </div>
+</section>
+
+<section id="metrics" class="wrap reveal">
+  <div class="section-kicker">Executive Metrics</div>
+  <h2>Risk posture summarized for leadership review.</h2>
+  <div class="grid4">
+    <button class="card" data-modal="Enterprise risk score represents the consolidated operating risk posture across controls, issues, and monitoring signals."><span>Enterprise Risk Score</span><strong>82</strong><em>Healthy</em></button>
+    <button class="card" data-modal="Control health reflects the percentage of reviewed controls currently operating within expected thresholds."><span>Control Health</span><strong>98%</strong><em>Above threshold</em></button>
+    <button class="card" data-modal="Critical controls are the high-priority controls monitored for governance, audit, and operational readiness."><span>Critical Controls</span><strong>247</strong><em>Monitored</em></button>
+    <button class="card" data-modal="Open risks are items requiring follow-up, validation, or management attention."><span>Open Risks</span><strong>18</strong><em>3 priority</em></button>
+  </div>
+</section>
+
+<section id="risks" class="wrap two reveal">
+  <div>
+    <div class="section-kicker">Risk Intelligence</div>
+    <h2>Top risks ranked by exposure and actionability.</h2>
+    <table>
+      <tr><th>Domain</th><th>Status</th><th>Action</th></tr>
+      <tr><td>Third‑Party</td><td><b class="medium">Medium</b></td><td>Evidence review</td></tr>
+      <tr><td>Operations</td><td><b class="low">Low</b></td><td>Monitor</td></tr>
+      <tr><td>Compliance</td><td><b class="low">Low</b></td><td>Maintain cadence</td></tr>
+      <tr><td>Technology</td><td><b class="medium">Medium</b></td><td>Patch validation</td></tr>
+    </table>
+  </div>
+  <aside class="insight-panel">
+    <div class="section-kicker">AI Signal</div>
+    <h3>Recommended focus</h3>
+    <p>Prioritize third‑party evidence validation and technology patch review before the next executive risk update.</p>
+    <a href="#recommendations">Open recommendation path →</a>
+  </aside>
+</section>
+
+<section id="recommendations" class="wrap reveal">
+  <div class="section-kicker">Executive Recommendations</div>
+  <h2>AI-assisted actions for faster oversight.</h2>
+  <div class="recommendations">
+    <button class="rec" data-modal="Create automated reminders and evidence intake checkpoints for vendor documentation.">Automate evidence collection</button>
+    <button class="rec" data-modal="Add human validation for AI classifications tied to executive reporting and risk escalation.">Expand AI validation</button>
+    <button class="rec" data-modal="Move quarterly reviews into a repeatable workflow with defined owners, dates, and evidence links.">Standardize review cadence</button>
+    <button class="rec" data-modal="Use risk indicators to monitor vendor performance, SLA exceptions, and documentation gaps.">Increase vendor monitoring</button>
+  </div>
+</section>
+
+<section id="roadmap" class="wrap reveal">
+  <div class="section-kicker">Delivery Roadmap</div>
+  <h2>From assessment to operating model.</h2>
+  <div class="timeline">
+    <div><span>Q1</span><b>Assessment</b><p>Map risks, controls, owners, and evidence gaps.</p></div>
+    <div><span>Q2</span><b>Controls</b><p>Standardize monitoring and validation checkpoints.</p></div>
+    <div><span>Q3</span><b>Automation</b><p>Introduce AI-assisted classification and reporting.</p></div>
+    <div><span>Q4</span><b>Optimization</b><p>Improve cadence, escalation, and executive decisioning.</p></div>
+  </div>
+</section>
+</main>
+
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <button id="closeModal">×</button>
+    <h3>Executive Detail</h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
