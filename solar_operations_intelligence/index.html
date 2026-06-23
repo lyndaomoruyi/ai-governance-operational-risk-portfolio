@@ -1,121 +1,707 @@
- <!doctype html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Solar Operations Intelligence</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#f4f2ed;color:#111827;font-family:Arial,Helvetica,sans-serif}
-main{padding:70px 72px 90px;max-width:1500px}
-.eyebrow{font-size:16px;text-transform:uppercase;letter-spacing:.12em;color:#9a7a2e;font-weight:700;margin-bottom:28px}
-h1{font-size:64px;line-height:1.05;margin:0 0 24px;font-weight:800;max-width:1180px}
-.hero-text{font-size:22px;line-height:1.45;color:#9a7a2e;max-width:1120px;margin-bottom:70px}
-section{margin:70px 0}
-h2{font-size:38px;margin:0 0 28px;font-weight:800}
-p{font-size:20px;line-height:1.65;max-width:1100px}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:35px}
-.metric{background:#fff;border-radius:20px;padding:30px;border:1px solid #e5e7eb;box-shadow:0 10px 28px rgba(15,23,42,.07)}
-.number{font-size:58px;font-weight:800;line-height:1;margin-bottom:18px}
-.label{font-size:18px;font-weight:700;margin-bottom:10px}
-.description{font-size:17px;color:#6b7280}
-.process{display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:#fff;border-radius:22px;padding:28px;border:1px solid #e5e7eb;box-shadow:0 10px 28px rgba(15,23,42,.06);font-size:19px}
-.step{padding:12px 16px;border:1px solid #e5e7eb;border-radius:999px;background:#f8fafc}
-.arrow{color:#9a7a2e;font-weight:800}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(15,23,42,.06)}
-th,td{padding:22px 24px;text-align:left;font-size:18px;border-bottom:1px solid #e5e7eb}
-th{background:#f8fafc;font-weight:800}
-.gov{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.gov div{background:#fff;border-radius:16px;padding:22px 24px;font-size:18px;border:1px solid #e5e7eb;box-shadow:0 10px 28px rgba(15,23,42,.06)}
-@media(max-width:900px){main{padding:40px 26px}h1{font-size:42px}.metrics,.gov{grid-template-columns:1fr}}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:#ffffff;
+
+color:#111827;
+
+line-height:1.6;
+
+}
+
+.hero{
+
+background:#0f172a;
+
+color:white;
+
+padding:90px 8%;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+font-weight:800;
+
+line-height:1.05;
+
+max-width:1100px;
+
+margin-bottom:28px;
+
+}
+
+.tagline{
+
+font-size:24px;
+
+font-weight:400;
+
+color:#d1d5db;
+
+max-width:900px;
+
+line-height:1.6;
+
+}
+
+.container{
+
+max-width:1450px;
+
+margin:auto;
+
+padding:80px 8%;
+
+}
+
+section{
+
+margin-bottom:90px;
+
+}
+
+h2{
+
+font-size:42px;
+
+font-weight:700;
+
+margin-bottom:28px;
+
+color:#111827;
+
+}
+
+p{
+
+font-size:20px;
+
+color:#374151;
+
+max-width:1050px;
+
+}
+
+.metric-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:24px;
+
+margin-top:45px;
+
+}
+
+.metric{
+
+background:white;
+
+border:1px solid #ececec;
+
+border-radius:18px;
+
+padding:36px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+}
+
+.metric-number{
+
+font-size:62px;
+
+font-weight:800;
+
+margin-bottom:14px;
+
+color:#111827;
+
+}
+
+.metric-title{
+
+font-size:20px;
+
+font-weight:700;
+
+margin-bottom:10px;
+
+}
+
+.metric p{
+
+font-size:17px;
+
+color:#6b7280;
+
+}
+
+.process{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:18px;
+
+margin-top:45px;
+
+flex-wrap:wrap;
+
+}
+
+.step{
+
+flex:1;
+
+background:#f9fafb;
+
+padding:24px;
+
+border-radius:14px;
+
+text-align:center;
+
+font-weight:600;
+
+border:1px solid #e5e7eb;
+
+min-width:170px;
+
+}
+
+.arrow{
+
+font-size:28px;
+
+color:#b38a36;
+
+font-weight:700;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+border-radius:18px;
+
+overflow:hidden;
+
+}
+
+th{
+
+background:#f8fafc;
+
+padding:22px;
+
+text-align:left;
+
+font-size:17px;
+
+}
+
+td{
+
+padding:22px;
+
+border-top:1px solid #ececec;
+
+font-size:18px;
+
+}
+
+.governance{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:22px;
+
+}
+
+.control{
+
+background:#fafafa;
+
+padding:26px;
+
+border-radius:16px;
+
+border:1px solid #ececec;
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+@media(max-width:1000px){
+
+.metric-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.governance{
+
+grid-template-columns:1fr;
+
+}
+
+.process{
+
+flex-direction:column;
+
+}
+
+.arrow{
+
+transform:rotate(90deg);
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
-<main>
 
-<div class="eyebrow">AI Transformation Case Study</div>
+<header class="hero">
 
-<h1>AI-Powered CRM Automation & Partner Visibility Platform</h1>
+<h1>
 
-<p class="hero-text">
-AI-assisted operational intelligence for partner onboarding, document intelligence,
-CRM synchronization, workflow automation, and executive decision support.
-</p>
+AI-Powered CRM Automation &
+Partner Visibility Platform
+
+</h1>
+
+<div class="tagline">
+
+AI-assisted operational intelligence for partner onboarding,
+CRM automation, workflow orchestration,
+and executive decision support.
+
+</div>
+
+</header>
+
+<div class="container">
 
 <section>
-<h2>Business Challenge</h2>
+
+<h2>
+
+Business Challenge
+
+</h2>
+
 <p>
-Operations teams process hundreds of partner requests through multiple disconnected systems,
-creating manual effort, processing delays, inconsistent documentation, and limited executive visibility.
+
+Operations teams process hundreds of partner requests across disconnected systems,
+creating manual effort, inconsistent documentation,
+processing delays and limited executive visibility.
+
 </p>
 
-<div class="metrics">
-<div class="metric"><div class="number">126</div><div class="label">Manual Intake</div><div class="description">Awaiting validation</div></div>
-<div class="metric"><div class="number">98%</div><div class="label">AI Classification</div><div class="description">Document accuracy</div></div>
-<div class="metric"><div class="number">97%</div><div class="label">Partner SLA</div><div class="description">Real-time monitoring</div></div>
-<div class="metric"><div class="number">63%</div><div class="label">Process Gain</div><div class="description">Workflow reduction</div></div>
+<div class="metric-grid">
+
+<div class="metric">
+
+<div class="metric-number">
+
+126
+
 </div>
+
+<div class="metric-title">
+
+Manual Intake
+
+</div>
+
+<p>
+
+Partner requests awaiting validation.
+
+</p>
+
+</div>
+
+<div class="metric">
+
+<div class="metric-number">
+
+98%
+
+</div>
+
+<div class="metric-title">
+
+AI Classification
+
+</div>
+
+<p>
+
+Document routing accuracy.
+
+</p>
+
+</div>
+
+<div class="metric">
+
+<div class="metric-number">
+
+97%
+
+</div>
+
+<div class="metric-title">
+
+Partner SLA
+
+</div>
+
+<p>
+
+Real-time compliance monitoring.
+
+</p>
+
+</div>
+
+<div class="metric">
+
+<div class="metric-number">
+
+63%
+
+</div>
+
+<div class="metric-title">
+
+Process Improvement
+
+</div>
+
+<p>
+
+Workflow cycle reduction.
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>Current State</h2>
+
+<h2>
+
+Current State
+
+</h2>
+
 <div class="process">
-<div class="step">Lead</div><div class="arrow">→</div>
-<div class="step">Contract</div><div class="arrow">→</div>
-<div class="step">Manual CRM</div><div class="arrow">→</div>
-<div class="step">Operations Review</div><div class="arrow">→</div>
-<div class="step">Partner Validation</div><div class="arrow">→</div>
+
+<div class="step">Lead</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Contract</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Manual CRM</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Operations Review</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Partner Validation</div>
+
+<div class="arrow">→</div>
+
 <div class="step">Executive Reporting</div>
+
 </div>
+
 </section>
 
 <section>
-<h2>AI Workflow</h2>
+
+<h2>
+
+AI Workflow
+
+</h2>
+
 <div class="process">
-<div class="step">Partner Upload</div><div class="arrow">→</div>
-<div class="step">AI Extraction</div><div class="arrow">→</div>
-<div class="step">Classification</div><div class="arrow">→</div>
-<div class="step">CRM Sync</div><div class="arrow">→</div>
-<div class="step">Executive Dashboard</div><div class="arrow">→</div>
-<div class="step">Real-Time Visibility</div>
+
+<div class="step">Partner Upload</div>
+
+<div class="arrow">→</div>
+
+<div class="step">AI Extraction</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Classification</div>
+
+<div class="arrow">→</div>
+
+<div class="step">CRM Sync</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Executive Dashboard</div>
+
+<div class="arrow">→</div>
+
+<div class="step">Decision Support</div>
+
 </div>
-</section>
 
+</section>
 <section>
-<h2>Partner Intelligence</h2>
+
+<h2>
+
+Partner Intelligence
+
+</h2>
+
 <table>
-<tr><th>Partner</th><th>Status</th><th>Next Action</th></tr>
-<tr><td>Solar West</td><td>Approved</td><td>Final Validation</td></tr>
-<tr><td>BrightGrid Partners</td><td>Active</td><td>SLA Monitoring</td></tr>
-<tr><td>RenewCo Installations</td><td>Complete</td><td>Audit Archived</td></tr>
+
+<thead>
+
+<tr>
+
+<th>Partner</th>
+
+<th>Status</th>
+
+<th>Next Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Solar West</td>
+
+<td>Approved</td>
+
+<td>Final Validation</td>
+
+</tr>
+
+<tr>
+
+<td>BrightGrid Partners</td>
+
+<td>Active</td>
+
+<td>SLA Monitoring</td>
+
+</tr>
+
+<tr>
+
+<td>RenewCo Installations</td>
+
+<td>Complete</td>
+
+<td>Audit Archived</td>
+
+</tr>
+
+</tbody>
+
 </table>
+
 </section>
 
 <section>
-<h2>Command Center</h2>
+
+<h2>
+
+Command Center
+
+</h2>
+
 <table>
-<tr><th>Time</th><th>Activity</th><th>Status</th></tr>
-<tr><td>09:01</td><td>Partner Intake Received</td><td>Queued</td></tr>
-<tr><td>09:04</td><td>AI Classification Complete</td><td>Validated</td></tr>
-<tr><td>09:08</td><td>CRM Synchronization</td><td>Updated</td></tr>
-<tr><td>09:12</td><td>Partner SLA Exception</td><td>Needs Review</td></tr>
+
+<thead>
+
+<tr>
+
+<th>Time</th>
+
+<th>Activity</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>09:01</td>
+
+<td>Partner Intake Received</td>
+
+<td>Queued</td>
+
+</tr>
+
+<tr>
+
+<td>09:04</td>
+
+<td>AI Document Classification Completed</td>
+
+<td>Validated</td>
+
+</tr>
+
+<tr>
+
+<td>09:08</td>
+
+<td>CRM Synchronization Completed</td>
+
+<td>Updated</td>
+
+</tr>
+
+<tr>
+
+<td>09:12</td>
+
+<td>Partner SLA Exception Flagged</td>
+
+<td>Needs Review</td>
+
+</tr>
+
+</tbody>
+
 </table>
+
 </section>
 
 <section>
-<h2>Governance Framework</h2>
-<div class="gov">
-<div>✓ Human Validation</div>
-<div>✓ Audit Trail</div>
-<div>✓ CRM Controls</div>
-<div>✓ Executive Reporting</div>
-<div>✓ NIST AI RMF Alignment</div>
-<div>✓ Partner SLA Monitoring</div>
+
+<h2>
+
+Governance Framework
+
+</h2>
+
+<div class="governance">
+
+<div class="control">
+
+✓ Human Validation
+
 </div>
+
+<div class="control">
+
+✓ CRM Update Controls
+
+</div>
+
+<div class="control">
+
+✓ Audit Trail Documentation
+
+</div>
+
+<div class="control">
+
+✓ Partner SLA Monitoring
+
+</div>
+
+<div class="control">
+
+✓ Executive Reporting
+
+</div>
+
+<div class="control">
+
+✓ NIST AI RMF Alignment
+
+</div>
+
+</div>
+
 </section>
 
-</main>
+</div>
+
 </body>
+
 </html>
