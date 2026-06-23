@@ -1,318 +1,121 @@
- <main>
+ <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solar Operations Intelligence</title>
 
-<header class="hero">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4f2ed;color:#111827;font-family:Arial,Helvetica,sans-serif}
+main{padding:70px 72px 90px;max-width:1500px}
+.eyebrow{font-size:16px;text-transform:uppercase;letter-spacing:.12em;color:#9a7a2e;font-weight:700;margin-bottom:28px}
+h1{font-size:64px;line-height:1.05;margin:0 0 24px;font-weight:800;max-width:1180px}
+.hero-text{font-size:22px;line-height:1.45;color:#9a7a2e;max-width:1120px;margin-bottom:70px}
+section{margin:70px 0}
+h2{font-size:38px;margin:0 0 28px;font-weight:800}
+p{font-size:20px;line-height:1.65;max-width:1100px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:35px}
+.metric{background:#fff;border-radius:20px;padding:30px;border:1px solid #e5e7eb;box-shadow:0 10px 28px rgba(15,23,42,.07)}
+.number{font-size:58px;font-weight:800;line-height:1;margin-bottom:18px}
+.label{font-size:18px;font-weight:700;margin-bottom:10px}
+.description{font-size:17px;color:#6b7280}
+.process{display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:#fff;border-radius:22px;padding:28px;border:1px solid #e5e7eb;box-shadow:0 10px 28px rgba(15,23,42,.06);font-size:19px}
+.step{padding:12px 16px;border:1px solid #e5e7eb;border-radius:999px;background:#f8fafc}
+.arrow{color:#9a7a2e;font-weight:800}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(15,23,42,.06)}
+th,td{padding:22px 24px;text-align:left;font-size:18px;border-bottom:1px solid #e5e7eb}
+th{background:#f8fafc;font-weight:800}
+.gov{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gov div{background:#fff;border-radius:16px;padding:22px 24px;font-size:18px;border:1px solid #e5e7eb;box-shadow:0 10px 28px rgba(15,23,42,.06)}
+@media(max-width:900px){main{padding:40px 26px}h1{font-size:42px}.metrics,.gov{grid-template-columns:1fr}}
+</style>
+</head>
 
-<div class="eyebrow">
-AI Transformation Case Study
-</div>
+<body>
+<main>
 
-<h1>
-AI-Powered CRM Automation &
-Partner Visibility Platform
-</h1>
+<div class="eyebrow">AI Transformation Case Study</div>
+
+<h1>AI-Powered CRM Automation & Partner Visibility Platform</h1>
 
 <p class="hero-text">
-AI-assisted operational intelligence for partner onboarding,
-document intelligence, CRM synchronization, workflow automation,
-and executive decision support.
+AI-assisted operational intelligence for partner onboarding, document intelligence,
+CRM synchronization, workflow automation, and executive decision support.
 </p>
 
-</header>
-
-
-<section class="intro">
-
+<section>
 <h2>Business Challenge</h2>
-
 <p>
-Operations teams process hundreds of partner requests through
-multiple disconnected systems, resulting in manual effort,
-processing delays, inconsistent documentation, and limited
-executive visibility.
+Operations teams process hundreds of partner requests through multiple disconnected systems,
+creating manual effort, processing delays, inconsistent documentation, and limited executive visibility.
 </p>
 
+<div class="metrics">
+<div class="metric"><div class="number">126</div><div class="label">Manual Intake</div><div class="description">Awaiting validation</div></div>
+<div class="metric"><div class="number">98%</div><div class="label">AI Classification</div><div class="description">Document accuracy</div></div>
+<div class="metric"><div class="number">97%</div><div class="label">Partner SLA</div><div class="description">Real-time monitoring</div></div>
+<div class="metric"><div class="number">63%</div><div class="label">Process Gain</div><div class="description">Workflow reduction</div></div>
+</div>
 </section>
-
-
-<section class="metrics">
-
-<div class="metric">
-
-<div class="number">
-126
-</div>
-
-<div class="label">
-Manual Intake
-</div>
-
-<div class="description">
-Awaiting Validation
-</div>
-
-</div>
-
-<div class="metric">
-
-<div class="number">
-98%
-</div>
-
-<div class="label">
-AI Classification
-</div>
-
-<div class="description">
-Document Accuracy
-</div>
-
-</div>
-
-<div class="metric">
-
-<div class="number">
-97%
-</div>
-
-<div class="label">
-Partner SLA
-</div>
-
-<div class="description">
-Real-Time Monitoring
-</div>
-
-</div>
-
-<div class="metric">
-
-<div class="number">
-63%
-</div>
-
-<div class="label">
-Process Gain
-</div>
-
-<div class="description">
-Workflow Reduction
-</div>
-
-</div>
-
-</section>
-
 
 <section>
-
 <h2>Current State</h2>
-
 <div class="process">
-
-<div>Lead</div>
-
-<div>→</div>
-
-<div>Contract</div>
-
-<div>→</div>
-
-<div>Manual CRM</div>
-
-<div>→</div>
-
-<div>Operations Review</div>
-
-<div>→</div>
-
-<div>Partner Validation</div>
-
-<div>→</div>
-
-<div>Executive Reporting</div>
-
+<div class="step">Lead</div><div class="arrow">→</div>
+<div class="step">Contract</div><div class="arrow">→</div>
+<div class="step">Manual CRM</div><div class="arrow">→</div>
+<div class="step">Operations Review</div><div class="arrow">→</div>
+<div class="step">Partner Validation</div><div class="arrow">→</div>
+<div class="step">Executive Reporting</div>
 </div>
-
 </section>
 
-
 <section>
-
 <h2>AI Workflow</h2>
-
 <div class="process">
-
-<div>Partner Upload</div>
-
-<div>→</div>
-
-<div>AI Extraction</div>
-
-<div>→</div>
-
-<div>Classification</div>
-
-<div>→</div>
-
-<div>CRM Synchronization</div>
-
-<div>→</div>
-
-<div>Executive Dashboard</div>
-
-<div>→</div>
-
-<div>Real-Time Visibility</div>
-
+<div class="step">Partner Upload</div><div class="arrow">→</div>
+<div class="step">AI Extraction</div><div class="arrow">→</div>
+<div class="step">Classification</div><div class="arrow">→</div>
+<div class="step">CRM Sync</div><div class="arrow">→</div>
+<div class="step">Executive Dashboard</div><div class="arrow">→</div>
+<div class="step">Real-Time Visibility</div>
 </div>
-
 </section>
 
-
 <section>
-
 <h2>Partner Intelligence</h2>
-
-<table class="executive-table">
-
-<tr>
-
-<th>Partner</th>
-
-<th>Status</th>
-
-<th>Next Action</th>
-
-</tr>
-
-<tr>
-
-<td>Solar West</td>
-
-<td>Approved</td>
-
-<td>Final Validation</td>
-
-</tr>
-
-<tr>
-
-<td>BrightGrid Partners</td>
-
-<td>Active</td>
-
-<td>SLA Monitoring</td>
-
-</tr>
-
-<tr>
-
-<td>RenewCo Installations</td>
-
-<td>Complete</td>
-
-<td>Audit Archived</td>
-
-</tr>
-
+<table>
+<tr><th>Partner</th><th>Status</th><th>Next Action</th></tr>
+<tr><td>Solar West</td><td>Approved</td><td>Final Validation</td></tr>
+<tr><td>BrightGrid Partners</td><td>Active</td><td>SLA Monitoring</td></tr>
+<tr><td>RenewCo Installations</td><td>Complete</td><td>Audit Archived</td></tr>
 </table>
-
 </section>
 
-
 <section>
-
 <h2>Command Center</h2>
-
-<table class="executive-table">
-
-<tr>
-
-<th>Time</th>
-
-<th>Activity</th>
-
-<th>Status</th>
-
-</tr>
-
-<tr>
-
-<td>09:01</td>
-
-<td>Partner Intake Received</td>
-
-<td>Queued</td>
-
-</tr>
-
-<tr>
-
-<td>09:04</td>
-
-<td>AI Classification Complete</td>
-
-<td>Validated</td>
-
-</tr>
-
-<tr>
-
-<td>09:08</td>
-
-<td>CRM Synchronization</td>
-
-<td>Updated</td>
-
-</tr>
-
-<tr>
-
-<td>09:12</td>
-
-<td>Partner SLA Exception</td>
-
-<td>Needs Review</td>
-
-</tr>
-
+<table>
+<tr><th>Time</th><th>Activity</th><th>Status</th></tr>
+<tr><td>09:01</td><td>Partner Intake Received</td><td>Queued</td></tr>
+<tr><td>09:04</td><td>AI Classification Complete</td><td>Validated</td></tr>
+<tr><td>09:08</td><td>CRM Synchronization</td><td>Updated</td></tr>
+<tr><td>09:12</td><td>Partner SLA Exception</td><td>Needs Review</td></tr>
 </table>
-
 </section>
 
-
 <section>
-
 <h2>Governance Framework</h2>
-
-<div class="governance-grid">
-
-<div>
-✓ Human Validation
+<div class="gov">
+<div>✓ Human Validation</div>
+<div>✓ Audit Trail</div>
+<div>✓ CRM Controls</div>
+<div>✓ Executive Reporting</div>
+<div>✓ NIST AI RMF Alignment</div>
+<div>✓ Partner SLA Monitoring</div>
 </div>
-
-<div>
-✓ Audit Trail
-</div>
-
-<div>
-✓ CRM Controls
-</div>
-
-<div>
-✓ Executive Reporting
-</div>
-
-<div>
-✓ NIST AI RMF Alignment
-</div>
-
-<div>
-✓ Partner SLA Monitoring
-</div>
-
-</div>
-
 </section>
 
 </main>
+</body>
+</html>
