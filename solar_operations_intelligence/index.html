@@ -1,707 +1,109 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
+ <!-- HERO -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section class="hero">
 
-<title>Solar Operations Intelligence</title>
+    <div class="container">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <div class="eyebrow">
+            CLARITY DRIVES EXECUTION • AI ACCELERATED
+        </div>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <h1>
+            AI-Powered CRM Automation
+            <br>
+            & Partner Visibility Platform
+        </h1>
 
-<style>
+        <p class="hero-description">
+            AI-assisted operational intelligence for partner onboarding,
+            CRM automation, workflow orchestration, document classification,
+            and executive decision support.
+        </p>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-
-font-family:'Inter',sans-serif;
-
-background:#ffffff;
-
-color:#111827;
-
-line-height:1.6;
-
-}
-
-.hero{
-
-background:#0f172a;
-
-color:white;
-
-padding:90px 8%;
-
-}
-
-.hero h1{
-
-font-size:64px;
-
-font-weight:800;
-
-line-height:1.05;
-
-max-width:1100px;
-
-margin-bottom:28px;
-
-}
-
-.tagline{
-
-font-size:24px;
-
-font-weight:400;
-
-color:#d1d5db;
-
-max-width:900px;
-
-line-height:1.6;
-
-}
-
-.container{
-
-max-width:1450px;
-
-margin:auto;
-
-padding:80px 8%;
-
-}
-
-section{
-
-margin-bottom:90px;
-
-}
-
-h2{
-
-font-size:42px;
-
-font-weight:700;
-
-margin-bottom:28px;
-
-color:#111827;
-
-}
-
-p{
-
-font-size:20px;
-
-color:#374151;
-
-max-width:1050px;
-
-}
-
-.metric-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:24px;
-
-margin-top:45px;
-
-}
-
-.metric{
-
-background:white;
-
-border:1px solid #ececec;
-
-border-radius:18px;
-
-padding:36px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.05);
-
-}
-
-.metric-number{
-
-font-size:62px;
-
-font-weight:800;
-
-margin-bottom:14px;
-
-color:#111827;
-
-}
-
-.metric-title{
-
-font-size:20px;
-
-font-weight:700;
-
-margin-bottom:10px;
-
-}
-
-.metric p{
-
-font-size:17px;
-
-color:#6b7280;
-
-}
-
-.process{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-gap:18px;
-
-margin-top:45px;
-
-flex-wrap:wrap;
-
-}
-
-.step{
-
-flex:1;
-
-background:#f9fafb;
-
-padding:24px;
-
-border-radius:14px;
-
-text-align:center;
-
-font-weight:600;
-
-border:1px solid #e5e7eb;
-
-min-width:170px;
-
-}
-
-.arrow{
-
-font-size:28px;
-
-color:#b38a36;
-
-font-weight:700;
-
-}
-
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
-background:white;
-
-box-shadow:0 10px 30px rgba(0,0,0,.05);
-
-border-radius:18px;
-
-overflow:hidden;
-
-}
-
-th{
-
-background:#f8fafc;
-
-padding:22px;
-
-text-align:left;
-
-font-size:17px;
-
-}
-
-td{
-
-padding:22px;
-
-border-top:1px solid #ececec;
-
-font-size:18px;
-
-}
-
-.governance{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:22px;
-
-}
-
-.control{
-
-background:#fafafa;
-
-padding:26px;
-
-border-radius:16px;
-
-border:1px solid #ececec;
-
-font-size:18px;
-
-font-weight:600;
-
-}
-
-@media(max-width:1000px){
-
-.metric-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.governance{
-
-grid-template-columns:1fr;
-
-}
-
-.process{
-
-flex-direction:column;
-
-}
-
-.arrow{
-
-transform:rotate(90deg);
-
-}
-
-.hero h1{
-
-font-size:46px;
-
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header class="hero">
-
-<h1>
-
-AI-Powered CRM Automation &
-Partner Visibility Platform
-
-</h1>
-
-<div class="tagline">
-
-AI-assisted operational intelligence for partner onboarding,
-CRM automation, workflow orchestration,
-and executive decision support.
-
-</div>
-
-</header>
-
-<div class="container">
-
-<section>
-
-<h2>
-
-Business Challenge
-
-</h2>
-
-<p>
-
-Operations teams process hundreds of partner requests across disconnected systems,
-creating manual effort, inconsistent documentation,
-processing delays and limited executive visibility.
-
-</p>
-
-<div class="metric-grid">
-
-<div class="metric">
-
-<div class="metric-number">
-
-126
-
-</div>
-
-<div class="metric-title">
-
-Manual Intake
-
-</div>
-
-<p>
-
-Partner requests awaiting validation.
-
-</p>
-
-</div>
-
-<div class="metric">
-
-<div class="metric-number">
-
-98%
-
-</div>
-
-<div class="metric-title">
-
-AI Classification
-
-</div>
-
-<p>
-
-Document routing accuracy.
-
-</p>
-
-</div>
-
-<div class="metric">
-
-<div class="metric-number">
-
-97%
-
-</div>
-
-<div class="metric-title">
-
-Partner SLA
-
-</div>
-
-<p>
-
-Real-time compliance monitoring.
-
-</p>
-
-</div>
-
-<div class="metric">
-
-<div class="metric-number">
-
-63%
-
-</div>
-
-<div class="metric-title">
-
-Process Improvement
-
-</div>
-
-<p>
-
-Workflow cycle reduction.
-
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section>
+<!-- CURRENT STATE -->
 
-<h2>
+<section class="section">
 
-Current State
+    <div class="container">
 
-</h2>
+        <h2>Current State</h2>
 
-<div class="process">
+        <!-- Current State content goes here -->
 
-<div class="step">Lead</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Contract</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Manual CRM</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Operations Review</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Partner Validation</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Executive Reporting</div>
-
-</div>
+    </div>
 
 </section>
 
-<section>
+<!-- AI WORKFLOW -->
 
-<h2>
+<section class="section">
 
-AI Workflow
+    <div class="container">
 
-</h2>
+        <h2>AI Workflow</h2>
 
-<div class="process">
+        <!-- AI Workflow content goes here -->
 
-<div class="step">Partner Upload</div>
-
-<div class="arrow">→</div>
-
-<div class="step">AI Extraction</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Classification</div>
-
-<div class="arrow">→</div>
-
-<div class="step">CRM Sync</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Executive Dashboard</div>
-
-<div class="arrow">→</div>
-
-<div class="step">Decision Support</div>
-
-</div>
-
-</section>
-<section>
-
-<h2>
-
-Partner Intelligence
-
-</h2>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Partner</th>
-
-<th>Status</th>
-
-<th>Next Action</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Solar West</td>
-
-<td>Approved</td>
-
-<td>Final Validation</td>
-
-</tr>
-
-<tr>
-
-<td>BrightGrid Partners</td>
-
-<td>Active</td>
-
-<td>SLA Monitoring</td>
-
-</tr>
-
-<tr>
-
-<td>RenewCo Installations</td>
-
-<td>Complete</td>
-
-<td>Audit Archived</td>
-
-</tr>
-
-</tbody>
-
-</table>
+    </div>
 
 </section>
 
-<section>
+<!-- COMMAND CENTER -->
 
-<h2>
+<section class="section">
 
-Command Center
+    <div class="container">
 
-</h2>
+        <h2>Command Center</h2>
 
-<table>
+        <!-- Command Center table goes here -->
 
-<thead>
-
-<tr>
-
-<th>Time</th>
-
-<th>Activity</th>
-
-<th>Status</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>09:01</td>
-
-<td>Partner Intake Received</td>
-
-<td>Queued</td>
-
-</tr>
-
-<tr>
-
-<td>09:04</td>
-
-<td>AI Document Classification Completed</td>
-
-<td>Validated</td>
-
-</tr>
-
-<tr>
-
-<td>09:08</td>
-
-<td>CRM Synchronization Completed</td>
-
-<td>Updated</td>
-
-</tr>
-
-<tr>
-
-<td>09:12</td>
-
-<td>Partner SLA Exception Flagged</td>
-
-<td>Needs Review</td>
-
-</tr>
-
-</tbody>
-
-</table>
+    </div>
 
 </section>
 
-<section>
+<!-- EXECUTIVE DASHBOARD -->
 
-<h2>
+<section class="section">
 
-Governance Framework
+    <div class="container">
 
-</h2>
+        <h2>Executive Dashboard</h2>
 
-<div class="governance">
+        <!-- Four KPI cards go here -->
 
-<div class="control">
-
-✓ Human Validation
-
-</div>
-
-<div class="control">
-
-✓ CRM Update Controls
-
-</div>
-
-<div class="control">
-
-✓ Audit Trail Documentation
-
-</div>
-
-<div class="control">
-
-✓ Partner SLA Monitoring
-
-</div>
-
-<div class="control">
-
-✓ Executive Reporting
-
-</div>
-
-<div class="control">
-
-✓ NIST AI RMF Alignment
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-</div>
+<!-- PARTNER INTELLIGENCE -->
 
-</body>
+<section class="section">
 
-</html>
+    <div class="container">
+
+        <h2>Partner Intelligence</h2>
+
+        <!-- Partner table goes here -->
+
+    </div>
+
+</section>
+
+<!-- GOVERNANCE FRAMEWORK -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>Governance Framework</h2>
+
+        <!-- Governance cards go here -->
+
+    </div>
+
+</section>
