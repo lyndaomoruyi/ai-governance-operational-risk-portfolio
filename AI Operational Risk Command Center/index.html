@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Operational Risk Command Center</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--black:#050505;
+--ink:#111827;
+--muted:#4b5563;
+--line:#e5e7eb;
+--soft:#f7f7f5;
+--gold:#c8a14d;
+--card:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Inter',Arial,sans-serif;
+background:#fff;
+color:var(--ink);
+line-height:1.6;
+}
+
+html{scroll-behavior:smooth}
+
+.hero{
+background:var(--black);
+color:#fff;
+padding:86px 8% 82px;
+}
+
+.hero-inner{
+max-width:1480px;
+margin:0 auto;
+display:grid;
+grid-template-columns:1.3fr .7fr;
+gap:70px;
+align-items:center;
+}
+
+.hero h1{
+font-size:62px;
+line-height:1.05;
+font-weight:900;
+letter-spacing:-2px;
+max-width:980px;
+}
+
+.hero p{
+font-size:22px;
+color:#d1d5db;
+max-width:760px;
+margin-top:28px;
+line-height:1.65;
+}
+
+.hero-card{
+background:#111827;
+border:1px solid rgba(255,255,255,.16);
+border-radius:24px;
+padding:34px;
+box-shadow:0 24px 70px rgba(0,0,0,.32);
+animation:fadeUp .7s ease both;
+}
+
+.hero-stat{
+display:flex;
+justify-content:space-between;
+padding:18px 0;
+border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.hero-stat:last-child{border-bottom:none}
+
+.hero-stat span{
+color:#cbd5e1;
+font-size:15px;
+}
+
+.hero-stat strong{
+font-size:30px;
+color:#fff;
+}
+
+.nav{
+position:sticky;
+top:0;
+z-index:20;
+background:#fff;
+border-bottom:1px solid var(--line);
+padding:18px 8%;
+}
+
+.nav-inner{
+max-width:1480px;
+margin:0 auto;
+display:flex;
+gap:22px;
+flex-wrap:wrap;
+}
+
+.nav a{
+text-decoration:none;
+color:var(--ink);
+font-weight:750;
+font-size:14px;
+letter-spacing:.3px;
+padding:10px 16px;
+border:1px solid var(--line);
+border-radius:999px;
+transition:.25s ease;
+}
+
+.nav a:hover{
+background:var(--black);
+color:#fff;
+transform:translateY(-2px);
+}
+
+.container{
+max-width:1480px;
+margin:0 auto;
+padding:72px 8% 96px;
+}
+
+.section{
+padding:86px 0;
+border-bottom:1px solid var(--line);
+}
+
+.section:last-child{border-bottom:none}
+
+.kicker{
+color:var(--gold);
+text-transform:uppercase;
+letter-spacing:3px;
+font-size:12px;
+font-weight:800;
+margin-bottom:18px;
+}
+
+h2{
+font-size:48px;
+line-height:1.08;
+font-weight:900;
+letter-spacing:-1.5px;
+max-width:1100px;
+margin-bottom:28px;
+}
+
+.lead{
+font-size:21px;
+color:var(--muted);
+max-width:960px;
+margin-bottom:44px;
+}
+
+.grid-4{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+}
+
+.metric{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:22px;
+padding:34px 30px;
+box-shadow:0 16px 42px rgba(17,24,39,.06);
+transition:.25s ease;
+}
+
+.metric:hover{
+transform:translateY(-6px);
+box-shadow:0 22px 54px rgba(17,24,39,.10);
+}
+
+.metric:before{
+content:"";
+display:block;
+width:48px;
+height:4px;
+background:var(--gold);
+margin-bottom:26px;
+}
+
+.metric-number{
+font-size:60px;
+line-height:1;
+font-weight:900;
+letter-spacing:-1px;
+margin-bottom:18px;
+}
+
+.metric-title{
+font-size:19px;
+font-weight:850;
+margin-bottom:10px;
+}
+
+.metric p{
+font-size:16px;
+color:var(--muted);
+line-height:1.45;
+}
+
+.process-row{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:18px;
+margin-top:44px;
+}
+
+.process-step{
+background:var(--soft);
+border:1px solid var(--line);
+border-radius:18px;
+padding:26px 22px;
+min-height:142px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+transition:.25s ease;
+}
+
+.process-step:hover{
+transform:translateY(-5px);
+background:#fff;
+}
+
+.process-step span{
+color:var(--gold);
+font-size:13px;
+font-weight:850;
+letter-spacing:2px;
+}
+
+.process-step strong{
+font-size:21px;
+line-height:1.2;
+}
+
+.table-wrap{
+background:#fff;
+border:1px solid var(--line);
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 18px 50px rgba(17,24,39,.06);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#f8fafc;
+text-align:left;
+padding:24px 28px;
+font-size:14px;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+td{
+padding:26px 28px;
+border-top:1px solid var(--line);
+font-size:18px;
+}
+
+tr{
+transition:.2s ease;
+}
+
+tbody tr:hover{
+background:#fafafa;
+}
+
+.status{
+font-weight:850;
+}
+
+.pill{
+display:inline-block;
+padding:8px 13px;
+border-radius:999px;
+font-size:13px;
+font-weight:850;
+}
+
+.critical{background:#111827;color:#fff}
+.high{background:#f3f4f6;color:#111827}
+.medium{background:#f8fafc;color:#374151}
+.low{background:#f9fafb;color:#4b5563}
+
+.heat-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+margin-top:42px;
+}
+
+.heat-card{
+background:var(--soft);
+border:1px solid var(--line);
+border-radius:22px;
+padding:34px;
+min-height:220px;
+transition:.25s ease;
+}
+
+.heat-card:hover{
+background:#fff;
+transform:translateY(-6px);
+box-shadow:0 18px 45px rgba(17,24,39,.08);
+}
+
+.heat-card span{
+color:var(--gold);
+font-size:13px;
+letter-spacing:2px;
+font-weight:850;
+text-transform:uppercase;
+}
+
+.heat-card h3{
+font-size:30px;
+margin:24px 0 12px;
+}
+
+.heat-card p{
+color:var(--muted);
+font-size:17px;
+}
+
+.controls{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+margin-top:40px;
+}
+
+.control{
+background:#fafafa;
+border:1px solid var(--line);
+border-radius:20px;
+padding:28px;
+font-size:20px;
+font-weight:850;
+transition:.25s ease;
+}
+
+.control:hover{
+transform:translateY(-5px);
+background:#fff;
+}
+
+.control span{
+color:var(--gold);
+margin-right:12px;
+}
+
+.recommendations{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+margin-top:42px;
+}
+
+.rec{
+background:#fff;
+border:1px solid var(--line);
+border-radius:22px;
+padding:34px;
+box-shadow:0 16px 42px rgba(17,24,39,.05);
+transition:.25s ease;
+}
+
+.rec:hover{transform:translateY(-6px)}
+
+.rec span{
+color:var(--gold);
+font-size:13px;
+font-weight:850;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.rec h3{
+font-size:25px;
+margin:18px 0 12px;
+}
+
+.rec strong{
+font-size:44px;
+display:block;
+margin-top:22px;
+}
+
+.footer-note{
+font-size:15px;
+color:var(--muted);
+margin-top:36px;
+}
+
+.fade{
+opacity:0;
+transform:translateY(24px);
+transition:.7s ease;
+}
+
+.fade.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(24px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:1100px){
+.hero-inner{grid-template-columns:1fr}
+.grid-4,.heat-grid{grid-template-columns:repeat(2,1fr)}
+.process-row{grid-template-columns:repeat(3,1fr)}
+.controls,.recommendations{grid-template-columns:1fr}
+.hero h1{font-size:48px}
+h2{font-size:38px}
+}
+
+@media(max-width:720px){
+.hero{padding:64px 7%}
+.container{padding:52px 7%}
+.grid-4,.heat-grid,.process-row{grid-template-columns:1fr}
+.hero h1{font-size:38px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero" id="overview">
+<div class="hero-inner">
+<div>
+<h1>AI Operational Risk Command Center</h1>
+<p>Real-time operational risk intelligence, AI-assisted control monitoring, executive reporting, and enterprise decision support.</p>
+</div>
+
+<div class="hero-card">
+<div class="hero-stat"><span>Risk Health</span><strong class="counter" data-target="94">0</strong></div>
+<div class="hero-stat"><span>Open Risks</span><strong class="counter" data-target="17">0</strong></div>
+<div class="hero-stat"><span>Controls Healthy</span><strong><span class="counter" data-target="96">0</span>%</strong></div>
+<div class="hero-stat"><span>AI Insights</span><strong class="counter" data-target="12">0</strong></div>
+</div>
+</div>
+</header>
+
+<nav class="nav">
+<div class="nav-inner">
+<a href="#environment">Environment</a>
+<a href="#workflow">AI Workflow</a>
+<a href="#command">Command Center</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#heatmap">Heat Map</a>
+<a href="#controls">Controls</a>
+</div>
+</nav>
+
+<main class="container">
+
+<section class="section fade" id="environment">
+<div class="kicker">Operational Environment</div>
+<h2>Manual risk monitoring creates delayed visibility.</h2>
+<p class="lead">Risk intake, control review, compliance validation, executive escalation, and reporting are often handled across disconnected touchpoints, limiting timely decision-making.</p>
+
+<div class="process-row">
+<div class="process-step"><span>01</span><strong>Business Operations</strong></div>
+<div class="process-step"><span>02</span><strong>Control Assessment</strong></div>
+<div class="process-step"><span>03</span><strong>Risk Identification</strong></div>
+<div class="process-step"><span>04</span><strong>Manual Review</strong></div>
+<div class="process-step"><span>05</span><strong>Executive Escalation</strong></div>
+<div class="process-step"><span>06</span><strong>Reporting</strong></div>
+</div>
+</section>
+
+<section class="section fade" id="workflow">
+<div class="kicker">AI Risk Intelligence Workflow</div>
+<h2>AI-assisted prioritization connects risk, controls, and remediation.</h2>
+<p class="lead">The workflow applies AI-assisted detection, control mapping, compliance validation, and executive-level reporting to improve visibility across operational risk activity.</p>
+
+<div class="process-row">
+<div class="process-step"><span>01</span><strong>Asset Discovery</strong></div>
+<div class="process-step"><span>02</span><strong>AI Risk Detection</strong></div>
+<div class="process-step"><span>03</span><strong>Risk Prioritization</strong></div>
+<div class="process-step"><span>04</span><strong>Compliance Validation</strong></div>
+<div class="process-step"><span>05</span><strong>Executive Review</strong></div>
+<div class="process-step"><span>06</span><strong>Resolution Tracking</strong></div>
+</div>
+</section>
+
+<section class="section fade" id="command">
+<div class="kicker">Operational Command Center</div>
+<h2>Real-time activity tracking improves operational control.</h2>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Operational Activity</th>
+<th>Severity</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:03</td>
+<td>High risk asset detected</td>
+<td><span class="pill critical">Critical</span></td>
+<td class="status">Open</td>
+</tr>
+<tr>
+<td>09:08</td>
+<td>AI validation completed</td>
+<td><span class="pill medium">Medium</span></td>
+<td class="status">Verified</td>
+</tr>
+<tr>
+<td>09:15</td>
+<td>Compliance review initiated</td>
+<td><span class="pill low">Low</span></td>
+<td class="status">In Progress</td>
+</tr>
+<tr>
+<td>09:20</td>
+<td>Executive escalation triggered</td>
+<td><span class="pill critical">Critical</span></td>
+<td class="status">Pending</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section fade" id="dashboard">
+<div class="kicker">Executive Risk Dashboard</div>
+<h2>Risk metrics are positioned after workflow activity so leaders can see business impact.</h2>
+
+<div class="grid-4">
+<div class="metric">
+<div class="metric-number counter" data-target="17">0</div>
+<div class="metric-title">Open Risks</div>
+<p>Risk items requiring operational review.</p>
+</div>
+
+<div class="metric">
+<div class="metric-number counter" data-target="4">0</div>
+<div class="metric-title">High Risk Items</div>
+<p>Issues requiring executive visibility.</p>
+</div>
+
+<div class="metric">
+<div class="metric-number"><span class="counter" data-target="96">0</span>%</div>
+<div class="metric-title">Controls Healthy</div>
+<p>Validated controls currently operating.</p>
+</div>
+
+<div class="metric">
+<div class="metric-number"><span class="counter" data-target="94">0</span>%</div>
+<div class="metric-title">AI Confidence</div>
+<p>Confidence level across risk scoring.</p>
+</div>
+</div>
+</section>
+
+<section class="section fade" id="heatmap">
+<div class="kicker">Enterprise Risk Heat Map</div>
+<h2>Risk exposure is grouped for faster executive review.</h2>
+
+<div class="heat-grid">
+<div class="heat-card">
+<span>Critical</span>
+<h3>Vendor Governance</h3>
+<p>Escalated risk requiring immediate executive review and mitigation tracking.</p>
+</div>
+
+<div class="heat-card">
+<span>High</span>
+<h3>Access Controls</h3>
+<p>Control exceptions requiring validation, owner assignment, and remediation.</p>
+</div>
+
+<div class="heat-card">
+<span>Medium</span>
+<h3>Evidence Gaps</h3>
+<p>Audit artifacts requiring completion before readiness review.</p>
+</div>
+
+<div class="heat-card">
+<span>Low</span>
+<h3>Process Variance</h3>
+<p>Routine workflow inconsistencies monitored through operational reporting.</p>
+</div>
+</div>
+</section>
+
+<section class="section fade" id="controls">
+<div class="kicker">Governance & Controls</div>
+<h2>Controls are embedded into the workflow to support oversight and audit readiness.</h2>
+
+<div class="controls">
+<div class="control"><span>✓</span>NIST AI RMF Alignment</div>
+<div class="control"><span>✓</span>SOC 2 Control Monitoring</div>
+<div class="control"><span>✓</span>SOX Evidence Review</div>
+<div class="control"><span>✓</span>Human Validation</div>
+<div class="control"><span>✓</span>Audit Evidence Tracking</div>
+<div class="control"><span>✓</span>Executive Oversight</div>
+</div>
+</section>
+
+<section class="section fade">
+<div class="kicker">AI Recommendations</div>
+<h2>AI recommendations help leaders prioritize operational improvements.</h2>
+
+<div class="recommendations">
+<div class="rec">
+<span>Priority 1</span>
+<h3>Reduce manual review cycles</h3>
+<p>Route high-risk findings to the appropriate owner faster.</p>
+<strong>38%</strong>
+</div>
+
+<div class="rec">
+<span>Priority 2</span>
+<h3>Automate evidence collection</h3>
+<p>Centralize audit artifacts and reduce manual follow-up.</p>
+<strong>42%</strong>
+</div>
+
+<div class="rec">
+<span>Priority 3</span>
+<h3>Standardize risk reporting</h3>
+<p>Improve executive visibility across operational risk categories.</p>
+<strong>31%</strong>
+</div>
+</div>
+
+<p class="footer-note">Prototype uses synthetic data for portfolio demonstration purposes.</p>
+</section>
+
+</main>
+
+<script>
+const counters=document.querySelectorAll('.counter');
+let counted=false;
+
+function runCounters(){
+if(counted)return;
+counted=true;
+counters.forEach(counter=>{
+const target=+counter.dataset.target;
+let current=0;
+const step=Math.max(1,Math.floor(target/45));
+const interval=setInterval(()=>{
+current+=step;
+if(current>=target){
+counter.textContent=target;
+clearInterval(interval);
+}else{
+counter.textContent=current;
+}
+},24);
+});
+}
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+runCounters();
+}
+});
+},{threshold:.18});
+
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+window.addEventListener('load',runCounters);
+</script>
+
+</body>
+</html>
