@@ -74,7 +74,56 @@ th{
   background:#d9b45f !important;
   color:#071426 !important;
 }
+body{
+  background:#ffffff !important;
+}
 
+.site-header,
+.hero{
+  background:#071426 !important;
+  color:#ffffff !important;
+}
+
+main,
+section{
+  background:#ffffff !important;
+  color:#071426 !important;
+}
+
+.hero h1,
+.hero .lead,
+.brand,
+.site-header a{
+  color:#ffffff !important;
+}
+
+section h2{
+  color:#071426 !important;
+}
+
+.card,
+.rec,
+.timeline div,
+table{
+  background:#ffffff !important;
+  color:#071426 !important;
+  border-color:#D8DDE5 !important;
+}
+
+.insight-panel{
+  background:#071426 !important;
+  color:#ffffff !important;
+}
+
+.primary{
+  background:#D9B45F !important;
+  color:#071426 !important;
+}
+
+.secondary{
+  color:#ffffff !important;
+  border-color:rgba(255,255,255,.35) !important;
+}
 .secondary{
   color:#ffffff !important;
   border-color:rgba(255,255,255,.35) !important;
