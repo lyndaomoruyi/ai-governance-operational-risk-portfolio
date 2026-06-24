@@ -34,7 +34,7 @@ h2{font-size:58px;line-height:1.05;letter-spacing:-2px;color:#fff;margin-bottom:
   background:#243853;color:#fff;border:1px solid rgba(255,255,255,.14);
   border-radius:16px;padding:34px;box-shadow:none
 }
-.card span{display:block;color:#dce6f2;font-size:18px;margin-bottom:30px}
+.card span{   display:block;   color:#071426;   font-size:18px;   margin-bottom:30px; }{display:block;color:#dce6f2;font-size:18px;margin-bottom:30px}
 .card strong{display:block;font-size:64px;color:#fff}
 .card em{font-style:normal;color:#D9B45F;font-weight:900}
 
