@@ -56,22 +56,4 @@ th,td{padding:22px;border-bottom:1px solid #D8DDE5;text-align:left;color:#071426
   .lead{font-size:22px}
   .grid4,.two,.recommendations,.timeline{grid-template-columns:1fr}
 }
-.hero,
-.wrap,
-section,
-.card,
-.rec,
-.timeline div,
-.insight-panel{
-    position:relative;
-    z-index:1;
-}
-
-a,
-button,
-.btn{
-    position:relative;
-    z-index:9999;
-    pointer-events:auto;
-}
-AI Operational Risk Command Center / styles.css
+ 
