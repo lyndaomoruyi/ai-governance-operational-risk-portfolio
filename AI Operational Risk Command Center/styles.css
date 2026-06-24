@@ -64,105 +64,62 @@ th,td{padding:22px;border-bottom:1px solid rgba(255,255,255,.14);text-align:left
   .lead{font-size:22px}
   .grid4,.two,.recommendations,.timeline{grid-template-columns:1fr}
 } 
-/* ===========================
-   FINAL EXECUTIVE THEME
-   =========================== */
-
-html{
-    background:#071426;
+ html, body{
+  background:#ffffff !important;
+  color:#071426 !important;
 }
 
-body{
-    background:#071426;
-    color:#ffffff;
-}
-
-/* Navigation */
-
-.site-header{
-    background:#071426 !important;
-    border-bottom:1px solid rgba(255,255,255,.08) !important;
-}
-
-.brand,
-.site-header a{
-    color:#ffffff !important;
-}
-
-/* Hero */
-
+.site-header,
 .hero{
-    background:#071426 !important;
-    color:#ffffff !important;
+  background:#071426 !important;
+  color:#ffffff !important;
 }
-
-.hero h1{
-    color:#ffffff !important;
-}
-
-.hero .lead{
-    color:#d9e4ef !important;
-}
-
-/* Buttons */
-
-.primary{
-    background:#D9B45F !important;
-    color:#071426 !important;
-}
-
-.secondary{
-    background:transparent !important;
-    color:#ffffff !important;
-    border:1px solid rgba(255,255,255,.35) !important;
-}
-
-/* Content sections */
 
 #metrics,
 #risks,
 #recommendations,
 #roadmap{
-    background:#071426 !important;
+  background:#ffffff !important;
+  color:#071426 !important;
 }
 
-/* Cards */
+h2,h3,strong,th,td{
+  color:#071426 !important;
+}
+
+.hero h1,
+.hero .lead,
+.brand,
+.site-header a{
+  color:#ffffff !important;
+}
 
 .card,
 .rec,
 .timeline div,
-table,
+table{
+  background:#ffffff !important;
+  color:#071426 !important;
+  border:1px solid #D8DDE5 !important;
+}
+
 .insight-panel{
-    background:#243853 !important;
-    color:#ffffff !important;
-    border:1px solid rgba(255,255,255,.12) !important;
+  background:#071426 !important;
+  color:#ffffff !important;
 }
 
-/* Text */
-
-h2,
-h3,
-strong,
-th,
-td{
-    color:#ffffff !important;
+.insight-panel h3,
+.insight-panel p,
+.insight-panel a{
+  color:#ffffff !important;
 }
 
-.card span,
-.timeline p,
-.insight-panel p{
-    color:#d9e4ef !important;
+.primary{
+  background:#D9B45F !important;
+  color:#071426 !important;
 }
 
-/* Accent */
-
-.section-kicker,
-.card em,
-.timeline span,
-.medium{
-    color:#D9B45F !important;
-}
-
-.low{
-    color:#7ED9A3 !important;
+.secondary{
+  color:#ffffff !important;
+  border-color:rgba(255,255,255,.35) !important;
 }
