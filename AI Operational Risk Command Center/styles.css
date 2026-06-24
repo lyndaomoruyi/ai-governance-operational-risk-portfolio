@@ -19,3 +19,59 @@ html, body, main, section, .wrap, .hero{
 body{
   color:#0B1F3A !important;
 }
+body{
+  background:#071426 !important;
+  color:#ffffff !important;
+}
+
+.site-header{
+  background:#071426 !important;
+  border-bottom:1px solid rgba(255,255,255,.08) !important;
+}
+
+.brand,
+.site-header a{
+  color:#ffffff !important;
+}
+
+.hero,
+.wrap,
+section,
+main{
+  background:#071426 !important;
+  color:#ffffff !important;
+}
+
+h1,h2{
+  color:#ffffff !important;
+}
+
+.lead{
+  color:#dce6f2 !important;
+}
+
+.card,
+.rec,
+.timeline div,
+table{
+  background:#243853 !important;
+  color:#ffffff !important;
+  border-color:rgba(255,255,255,.15) !important;
+}
+
+.card span,
+.timeline p,
+td,
+th{
+  color:#dce6f2 !important;
+}
+
+.primary{
+  background:#d9b45f !important;
+  color:#071426 !important;
+}
+
+.secondary{
+  color:#ffffff !important;
+  border-color:rgba(255,255,255,.35) !important;
+}
