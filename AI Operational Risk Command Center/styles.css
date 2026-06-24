@@ -18,7 +18,7 @@ body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#071426}
 
 h1{font-size:82px;line-height:.98;letter-spacing:-3px;color:#fff;margin-bottom:30px}
 h2{font-size:58px;line-height:1.05;letter-spacing:-2px;color:#071426;margin-bottom:36px}
-.lead{font-size:32px;line-height:1.35;color:#dce6f2;max-width:1050px}
+.lead{     color:#4B5563 !important;     font-size:32px !important;     font-weight:500 !important;     line-height:1.4 !important;     max-width:1100px !important;     opacity:1 !important; }font-size:32px;line-height:1.35;color:#dce6f2;max-width:1050px}
 
 .actions{display:flex;gap:18px;margin-top:44px}
 .btn{padding:18px 30px;border-radius:999px;text-decoration:none;font-weight:900;cursor:pointer}
