@@ -430,23 +430,6 @@ function setupNavigation() {
   }, { rootMargin: "-35% 0px -55% 0px" });
 
   sections.forEach(section => observer.observe(section));
-
-  $("[data-action='presentation']").addEventListener("click", async () => {
-    document.body.classList.toggle("presentation-mode");
-    if (document.body.classList.contains("presentation-mode") && document.documentElement.requestFullscreen) {
-      try {
-        await document.documentElement.requestFullscreen();
-      } catch (_) {
-        showToast("Presentation mode enabled. Full screen was not available.");
-      }
-    } else if (document.fullscreenElement && document.exitFullscreen) {
-      await document.exitFullscreen();
-    }
-  });
-
-  document.addEventListener("fullscreenchange", () => {
-    if (!document.fullscreenElement) document.body.classList.remove("presentation-mode");
-  });
 }
 
 function setupRevealAndCounters() {
