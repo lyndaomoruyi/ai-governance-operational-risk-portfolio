@@ -12,8 +12,12 @@ h1,h2,.brand,.site-header a{color:var(--navy);}
 .primary{background:var(--blue);}
 .timeline div{border-left-color:var(--blue);}
 .insight-panel{background:var(--navy);}
-html, body, main, section, .wrap, .hero{
-  background:#ffffff !important;
+html, body{
+  background:#071426 !important;
+}
+
+main, section, .wrap, .hero{
+  background:#071426 !important;
 }
 
 body{
