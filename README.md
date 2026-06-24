@@ -1,21 +1,17 @@
-# Professional AI Solutions Homepage
+# AI Portfolio Homepage — Final Hero Sizing
 
-Complete replacement files for the repository root homepage.
+Complete homepage replacement package.
 
-## Upload to the repository root
+Final approved adjustment:
+- Reduced the desktop hero headline by approximately 12%
+- Tightened headline line height
 
-Replace these existing files:
+Unchanged:
+- Wording
+- Navy-and-gold design
+- Navigation
+- Four professional solution links
+- Capabilities, professional foundation, and contact sections
+- Responsive behavior and interactions
 
-- `index.html`
-- `styles.css`
-- `script.js`
-
-Do not upload this folder into one of the project folders. These files belong at the main repository level.
-
-## Commit message
-
-`Upgrade professional portfolio homepage`
-
-
-## Headline refinement
-The homepage hero headline has been reduced for faster recruiter scanning, with slightly tighter hero spacing. All wording, links, sections, colors, and interactions remain unchanged.
+Upload `index.html`, `styles.css`, and `script.js` to the repository root.
