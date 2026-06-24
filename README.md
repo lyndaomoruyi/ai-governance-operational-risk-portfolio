@@ -15,3 +15,7 @@ Do not upload this folder into one of the project folders. These files belong at
 ## Commit message
 
 `Upgrade professional portfolio homepage`
+
+
+## Headline refinement
+The homepage hero headline has been reduced for faster recruiter scanning, with slightly tighter hero spacing. All wording, links, sections, colors, and interactions remain unchanged.
