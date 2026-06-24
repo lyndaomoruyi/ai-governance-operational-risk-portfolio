@@ -64,3 +64,105 @@ th,td{padding:22px;border-bottom:1px solid rgba(255,255,255,.14);text-align:left
   .lead{font-size:22px}
   .grid4,.two,.recommendations,.timeline{grid-template-columns:1fr}
 } 
+/* ===========================
+   FINAL EXECUTIVE THEME
+   =========================== */
+
+html{
+    background:#071426;
+}
+
+body{
+    background:#071426;
+    color:#ffffff;
+}
+
+/* Navigation */
+
+.site-header{
+    background:#071426 !important;
+    border-bottom:1px solid rgba(255,255,255,.08) !important;
+}
+
+.brand,
+.site-header a{
+    color:#ffffff !important;
+}
+
+/* Hero */
+
+.hero{
+    background:#071426 !important;
+    color:#ffffff !important;
+}
+
+.hero h1{
+    color:#ffffff !important;
+}
+
+.hero .lead{
+    color:#d9e4ef !important;
+}
+
+/* Buttons */
+
+.primary{
+    background:#D9B45F !important;
+    color:#071426 !important;
+}
+
+.secondary{
+    background:transparent !important;
+    color:#ffffff !important;
+    border:1px solid rgba(255,255,255,.35) !important;
+}
+
+/* Content sections */
+
+#metrics,
+#risks,
+#recommendations,
+#roadmap{
+    background:#071426 !important;
+}
+
+/* Cards */
+
+.card,
+.rec,
+.timeline div,
+table,
+.insight-panel{
+    background:#243853 !important;
+    color:#ffffff !important;
+    border:1px solid rgba(255,255,255,.12) !important;
+}
+
+/* Text */
+
+h2,
+h3,
+strong,
+th,
+td{
+    color:#ffffff !important;
+}
+
+.card span,
+.timeline p,
+.insight-panel p{
+    color:#d9e4ef !important;
+}
+
+/* Accent */
+
+.section-kicker,
+.card em,
+.timeline span,
+.medium{
+    color:#D9B45F !important;
+}
+
+.low{
+    color:#7ED9A3 !important;
+}
