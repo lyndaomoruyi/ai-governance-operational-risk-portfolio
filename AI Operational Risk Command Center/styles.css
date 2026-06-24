@@ -7,7 +7,14 @@ body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#071426}
 .site-header a{margin-left:28px}
 
 .wrap{max-width:1280px;margin:auto;padding:90px 5vw;color:#071426}
-.hero{max-width:none;margin:0;padding:120px 5vw 90px;background:#071426;color:#fff;min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+.wrap{
+    max-width:1280px;
+    margin:auto;
+    padding:90px 5vw;
+    color:#071426;
+    position:relative;
+    z-index:1;
+}
 
 h1{font-size:82px;line-height:.98;letter-spacing:-3px;color:#fff;margin-bottom:30px}
 h2{font-size:58px;line-height:1.05;letter-spacing:-2px;color:#071426;margin-bottom:36px}
@@ -48,4 +55,22 @@ th,td{padding:22px;border-bottom:1px solid #D8DDE5;text-align:left;color:#071426
   h2{font-size:40px}
   .lead{font-size:22px}
   .grid4,.two,.recommendations,.timeline{grid-template-columns:1fr}
+}
+.hero,
+.wrap,
+section,
+.card,
+.rec,
+.timeline div,
+.insight-panel{
+    position:relative;
+    z-index:1;
+}
+
+a,
+button,
+.btn{
+    position:relative;
+    z-index:9999;
+    pointer-events:auto;
 }
