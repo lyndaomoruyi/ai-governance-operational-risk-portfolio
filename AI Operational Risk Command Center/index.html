@@ -1,97 +1,436 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Operational Risk & Governance Command Center</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive AI Operational Risk and Governance Command Center demonstration for CRM and third-party workflow automation.">
+  <title>AI Operational Risk &amp; Governance Command Center</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="site-header">
-  <div class="brand">AI Operational Risk & Governance Command Center</div>
-  <nav>
-    <a href="#overview">Overview</a>
-    <a href="#metrics">Metrics</a>
-    <a href="#risks">Risks</a>
-    <a href="#recommendations">Recommendations</a>
-    <a href="#roadmap">Roadmap</a>
-  </nav>
-</header>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="AI Command Center home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span class="brand-copy">Command Center</span>
+      </a>
 
-<main>
-<section id="overview" class="wrap hero reveal">
-   
-  <h1>AI Operational Risk<br>Command Center</h1>
-  <p class="lead">Executive visibility into operational risk, controls, third-party oversight, and AI-assisted decision support.</p>
-  <div class="actions">
-    <a class="btn primary" href="#metrics">View Dashboard</a>
-    <a class="btn secondary" href="#recommendations">Open Action Plan →</a>
-  </div>
-</section>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
 
-<section id="metrics" class="wrap reveal">
-  <div class="section-kicker">Executive Metrics</div>
-  <h2>Risk posture summarized for leadership review.</h2>
-  <div class="grid4">
-    <button class="card" data-modal="Enterprise risk score represents the consolidated operating risk posture across controls, issues, and monitoring signals."><span>Enterprise Risk Score</span><strong>82</strong><em>Healthy</em></button>
-    <button class="card" data-modal="Control health reflects the percentage of reviewed controls currently operating within expected thresholds."><span>Control Health</span><strong>98%</strong><em>Above threshold</em></button>
-    <button class="card" data-modal="Critical controls are the high-priority controls monitored for governance, audit, and operational readiness."><span>Critical Controls</span><strong>247</strong><em>Monitored</em></button>
-    <button class="card" data-modal="Open risks are items requiring follow-up, validation, or management attention."><span>Open Risks</span><strong>18</strong><em>3 priority</em></button>
-  </div>
-</section>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+        <a href="#problem">Problem</a>
+        <a href="#transformation">Transformation</a>
+        <a href="#demo">Live demo</a>
+        <a href="#governance">Governance</a>
+        <a href="#impact">Impact</a>
+      </nav>
 
-<section id="risks" class="wrap two reveal">
-  <div>
-    <div class="section-kicker">Risk Intelligence</div>
-    <h2>Top risks ranked by exposure and actionability.</h2>
-    <table>
-      <tr><th>Domain</th><th>Status</th><th>Action</th></tr>
-      <tr><td>Third‑Party</td><td><b class="medium">Medium</b></td><td>Evidence review</td></tr>
-      <tr><td>Operations</td><td><b class="low">Low</b></td><td>Monitor</td></tr>
-      <tr><td>Compliance</td><td><b class="low">Low</b></td><td>Maintain cadence</td></tr>
-      <tr><td>Technology</td><td><b class="medium">Medium</b></td><td>Patch validation</td></tr>
-    </table>
-  </div>
-  <aside class="insight-panel">
-    <div class="section-kicker">AI Signal</div>
-    <h3>Recommended focus</h3>
-    <p>Prioritize third‑party evidence validation and technology patch review before the next executive risk update.</p>
-    <a href="#recommendations">Open recommendation path →</a>
-  </aside>
-</section>
+      <button class="presentation-button" type="button" data-action="presentation">Presentation mode</button>
+    </div>
+  </header>
 
-<section id="recommendations" class="wrap reveal">
-  <div class="section-kicker">Executive Recommendations</div>
-  <h2>AI-assisted actions for faster oversight.</h2>
-  <div class="recommendations">
-    <button class="rec" data-modal="Create automated reminders and evidence intake checkpoints for vendor documentation.">Automate evidence collection</button>
-    <button class="rec" data-modal="Add human validation for AI classifications tied to executive reporting and risk escalation.">Expand AI validation</button>
-    <button class="rec" data-modal="Move quarterly reviews into a repeatable workflow with defined owners, dates, and evidence links.">Standardize review cadence</button>
-    <button class="rec" data-modal="Use risk indicators to monitor vendor performance, SLA exceptions, and documentation gaps.">Increase vendor monitoring</button>
-  </div>
-</section>
+  <main id="main-content">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI operational risk &amp; governance command center</p>
+          <h1 id="hero-title">Move data once.<br>Let AI complete the workflow.</h1>
+          <p class="hero-summary">
+            A governed AI workflow can read incoming records, validate required fields, populate the CRM, synchronize third-party platforms, and route only exceptions to people.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#demo">Run the demo</a>
+            <a class="button button-light" href="#problem">See the problem</a>
+          </div>
+        </div>
 
-<section id="roadmap" class="wrap reveal">
-  <div class="section-kicker">Delivery Roadmap</div>
-  <h2>From assessment to operating model.</h2>
-  <div class="timeline">
-    <div><span>Q1</span><b>Assessment</b><p>Map risks, controls, owners, and evidence gaps.</p></div>
-    <div><span>Q2</span><b>Controls</b><p>Standardize monitoring and validation checkpoints.</p></div>
-    <div><span>Q3</span><b>Automation</b><p>Introduce AI-assisted classification and reporting.</p></div>
-    <div><span>Q4</span><b>Optimization</b><p>Improve cadence, escalation, and executive decisioning.</p></div>
-  </div>
-</section>
-</main>
+        <aside class="answer-card reveal" aria-label="Executive answer">
+          <p class="card-label">Executive answer</p>
+          <h2>The work should shift from manual entry to controlled exception review.</h2>
+          <div class="answer-rule"></div>
+          <p>AI performs the repetitive transfer. People retain approval, accountability, and oversight.</p>
+        </aside>
+      </div>
 
-<div class="modal" id="modal">
-  <div class="modal-card">
-    <button id="closeModal">×</button>
-    <h3>Executive Detail</h3>
-    <p id="modalText"></p>
-  </div>
-</div>
+      <div class="hero-metrics" aria-label="Illustrative current-state metrics">
+        <article class="metric-strip reveal">
+          <span class="metric-value">8 hrs</span>
+          <span class="metric-label">Illustrative day spent on paperwork</span>
+        </article>
+        <article class="metric-strip reveal">
+          <span class="metric-value">5 steps</span>
+          <span class="metric-label">Repeated before a record is complete</span>
+        </article>
+        <article class="metric-strip reveal">
+          <span class="metric-value">2 systems</span>
+          <span class="metric-label">CRM and third-party platform updated separately</span>
+        </article>
+        <article class="metric-strip reveal">
+          <span class="metric-value">1 review</span>
+          <span class="metric-label">Human approval retained at the decision point</span>
+        </article>
+      </div>
+      <p class="data-note">Illustrative demo assumptions; replace with validated client baseline data before implementation.</p>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section-shell section-divider" id="problem" aria-labelledby="problem-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 &nbsp; The problem</p>
+        <h2 id="problem-title">Manual handoffs consume the day before the real work begins.</h2>
+        <p>Information is received once but entered repeatedly. Each handoff adds delay, duplicate effort, and another opportunity for a field to be missed.</p>
+      </div>
+
+      <div class="problem-layout">
+        <div class="manual-flow reveal" aria-label="Current manual workflow">
+          <div class="flow-header">
+            <p class="card-label">Current-state workflow</p>
+            <span class="status-pill">Manual</span>
+          </div>
+
+          <ol class="vertical-flow">
+            <li>
+              <span class="flow-number">01</span>
+              <div><strong>Receive</strong><small>Email, PDF, spreadsheet, or vendor file</small></div>
+            </li>
+            <li>
+              <span class="flow-number">02</span>
+              <div><strong>Read</strong><small>Locate names, identifiers, dates, terms, and status</small></div>
+            </li>
+            <li>
+              <span class="flow-number">03</span>
+              <div><strong>Copy</strong><small>Move each value field by field</small></div>
+            </li>
+            <li>
+              <span class="flow-number">04</span>
+              <div><strong>Re-enter</strong><small>Populate the CRM and third-party platform separately</small></div>
+            </li>
+            <li>
+              <span class="flow-number">05</span>
+              <div><strong>Reconcile</strong><small>Check missing fields, duplicate records, and mismatched status</small></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="issue-tree reveal">
+          <p class="card-label">What the manual process creates</p>
+          <div class="issue-branch">
+            <button class="issue-button active" type="button" data-issue="time">Time</button>
+            <button class="issue-button" type="button" data-issue="quality">Quality</button>
+            <button class="issue-button" type="button" data-issue="visibility">Visibility</button>
+            <button class="issue-button" type="button" data-issue="control">Control</button>
+          </div>
+          <div class="issue-detail" id="issue-detail" aria-live="polite">
+            <span class="issue-index">01</span>
+            <h3>Administrative work expands with every record.</h3>
+            <p>Volume increases the amount of copying, checking, and re-entering instead of increasing the time available for customer, operational, and decision-focused work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell dark-section" id="transformation" aria-labelledby="transformation-title">
+      <div class="section-heading light reveal">
+        <p class="eyebrow">02 &nbsp; The transformation</p>
+        <h2 id="transformation-title">AI compresses five manual handoffs into one governed flow.</h2>
+        <p>The source enters once. AI reads, validates, maps, and distributes the information while humans review only exceptions and final approvals.</p>
+      </div>
+
+      <div class="transformation-flow reveal" aria-label="AI-enabled workflow">
+        <button class="transform-step active" type="button" data-transform="ingest">
+          <span>01</span><strong>Ingest</strong><small>Accept source data</small>
+        </button>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <button class="transform-step" type="button" data-transform="extract">
+          <span>02</span><strong>Extract</strong><small>Identify key fields</small>
+        </button>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <button class="transform-step" type="button" data-transform="validate">
+          <span>03</span><strong>Validate</strong><small>Apply data rules</small>
+        </button>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <button class="transform-step" type="button" data-transform="distribute">
+          <span>04</span><strong>Distribute</strong><small>Update connected systems</small>
+        </button>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <button class="transform-step" type="button" data-transform="approve">
+          <span>05</span><strong>Approve</strong><small>Escalate exceptions</small>
+        </button>
+      </div>
+
+      <div class="transform-detail reveal" id="transform-detail" aria-live="polite">
+        <div>
+          <p class="card-label">Selected capability</p>
+          <h3>Ingest information from the channel where it arrives.</h3>
+        </div>
+        <p>The command center accepts a document, structured file, form submission, or system event and creates one controlled processing record.</p>
+      </div>
+    </section>
+
+    <section class="section-shell" id="demo" aria-labelledby="demo-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 &nbsp; Interactive demonstration</p>
+        <h2 id="demo-title">One upload becomes a complete, reviewable transaction.</h2>
+        <p>Run the workflow below to demonstrate AI-assisted extraction, CRM population, third-party synchronization, and a full decision log.</p>
+      </div>
+
+      <div class="demo-shell reveal">
+        <div class="demo-sidebar" aria-label="Demo workflow steps">
+          <div class="demo-progress" aria-hidden="true"><span id="demo-progress-bar"></span></div>
+          <button class="demo-nav-item active" type="button" data-demo-step="1">
+            <span>01</span><div><strong>Source</strong><small>Upload or sample</small></div>
+          </button>
+          <button class="demo-nav-item" type="button" data-demo-step="2" disabled>
+            <span>02</span><div><strong>Extract</strong><small>AI field mapping</small></div>
+          </button>
+          <button class="demo-nav-item" type="button" data-demo-step="3" disabled>
+            <span>03</span><div><strong>CRM</strong><small>Populate record</small></div>
+          </button>
+          <button class="demo-nav-item" type="button" data-demo-step="4" disabled>
+            <span>04</span><div><strong>Third party</strong><small>Synchronize</small></div>
+          </button>
+          <button class="demo-nav-item" type="button" data-demo-step="5" disabled>
+            <span>05</span><div><strong>Audit</strong><small>Review evidence</small></div>
+          </button>
+        </div>
+
+        <div class="demo-workspace">
+          <section class="demo-panel active" data-panel="1" aria-labelledby="source-panel-title">
+            <div class="panel-heading">
+              <div><p class="card-label">Source intake</p><h3 id="source-panel-title">Start with one incoming record.</h3></div>
+              <span class="panel-status">Ready</span>
+            </div>
+
+            <label class="drop-zone" id="drop-zone" for="file-input">
+              <input id="file-input" type="file" accept=".pdf,.doc,.docx,.txt,.csv,.json,.xlsx,.xls,.png,.jpg,.jpeg">
+              <span class="upload-icon" aria-hidden="true">↑</span>
+              <strong>Drop a file here or browse</strong>
+              <small>PDF, document, spreadsheet, image, CSV, JSON, or text</small>
+            </label>
+
+            <div class="or-divider"><span>or</span></div>
+            <button class="button button-dark full-width" type="button" data-action="sample">Use sample operational record</button>
+            <p class="demo-note">This front-end demonstration simulates AI extraction locally. No file is uploaded to a server.</p>
+          </section>
+
+          <section class="demo-panel" data-panel="2" aria-labelledby="extract-panel-title">
+            <div class="panel-heading">
+              <div><p class="card-label">AI extraction</p><h3 id="extract-panel-title">Review the fields AI identified.</h3></div>
+              <span class="panel-status" id="extract-status">Processing</span>
+            </div>
+
+            <div class="processing-state" id="processing-state">
+              <div class="processing-line"><span></span></div>
+              <p id="processing-message">Reading source structure...</p>
+            </div>
+
+            <form class="extraction-form hidden" id="extraction-form">
+              <div class="form-grid">
+                <label>Organization<input name="organization" value="Northstar Services Group"></label>
+                <label>Record ID<input name="recordId" value="OPS-2026-0148"></label>
+                <label>Contact name<input name="contactName" value="Jordan Lee"></label>
+                <label>Contact email<input name="contactEmail" type="email" value="jordan.lee@example.com"></label>
+                <label>Request type<select name="requestType"><option>Third-party onboarding</option><option>Customer onboarding</option><option>Contract update</option><option>Operational request</option></select></label>
+                <label>Effective date<input name="effectiveDate" type="date" value="2026-06-23"></label>
+                <label>Service category<input name="serviceCategory" value="Field operations support"></label>
+                <label>Review owner<input name="reviewOwner" value="Operations Governance"></label>
+              </div>
+              <div class="validation-summary">
+                <div><span class="validation-score" id="confidence-score">97%</span><small>AI confidence</small></div>
+                <ul>
+                  <li><span>✓</span> Required fields present</li>
+                  <li><span>✓</span> Format checks passed</li>
+                  <li><span>✓</span> No duplicate record detected</li>
+                </ul>
+              </div>
+              <button class="button button-dark" type="submit">Approve fields</button>
+            </form>
+          </section>
+
+          <section class="demo-panel" data-panel="3" aria-labelledby="crm-panel-title">
+            <div class="panel-heading">
+              <div><p class="card-label">CRM population</p><h3 id="crm-panel-title">Create the CRM record without re-entry.</h3></div>
+              <span class="panel-status">Validated</span>
+            </div>
+
+            <div class="system-preview">
+              <div class="system-topbar"><strong>CRM</strong><span>New operational record</span></div>
+              <dl class="record-list" id="crm-record"></dl>
+            </div>
+            <button class="button button-dark" type="button" data-action="populate-crm">Populate CRM</button>
+          </section>
+
+          <section class="demo-panel" data-panel="4" aria-labelledby="third-party-panel-title">
+            <div class="panel-heading">
+              <div><p class="card-label">Third-party synchronization</p><h3 id="third-party-panel-title">Distribute approved data to the connected platform.</h3></div>
+              <span class="panel-status">CRM complete</span>
+            </div>
+
+            <div class="sync-map">
+              <div class="sync-node"><span>CRM</span><strong id="sync-record-id">OPS-2026-0148</strong><small>Approved source</small></div>
+              <div class="sync-connector"><span></span><b aria-hidden="true">→</b></div>
+              <div class="sync-node"><span>Third-party platform</span><strong>Vendor profile</strong><small>Awaiting synchronization</small></div>
+            </div>
+
+            <div class="mapping-table" aria-label="Field mapping preview">
+              <div class="mapping-row heading"><span>CRM field</span><span>Destination field</span><span>Rule</span></div>
+              <div class="mapping-row"><span>Organization</span><span>Legal entity</span><span>Direct</span></div>
+              <div class="mapping-row"><span>Record ID</span><span>External reference</span><span>Direct</span></div>
+              <div class="mapping-row"><span>Request type</span><span>Engagement type</span><span>Mapped</span></div>
+              <div class="mapping-row"><span>Review owner</span><span>Internal owner</span><span>Direct</span></div>
+            </div>
+            <button class="button button-dark" type="button" data-action="sync-third-party">Synchronize platform</button>
+          </section>
+
+          <section class="demo-panel" data-panel="5" aria-labelledby="audit-panel-title">
+            <div class="panel-heading">
+              <div><p class="card-label">Governance evidence</p><h3 id="audit-panel-title">Every automated action remains visible.</h3></div>
+              <span class="panel-status">Complete</span>
+            </div>
+
+            <div class="completion-banner">
+              <span class="completion-check" aria-hidden="true">✓</span>
+              <div><strong>Workflow completed</strong><small>CRM and third-party records are synchronized.</small></div>
+            </div>
+
+            <div class="audit-log" id="audit-log" aria-live="polite"></div>
+            <div class="panel-actions">
+              <button class="button button-dark" type="button" data-action="download-log">Download activity log</button>
+              <button class="button button-light" type="button" data-action="reset-demo">Run again</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-divider" id="governance" aria-labelledby="governance-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 &nbsp; Governance by design</p>
+        <h2 id="governance-title">Automation moves faster when the controls move with it.</h2>
+        <p>The command center combines efficiency with traceability, validation, accountability, and human oversight.</p>
+      </div>
+
+      <div class="governance-grid">
+        <article class="governance-card reveal">
+          <span class="governance-number">01</span>
+          <h3>Data validation</h3>
+          <p>Required fields, formats, duplicates, and mapping rules are checked before distribution.</p>
+          <button class="text-button" type="button" data-modal="validation">View control →</button>
+        </article>
+        <article class="governance-card reveal">
+          <span class="governance-number">02</span>
+          <h3>Human approval</h3>
+          <p>Low-confidence or policy-sensitive records are routed to an accountable reviewer.</p>
+          <button class="text-button" type="button" data-modal="approval">View control →</button>
+        </article>
+        <article class="governance-card reveal">
+          <span class="governance-number">03</span>
+          <h3>System traceability</h3>
+          <p>Source, field changes, decisions, timestamps, and destinations are recorded.</p>
+          <button class="text-button" type="button" data-modal="traceability">View control →</button>
+        </article>
+        <article class="governance-card reveal">
+          <span class="governance-number">04</span>
+          <h3>Exception management</h3>
+          <p>Missing, conflicting, or nonstandard information is held instead of silently passed forward.</p>
+          <button class="text-button" type="button" data-modal="exceptions">View control →</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell dark-section" id="impact" aria-labelledby="impact-title">
+      <div class="section-heading light reveal">
+        <p class="eyebrow">05 &nbsp; Business impact</p>
+        <h2 id="impact-title">The value comes from redesigning the workflow—not adding another tool.</h2>
+        <p>Use validated baseline data to calculate the final business case. The scenario below demonstrates the measurement model.</p>
+      </div>
+
+      <div class="impact-grid reveal">
+        <article class="impact-card">
+          <span class="impact-value" data-counter="75" data-suffix="%">0%</span>
+          <h3>Less manual entry</h3>
+          <p>Illustrative reduction when standard records move straight through.</p>
+        </article>
+        <article class="impact-card">
+          <span class="impact-value" data-counter="60" data-suffix="%">0%</span>
+          <h3>Faster processing</h3>
+          <p>Illustrative improvement from eliminating repeated handoffs.</p>
+        </article>
+        <article class="impact-card">
+          <span class="impact-value" data-counter="100" data-suffix="%">0%</span>
+          <h3>Action traceability</h3>
+          <p>Target state: every automated event recorded in the workflow log.</p>
+        </article>
+        <article class="impact-card">
+          <span class="impact-value" data-counter="1" data-prefix="&lt;" data-suffix=" min">0 min</span>
+          <h3>Standard record routing</h3>
+          <p>Illustrative straight-through processing target for validated inputs.</p>
+        </article>
+      </div>
+
+      <div class="before-after reveal">
+        <div>
+          <p class="card-label">Before</p>
+          <h3>People move every field.</h3>
+          <ul>
+            <li>Read each source manually</li>
+            <li>Enter the same information more than once</li>
+            <li>Reconcile status across systems</li>
+            <li>Find errors after the handoff</li>
+          </ul>
+        </div>
+        <div>
+          <p class="card-label">After</p>
+          <h3>AI moves the data; people govern the decision.</h3>
+          <ul>
+            <li>Extract and map standard fields automatically</li>
+            <li>Update the CRM and third-party platform together</li>
+            <li>Route only exceptions and approvals</li>
+            <li>Preserve evidence from source to destination</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell closing-section" aria-labelledby="closing-title">
+      <div class="closing-grid">
+        <div class="reveal">
+          <p class="eyebrow">Recommendation</p>
+          <h2 id="closing-title">Begin with one high-volume workflow, prove the controls, then scale.</h2>
+        </div>
+        <div class="recommendation-steps reveal">
+          <article><span>01</span><div><strong>Baseline</strong><p>Measure time, volume, rework, and exception rates.</p></div></article>
+          <article><span>02</span><div><strong>Pilot</strong><p>Automate one repeatable CRM and third-party workflow.</p></div></article>
+          <article><span>03</span><div><strong>Validate</strong><p>Confirm accuracy, approvals, audit evidence, and adoption.</p></div></article>
+          <article><span>04</span><div><strong>Scale</strong><p>Extend the pattern to the next workflow and system.</p></div></article>
+        </div>
+      </div>
+      <a class="button button-dark closing-button" href="#demo">Run the demonstration</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>AI Operational Risk &amp; Governance Command Center</strong>
+      <span>Interactive workflow automation demonstration</span>
+    </div>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog class="control-dialog" id="control-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+    <p class="card-label">Governance control</p>
+    <h2 id="dialog-title">Control detail</h2>
+    <p id="dialog-copy"></p>
+    <div class="dialog-rule"></div>
+    <dl id="dialog-list"></dl>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
