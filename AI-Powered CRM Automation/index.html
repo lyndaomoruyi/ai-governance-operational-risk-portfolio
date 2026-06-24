@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,6 +20,9 @@ body{font-family:'Inter',Arial,sans-serif;background:#fff;color:var(--ink);line-
 .section-kicker{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:750;margin-bottom:18px}
 h2{font-size:38px;line-height:1.12;font-weight:850;letter-spacing:-1px;margin-bottom:26px}
 .lead{font-size:21px;color:var(--muted);max-width:920px;margin-bottom:42px}
+.role-grid{display:grid;grid-template-columns:1.05fr 1.95fr;gap:34px;align-items:start}
+.role-label{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:1.8px;color:var(--ink);padding-top:5px}
+.role-copy{font-size:21px;color:var(--muted);max-width:980px}
 .process-row{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;align-items:stretch}
 .process-step{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:24px 20px;min-height:116px;display:flex;flex-direction:column;justify-content:space-between}
 .process-step span{color:var(--gold);font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
@@ -30,6 +33,7 @@ h2{font-size:38px;line-height:1.12;font-weight:850;letter-spacing:-1px;margin-bo
 .metric-number{font-size:60px;line-height:1;font-weight:900;letter-spacing:-1px;margin-bottom:18px}
 .metric-title{font-size:19px;font-weight:800;margin-bottom:10px}
 .metric p{font-size:16px;color:var(--muted);line-height:1.45}
+.metrics-note{font-size:14px;color:var(--muted);margin-top:24px;max-width:900px;font-style:italic}
 .table-wrap{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 16px 42px rgba(17,24,39,.05)}
 table{width:100%;border-collapse:collapse}
 th{background:#f8fafc;color:#111827;text-align:left;padding:22px 26px;font-size:15px;text-transform:uppercase;letter-spacing:1.6px}
@@ -38,8 +42,11 @@ td{padding:24px 26px;border-top:1px solid var(--line);font-size:18px}
 .governance-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}
 .control{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:26px;font-size:18px;font-weight:750}
 .control span{color:var(--gold);margin-right:10px}
-@media(max-width:1100px){.hero h1{font-size:48px}.process-row,.metrics,.governance-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:720px){.hero{padding:72px 7%}.hero h1{font-size:38px}.container{padding:48px 7%}.section{padding:52px 0}h2{font-size:32px}.process-row,.metrics,.governance-grid{grid-template-columns:1fr}}
+.outcome{background:var(--black);color:#fff;border-bottom:none;margin-top:24px;padding:64px;border-radius:24px}
+.outcome .section-kicker{margin-bottom:20px}
+.outcome h2{max-width:980px;margin-bottom:0}
+@media(max-width:1100px){.hero h1{font-size:48px}.process-row,.metrics,.governance-grid{grid-template-columns:repeat(2,1fr)}.role-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.hero{padding:72px 7%}.hero h1{font-size:38px}.container{padding:48px 7%}.section{padding:52px 0}h2{font-size:32px}.process-row,.metrics,.governance-grid{grid-template-columns:1fr}.outcome{padding:42px 28px;border-radius:18px}}
 </style>
 </head>
 <body>
@@ -47,7 +54,17 @@ td{padding:24px 26px;border-top:1px solid var(--line);font-size:18px}
   <div class="brand-line">Clarity drives execution • AI accelerates it</div>
   <h1>AI-Powered CRM Automation &amp; Partner Visibility Platform</h1>
 </header>
+
 <main class="container">
+<section class="section">
+  <div class="section-kicker">My Role</div>
+  <h2>Workflow strategy, governance, and executive solution design.</h2>
+  <div class="role-grid">
+    <div class="role-label">Project Contribution</div>
+    <p class="role-copy">Designed the AI-assisted operating model, mapped the current- and future-state workflows, defined CRM synchronization and partner-monitoring requirements, structured governance controls, and translated the solution into an executive dashboard concept.</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="section-kicker">Current State</div>
   <h2>Manual operations create fragmented visibility.</h2>
@@ -61,6 +78,7 @@ td{padding:24px 26px;border-top:1px solid var(--line);font-size:18px}
     <div class="process-step"><span>06</span><strong>Executive Reporting</strong></div>
   </div>
 </section>
+
 <section class="section">
   <div class="section-kicker">AI Workflow</div>
   <h2>AI-assisted workflow orchestration connects intake, CRM, and executive visibility.</h2>
@@ -74,16 +92,23 @@ td{padding:24px 26px;border-top:1px solid var(--line);font-size:18px}
     <div class="process-step"><span>06</span><strong>Decision Support</strong></div>
   </div>
 </section>
+
 <section class="section">
   <div class="section-kicker">Command Center</div>
   <h2>Real-time activity tracking improves operational control.</h2>
-  <div class="table-wrap"><table><thead><tr><th>Time</th><th>Operational Activity</th><th>Status</th></tr></thead><tbody>
-    <tr><td>09:01</td><td>Partner intake received</td><td class="status">Queued</td></tr>
-    <tr><td>09:04</td><td>AI document classification completed</td><td class="status">Validated</td></tr>
-    <tr><td>09:08</td><td>CRM synchronization completed</td><td class="status">Updated</td></tr>
-    <tr><td>09:12</td><td>Partner SLA exception flagged</td><td class="status">Needs Review</td></tr>
-  </tbody></table></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Time</th><th>Operational Activity</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>09:01</td><td>Partner intake received</td><td class="status">Queued</td></tr>
+        <tr><td>09:04</td><td>AI document classification completed</td><td class="status">Validated</td></tr>
+        <tr><td>09:08</td><td>CRM synchronization completed</td><td class="status">Updated</td></tr>
+        <tr><td>09:12</td><td>Partner SLA exception flagged</td><td class="status">Needs Review</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
+
 <section class="section">
   <div class="section-kicker">Executive Dashboard</div>
   <h2>Business impact is measured through operational visibility and cycle-time improvement.</h2>
@@ -94,16 +119,24 @@ td{padding:24px 26px;border-top:1px solid var(--line);font-size:18px}
     <div class="metric"><div class="metric-number">97%</div><div class="metric-title">Partner SLA</div><p>Real-time compliance monitoring.</p></div>
     <div class="metric"><div class="metric-number">63%</div><div class="metric-title">Process Improvement</div><p>Workflow cycle reduction.</p></div>
   </div>
+  <p class="metrics-note">Illustrative performance metrics shown for demonstration purposes. Actual outcomes depend on data quality, workflow design, system integration, and operating controls.</p>
 </section>
+
 <section class="section">
   <div class="section-kicker">Partner Intelligence</div>
   <h2>Partner status is standardized for faster review and follow-up.</h2>
-  <div class="table-wrap"><table><thead><tr><th>Partner</th><th>Status</th><th>Next Action</th></tr></thead><tbody>
-    <tr><td>Solar West</td><td class="status">Approved</td><td>Final Validation</td></tr>
-    <tr><td>BrightGrid Partners</td><td class="status">Active</td><td>SLA Monitoring</td></tr>
-    <tr><td>RenewCo Installations</td><td class="status">Complete</td><td>Audit Archived</td></tr>
-  </tbody></table></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Partner</th><th>Status</th><th>Next Action</th></tr></thead>
+      <tbody>
+        <tr><td>Solar West</td><td class="status">Approved</td><td>Final Validation</td></tr>
+        <tr><td>BrightGrid Partners</td><td class="status">Active</td><td>SLA Monitoring</td></tr>
+        <tr><td>RenewCo Installations</td><td class="status">Complete</td><td>Audit Archived</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
+
 <section class="section">
   <div class="section-kicker">Governance Framework</div>
   <h2>Controls are embedded into the workflow to support oversight and audit readiness.</h2>
@@ -115,6 +148,11 @@ td{padding:24px 26px;border-top:1px solid var(--line);font-size:18px}
     <div class="control"><span>✓</span>Executive Reporting</div>
     <div class="control"><span>✓</span>NIST AI RMF Alignment</div>
   </div>
+</section>
+
+<section class="section outcome">
+  <div class="section-kicker">Business Outcome</div>
+  <h2>The solution demonstrates how AI can reduce repetitive CRM work, improve partner visibility, accelerate operational decisions, and preserve human oversight through embedded governance controls.</h2>
 </section>
 </main>
 </body>
