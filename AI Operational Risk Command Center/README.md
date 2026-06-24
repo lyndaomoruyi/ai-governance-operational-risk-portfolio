@@ -27,3 +27,8 @@ No installation, build step, framework, server, or external library is required.
 7. Review and download the activity log.
 
 The business impact figures are explicitly labeled as illustrative. Replace them with validated client baseline and pilot data before using them as factual claims.
+
+
+Final presentation refinements:
+- Hero content moved upward to reduce excess top whitespace.
+- Primary call-to-action changed to “View the workflow.”
